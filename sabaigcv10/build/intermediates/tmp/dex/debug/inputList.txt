@@ -1,0 +1,12 @@
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/classes/debug
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-47baba8c291af738a2000b78e7105f962dcc2be8.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-0f2e242852c6977459f6abd3ea1a3fc442ee2c86.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-0400d42bb9ba27e31ae41c2e7cd8369e5b530685.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-baa439d1b327b6baa190fe1a38bedb2558775fec.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-2f6cbfd859e827889012189db78dbfea8e55a8ec.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-65fc718102a3019701112d1ee80744368bfef53a.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-60af679dd1f9f9bc09808ca36209bb8eba33afdc.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-e83e019c8a4ee61b6c5ab35dfaa0087f32732470.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-bb094f5f9d1ee4b1bf389203a82733c24981fe5b.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-7d4cec3cb8b80b2dd3b552940a2431b7e426a793.jar
+/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-3f01f780d7b860213fe344845a5c5ec4885740f0.jar

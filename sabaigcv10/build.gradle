@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.saba.igc.org"
+        minSdkVersion 19
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':androidTime')
+    compile project(':googleplayservices_lib')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('libs/activeandroid-3.1-SNAPSHOT.jar')
+    compile files('libs/android-async-http-1.4.5.jar')
+    compile files('libs/codepath-utils.jar')
+    compile files('libs/commons-io-2.4.jar')
+    compile files('libs/universal-image-loader-1.8.4.jar')
+    compile 'com.google.android.gms:play-services:6.5.87'
+}

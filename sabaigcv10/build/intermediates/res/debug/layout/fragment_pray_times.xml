@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/city_name"
+        android:layout_marginTop = "15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvEnglishDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/tvCityName" 
+        android:text="@string/english_date" 
+        android:layout_marginTop = "5dp"/>
+
+    <ListView
+        android:id="@+id/lvPrayTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnglishDate"
+        android:divider="@null"
+        android:dividerHeight="0dp" 
+        android:layout_marginTop = "15dp">
+
+    </ListView>
+    
+    <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/prayTimesProgressBar"
+          style="@android:style/Widget.ProgressBar.Large"
+          android:layout_centerInParent="true"/>
+
+</RelativeLayout><!-- From: file:/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/src/main/res/layout/fragment_pray_times.xml -->

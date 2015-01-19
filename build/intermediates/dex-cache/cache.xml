@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-3f01f780d7b860213fe344845a5c5ec4885740f0.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-e83e019c8a4ee61b6c5ab35dfaa0087f32732470.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-bb094f5f9d1ee4b1bf389203a82733c24981fe5b.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/libs/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-65fc718102a3019701112d1ee80744368bfef53a.jar" />
+    </item>
+    <item
+        jar="/Users/syed/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-0400d42bb9ba27e31ae41c2e7cd8369e5b530685.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-60af679dd1f9f9bc09808ca36209bb8eba33afdc.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="71a3848de123024c981082a62941a3ca8bfe96e3">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-47baba8c291af738a2000b78e7105f962dcc2be8.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="15746b6d9bbe45fb11e98ce1e4880369d83559c5">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-0f2e242852c6977459f6abd3ea1a3fc442ee2c86.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-baa439d1b327b6baa190fe1a38bedb2558775fec.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/libs/activeandroid-3.1-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6bede33d5bb966f604fc8ba264fea0297730225c">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-2f6cbfd859e827889012189db78dbfea8e55a8ec.jar" />
+    </item>
+    <item
+        jar="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-7d4cec3cb8b80b2dd3b552940a2431b7e426a793.jar" />
+    </item>
+
+</items>
