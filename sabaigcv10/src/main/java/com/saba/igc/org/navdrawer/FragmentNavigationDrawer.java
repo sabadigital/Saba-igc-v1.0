@@ -104,8 +104,8 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 		// Highlight the selected item, update the title, and close the drawer
 		lvDrawer.setItemChecked(position, true);
 		setTitle(navItem.getTitle());
-		//closeDrawer(lvDrawer);
-		openDrawer(lvDrawer);
+		closeDrawer(lvDrawer);
+		//openDrawer(lvDrawer);
 	}
 	
  

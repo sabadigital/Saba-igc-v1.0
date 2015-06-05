@@ -15,7 +15,7 @@ ADDED from AndroidManifest.xml:2:1
 		INJECTED from AndroidManifest.xml:0:0
 uses-sdk
 ADDED from AndroidManifest.xml:7:5
-MERGED from Saba-igc.v1.0:androidTime:unspecified:5:5
+MERGED from Saba-igc-v1.0:androidTime:unspecified:5:5
 MERGED from com.android.support:support-v4:21.0.0:15:5
 MERGED from com.google.android.gms:play-services:6.5.87:18:5
 MERGED from com.android.support:support-v4:21.0.0:15:5
@@ -49,7 +49,7 @@ ADDED from AndroidManifest.xml:15:5
 		ADDED from AndroidManifest.xml:15:22
 application
 ADDED from AndroidManifest.xml:18:5
-MERGED from Saba-igc.v1.0:androidTime:unspecified:9:5
+MERGED from Saba-igc-v1.0:androidTime:unspecified:9:5
 MERGED from com.android.support:support-v4:21.0.0:16:5
 MERGED from com.google.android.gms:play-services:6.5.87:20:5
 MERGED from com.android.support:support-v4:21.0.0:16:5

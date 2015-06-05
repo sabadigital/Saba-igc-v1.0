@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc.v1.0/androidTime/src/main/res/values-it/time.xml -->
+    <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/androidTime/src/main/res/values-it/time.xml -->
     <eat-comment/>
     <plurals name="in_x_days">
 		<item quantity="zero">in %d giorni</item>
