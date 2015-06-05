@@ -37,4 +37,4 @@
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
     android:textAppearance="?android:attr/textAppearanceListItemSmall"
     android:textSize="16sp"
-    android:textColor="#111" /> --><!-- From: file:/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/src/main/res/layout/drawer_nav_item.xml -->
+    android:textColor="#111" /> --><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc.v1.0/sabaigcv10/src/main/res/layout/drawer_nav_item.xml -->

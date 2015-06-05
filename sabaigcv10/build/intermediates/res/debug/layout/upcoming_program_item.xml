@@ -69,4 +69,4 @@ android:paddingEnd="0dp"
 android:ellipsize="end"
 android:layout_below="@+id/ivProgram"
 android:layout_alignStart="@+id/ivProgram" />
-    --><!-- From: file:/Users/syed/AndroidstudioProjects/Saba-igc.v1.0/sabaigcv10/src/main/res/layout/upcoming_program_item.xml -->
+    --><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc.v1.0/sabaigcv10/src/main/res/layout/upcoming_program_item.xml -->
