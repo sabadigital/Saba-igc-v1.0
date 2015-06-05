@@ -16,8 +16,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="0dp"
-        android:background="@android:color/background_light"
+        android:divider="@android:color/holo_green_dark"
+        android:dividerHeight="1dp"
+        android:background="@android:color/white"
      />
 </com.saba.igc.org.navdrawer.FragmentNavigationDrawer>

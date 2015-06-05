@@ -4,8 +4,6 @@
  
 package com.saba.igc.org.navdrawer;
  
-import java.util.ArrayList;
-
 import android.app.ActionBar;
 import android.content.Context;
 import android.os.Bundle;
@@ -23,6 +21,8 @@ import android.widget.ListView;
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.NavDrawerListAdapter;
 import com.saba.igc.org.models.NavDrawerItem;
+
+import java.util.ArrayList;
  
 /**
  * @author Syed Aftab Naqvi

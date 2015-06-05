@@ -10,7 +10,6 @@ import android.widget.ListView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.fragments.CommunityAnnouncementsFragment;
-import com.saba.igc.org.fragments.GeneralAnnouncementsFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
 import com.saba.igc.org.fragments.UpcomingProgramsFragment;
 import com.saba.igc.org.fragments.WeeklyProgramsFragment;
@@ -31,15 +30,14 @@ public class MainActivity1 extends FragmentActivity {
 		// Find our drawer view
 		dlDrawer = (FragmentNavigationDrawer) findViewById(R.id.drawer_layout);
 		// Setup drawer view
-		dlDrawer.setupDrawerConfiguration((ListView) findViewById(R.id.lvDrawer), 
-                     R.layout.drawer_nav_item, R.id.flContent);
+		dlDrawer.setupDrawerConfiguration((ListView) findViewById(R.id.lvDrawer),
+				R.layout.drawer_nav_item, R.id.flContent);
 		
 		// Add nav items
-		dlDrawer.addNavItem("Upcoming", R.drawable.ic_one, "Upcoming Programs", UpcomingProgramsFragment.class);
-		dlDrawer.addNavItem("Weekly", R.drawable.ic_two, "Weekly Programs", WeeklyProgramsFragment.class);
-		dlDrawer.addNavItem("Community", R.drawable.ic_two, "Community Announcements", CommunityAnnouncementsFragment.class);
-		dlDrawer.addNavItem("General", R.drawable.ic_two, "General Announcements", GeneralAnnouncementsFragment.class);
-		dlDrawer.addNavItem("Pray Times", R.drawable.ic_pray, "Pray Times", PrayerTimesFragment.class);
+		dlDrawer.addNavItem("Weekly Schedule", R.drawable.ic_weekly_chedule1, "Weekly Schedule", WeeklyProgramsFragment.class);
+		dlDrawer.addNavItem("Events", R.drawable.ic_events_annucements, "Events & Announcements", UpcomingProgramsFragment.class);
+		dlDrawer.addNavItem("Community", R.drawable.ic_community, "Community Announcements", CommunityAnnouncementsFragment.class);
+		dlDrawer.addNavItem("Prayer Times", R.drawable.ic_prayer, "Prayer Times", PrayerTimesFragment.class);
 
 		// Select default
 		if (savedInstanceState == null) {
