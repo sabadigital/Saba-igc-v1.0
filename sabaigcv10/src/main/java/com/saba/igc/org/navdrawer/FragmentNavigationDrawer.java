@@ -183,6 +183,4 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 	public boolean isDrawerOpen() {
 		return isDrawerOpen(lvDrawer);
 	}
-	
- 
 }
