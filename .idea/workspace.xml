@@ -10,88 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c1556e8-2c73-4fe4-ab94-0fce5c25bb49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_contact_directions.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/ContactAndDirectionsFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/buildConfig/debug/im/delight/android/time/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/buildConfig/test/debug/im/delight/android/time/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/r/debug/im/delight/android/time/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/r/test/debug/im/delight/android/time/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/r/test/debug/im/delight/android/time/test/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-de/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-es/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-fr/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-it/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-nb/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-pt-rBR/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-pt-rPT/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/debug/im/delight/android/time/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/debug/im/delight/android/time/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/debug/im/delight/android/time/R$plurals.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/debug/im/delight/android/time/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/debug/im/delight/android/time/RelativeTime.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/aidl/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/aidl/test/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/packageResources/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/test/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger1190043198413884023.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger214592101808135706.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger298617561784457113.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger5428727919652343767.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/resources-debug-test.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-de/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-es/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-fr/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-it/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-nb/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-pt-rBR/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-pt-rPT/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/symbols/test/debug/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/tmp/packageDebugJar/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/buildConfig/test/debug/com/saba/igc/org/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-de/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-es/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-fr/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-it/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-nb/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-pt-rBR/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values-pt-rPT/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.1/androidTime/unspecified/res/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-de/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-es/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-fr/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-it/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-nb/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-pt-rBR/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values-pt-rPT/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/res/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/aidl/test/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/manifests/test/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug-test.ap_" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-hdpi-v4/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-mdpi-v4/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-xhdpi-v4/ic_launcher.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-xxhdpi-v4/ic_launcher.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_launcher1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/ic_launcher1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-xhdpi/ic_launcher1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-xxhdpi/ic_launcher1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/ProgramDetailActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/ProgramDetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" />
@@ -99,45 +27,24 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$string.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/WeeklyProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/WeeklyProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b4062bdd6f839d0fe53acb4aae8eab0fe14db184.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b4062bdd6f839d0fe53acb4aae8eab0fe14db184.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-df9fa7dacc71b9d9cee40a5e20b3aa05b7a40faa.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-df9fa7dacc71b9d9cee40a5e20b3aa05b7a40faa.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" afterPath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-30cec9aee961d0b4d5f3a2378d70416ff5bbbe9d.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-30cec9aee961d0b4d5f3a2378d70416ff5bbbe9d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Saba-igc-v1.0.iws" />
@@ -159,13 +66,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ic_contact_directions.jpeg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_contact_directions.jpeg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainActivity1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -178,39 +78,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FragmentNavigationDrawer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommunityAnnouncementsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SabaBaseFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_contact_and_directions.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fragment_contact_and_directions.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -219,6 +87,67 @@
             </state>
           </provider>
           <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ic_launcher1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ic_launcher.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ic_launcher1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_launcher1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ic_launcher1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/ic_launcher1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="R.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.72">
+              <caret line="406" column="32" selection-start-line="406" selection-start-column="32" selection-end-line="406" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upcoming_program_item.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/upcoming_program_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5989515">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
@@ -2139,6 +2068,8 @@
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/ContactAndDirectionsFragment.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/upcoming_program_item.xml" />
       </list>
     </option>
   </component>
@@ -2220,6 +2151,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Saba-igc-v1.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sabaigcv10" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2526,12 +2475,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2252" height="1174" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986426" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32986426" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986766" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -2546,12 +2496,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15339367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15339367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2632,6 +2581,53 @@
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/ic_launcher.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_launcher1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/ic_launcher1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.72">
+          <caret line="406" column="32" selection-start-line="406" selection-start-column="32" selection-end-line="406" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/upcoming_program_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5989515">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
