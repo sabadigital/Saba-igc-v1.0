@@ -138,6 +138,7 @@
     <string name="fajar_label">Fajar</string>
     <string name="fajar_value">5:25 AM</string>
     <string name="header">Tuesday/December 19/29th safar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="imsaac_label">Imsaac</string>
     <string name="imsaac_value">5:11 AM</string>

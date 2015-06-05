@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.fragments.CommunityAnnouncementsFragment;
+import com.saba.igc.org.fragments.ContactAndDirectionsFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
 import com.saba.igc.org.fragments.UpcomingProgramsFragment;
 import com.saba.igc.org.fragments.WeeklyProgramsFragment;
@@ -37,6 +38,7 @@ public class MainActivity1 extends FragmentActivity {
 		dlDrawer.addNavItem("Weekly Schedule", R.drawable.ic_weekly_chedule1, "Weekly Schedule", WeeklyProgramsFragment.class);
 		dlDrawer.addNavItem("Events", R.drawable.ic_events_annucements, "Events & Announcements", UpcomingProgramsFragment.class);
 		dlDrawer.addNavItem("Community", R.drawable.ic_community, "Community Announcements", CommunityAnnouncementsFragment.class);
+		dlDrawer.addNavItem("Contact and Directions", R.drawable.ic_contact_directions, "Contact and Directions", ContactAndDirectionsFragment.class);
 		dlDrawer.addNavItem("Prayer Times", R.drawable.ic_prayer, "Prayer Times", PrayerTimesFragment.class);
 
 		// Select default
