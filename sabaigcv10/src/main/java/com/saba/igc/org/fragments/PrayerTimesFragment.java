@@ -1,13 +1,5 @@
 package com.saba.igc.org.fragments;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import android.content.Context;
 import android.location.Criteria;
 import android.location.Location;
@@ -32,6 +24,16 @@ import com.saba.igc.org.extras.LocationBasedCityName;
 import com.saba.igc.org.extras.LocationService;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.PrayTime;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.TimeZone;
 
 /**
  * @author Syed Aftab Naqvi
@@ -95,7 +97,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
         }
         
 		SabaClient client = SabaClient.getInstance(getActivity());
-		client.getPrayTimes(longitude, latitude, this);
+		client.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), longitude, latitude, this);
 		
 		// initiate the request to get the city name based of current latitude and longitude. 
 		LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
@@ -143,7 +145,18 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public void processJsonObject(String programName, JSONArray response) {
 		// we are not expecting any data here in this case....
 	}
-	
+
+	public static String getCurrentTimezoneOffsetInMinutes() {
+
+		TimeZone tz = TimeZone.getDefault();
+		Calendar cal = GregorianCalendar.getInstance(tz);
+		int offsetInMillis = tz.getOffset(cal.getTimeInMillis());
+
+		String offset = String.format("%d", offsetInMillis/(1000*60)); // offset in minutes
+
+		return offset;
+	}
+
 	private class GeocoderHandler extends Handler {
         @Override
         public void handleMessage(Message message) {

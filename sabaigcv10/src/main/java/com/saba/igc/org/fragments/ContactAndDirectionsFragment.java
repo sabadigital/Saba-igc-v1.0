@@ -23,6 +23,23 @@ public class ContactAndDirectionsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+
+
+        super.onCreateView(inflater, container, savedInstanceState);
+
+//        View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
+//
+//        View header = inflater.inflate(R.layout.header, null);
+//        View footer = inflater.inflate(R.layout.footer, null);
+//        ListView listView = getListView();
+//        listView.addHeaderView(header);
+//
+//
+//        setupUI(view);
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_contact_and_directions, container, false);
     }

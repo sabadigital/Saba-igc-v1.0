@@ -30,10 +30,20 @@ public class MainActivity1 extends FragmentActivity {
 		setContentView(R.layout.activity_main1);
 		// Find our drawer view
 		dlDrawer = (FragmentNavigationDrawer) findViewById(R.id.drawer_layout);
+
+        ListView lvDrawer = (ListView) findViewById(R.id.lvDrawer);
+
+//        (R.layout.fragment_pray_times, container, false);
+//
+//        View view = inflater.inflate(R.layout.activity_main, container, false);
+//
+//        View header = getLayoutInflater().inflate(R.id.tvProgramHeader);
+//        lvDrawer.addHeaderView(header);
 		// Setup drawer view
-		dlDrawer.setupDrawerConfiguration((ListView) findViewById(R.id.lvDrawer),
+		dlDrawer.setupDrawerConfiguration(lvDrawer,
 				R.layout.drawer_nav_item, R.id.flContent);
-		
+
+
 		// Add nav items
 		dlDrawer.addNavItem("Weekly Schedule", R.drawable.ic_weekly_chedule1, "Weekly Schedule", WeeklyProgramsFragment.class);
 		dlDrawer.addNavItem("Events", R.drawable.ic_events_annucements, "Events & Announcements", UpcomingProgramsFragment.class);

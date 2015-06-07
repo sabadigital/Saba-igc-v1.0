@@ -1,18 +1,17 @@
 package com.saba.igc.org.application;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.TimeZone;
+import android.content.Context;
+import android.util.Log;
+
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
+import com.saba.igc.org.listeners.SabaServerResponseListener;
 
 import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import android.content.Context;
-
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.JsonHttpResponseHandler;
-import com.saba.igc.org.listeners.SabaServerResponseListener;
+import java.util.Calendar;
 
 /**
  * @author Syed Aftab Naqvi
@@ -25,7 +24,7 @@ public class SabaClient {
 //	private SabaServerResponseListener mTarget;
 	private static final String SABA_BASE_URL = "http://www.saba-igc.org/mobileapp/datafeedproxy.php?sheetName=weekly&sheetId=";
 	private static String PRAY_TIME_INFO_URL = "http://praytime.info/getprayertimes.php?lat=34.024899&lon=-117.89730099999997&gmt=-480&m=11&d=31&y=2014&school=0";
-	private static String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=-480";
+	private static String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=";
 	private static final int TIME_OUT = 30000;
 	
 //	private class ReadFromDatabase extends AsyncTask<String, Void, List<SabaProgram> > {
@@ -149,24 +148,27 @@ public class SabaClient {
 		//new ReadFromDatabase().execute(string);
 	}
 	
-	public void getPrayTimes(double longitude, double latitude, SabaServerResponseListener target) {
+	public void getPrayTimes(String timeZoneOffsetInMinutes, double longitude, double latitude, SabaServerResponseListener target) {
 		StringBuilder sb = new StringBuilder(PRAY_TIME_INFO_BASE_URL);
-		
+
+		sb.append(timeZoneOffsetInMinutes); // appending timeZoneOffsetInMinutes.
+
 		// setting location
 		sb.append("&lat=");
 		sb.append(latitude);
 		sb.append("&lon=");
 		sb.append(longitude);
-		
+
 		// setting today's date.
-		Calendar now = Calendar.getInstance();
 		sb.append("&m=");
-		sb.append(now.get(Calendar.MONTH+1)); // month is zero based.
+		sb.append(Calendar.getInstance().get(Calendar.MONTH) + 1); // month is zero based.
 		sb.append("&d=");
-		sb.append(now.get(Calendar.DAY_OF_MONTH));
+		sb.append(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
 		sb.append("&y=");
-		sb.append(now.get(Calendar.YEAR));
-		
-	    sendRequest("Pray Times", sb.toString(), target);
+		sb.append(Calendar.getInstance().get(Calendar.YEAR));
+
+		Log.d("PrayerTime URL: ", sb.toString());
+
+		sendRequest("Pray Times", sb.toString(), target);
 	}
 }

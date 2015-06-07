@@ -52,31 +52,32 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 	// setupDrawerConfiguration((ListView) findViewById(R.id.lvDrawer), R.layout.drawer_list_item, R.id.flContent);
 	public void setupDrawerConfiguration(ListView drawerListView, int drawerItemRes, int drawerContainerRes) {
 		// Setup navigation items array
-		 		drawerNavItems = new ArrayList<FragmentNavigationDrawer.FragmentNavItem>(); 		
-		 		navDrawerItems = new ArrayList<NavDrawerItem>(); 				
-		 		this.drawerContainerRes = drawerContainerRes;  
-		 		// Setup drawer list view
-		 		lvDrawer = drawerListView; 
-		 		// Setup item listener
-		 		lvDrawer.setOnItemClickListener(new FragmentDrawerItemListener());
-		 		// ActionBarDrawerToggle ties together the the proper interactions
-		 		// between the sliding drawer and the action bar app icon
-		 		drawerToggle = setupDrawerToggle();
-		 		setDrawerListener(drawerToggle);
-		 		// set a custom shadow that overlays the main content when the drawer
-		 		setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
-		 		// Setup action buttons
-		 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		 		getActionBar().setHomeButtonEnabled(true);
+		drawerNavItems = new ArrayList<FragmentNavigationDrawer.FragmentNavItem>();
+		navDrawerItems = new ArrayList<NavDrawerItem>();
+		this.drawerContainerRes = drawerContainerRes;
+		// Setup drawer list view
+		lvDrawer = drawerListView;
+		// Setup item listener
+		lvDrawer.setOnItemClickListener(new FragmentDrawerItemListener());
+		// ActionBarDrawerToggle ties together the the proper interactions
+		// between the sliding drawer and the action bar app icon
+		drawerToggle = setupDrawerToggle();
+		setDrawerListener(drawerToggle);
+		// set a custom shadow that overlays the main content when the drawer
+		setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+		// Setup action buttons
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+		getActionBar().setHomeButtonEnabled(true);
+
+		// Set the adapter for the list view
+		drawerAdapter = new NavDrawerListAdapter(getActivity(), navDrawerItems);
+		lvDrawer.setAdapter(drawerAdapter);
 	}
  
 	// addNavItem("First", R.drawable.ic_one, "First Fragment", FirstFragment.class)
 	 	public void addNavItem(String navTitle, int icon, String windowTitle, Class<? extends Fragment> fragmentClass) { 
 	 		// adding nav drawer items to array
-	 		navDrawerItems.add(new NavDrawerItem(navTitle, icon)); 
-	 		// Set the adapter for the list view
-	 		drawerAdapter = new NavDrawerListAdapter(getActivity(), navDrawerItems); 	
-	 		lvDrawer.setAdapter(drawerAdapter);
+	 		navDrawerItems.add(new NavDrawerItem(navTitle, icon));
 	 		drawerNavItems.add(new FragmentNavItem(windowTitle, fragmentClass));
 	 	}
 	 	
