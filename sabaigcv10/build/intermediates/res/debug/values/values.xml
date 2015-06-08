@@ -93,7 +93,7 @@
     <string name="app_name">Saba</string>
     <string name="asr_label">Asr</string>
     <string name="asr_value">04:10 PM</string>
-    <string name="city_name">San Jose</string>
+    <string name="city_name"/>
     <string name="city_name_label">San Jose, CA</string>
     <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_strings.xml -->
     <eat-comment/>

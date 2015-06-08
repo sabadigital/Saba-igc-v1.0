@@ -148,7 +148,7 @@ public class SabaClient {
 		//new ReadFromDatabase().execute(string);
 	}
 	
-	public void getPrayTimes(String timeZoneOffsetInMinutes, double longitude, double latitude, SabaServerResponseListener target) {
+	public void getPrayTimes(String timeZoneOffsetInMinutes, double latitude, double longitude, SabaServerResponseListener target) {
 		StringBuilder sb = new StringBuilder(PRAY_TIME_INFO_BASE_URL);
 
 		sb.append(timeZoneOffsetInMinutes); // appending timeZoneOffsetInMinutes.

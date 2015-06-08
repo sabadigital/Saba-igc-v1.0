@@ -40,7 +40,7 @@
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="3f5ee383baeaeaf793369b26195d9ed29d7f8cbe">
+        sha1="c00bb5bb6c42bb83f768b3cc1d91e430be199f5d">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
     </item>
     <item
@@ -131,7 +131,7 @@
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="fb38a2e453698e00f146630f0a12f14d12d1653d">
+        sha1="1ccde6b95a54fbc1a3254fb98f987080f9bfd2e4">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
     </item>
     <item
