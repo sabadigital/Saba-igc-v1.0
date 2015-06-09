@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.text.method.LinkMovementMethod;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
@@ -129,9 +130,9 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 		if(viewHolder.tvProgramDescription != null){
 			viewHolder.tvProgramDescription.setText(Html.fromHtml(program.getDescription()));
 
-            // forgot what following line was doing but lets keep it here...
-            // currently, it was disabling the click events.
-			//viewHolder.tvProgramDescription.setMovementMethod(LinkMovementMethod.getInstance());
+			// disable tap on Weekly Programs on links. Tap will work on Weekly programs to show daily programs.
+            if(program.getProgramName().equalsIgnoreCase("Weekly Programs")==false)
+            	viewHolder.tvProgramDescription.setMovementMethod(LinkMovementMethod.getInstance());
 		}	
 	}
 	
@@ -157,24 +158,7 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 	        		spinner.setVisibility(View.GONE); //  loading completed set the spinne m[p 8978 p 5p b84etttttttttyetw4r visibility to gone
 	        	
 	        	int width=60;
-//	        	if( view.getWidth() == 0){
-//	        		width = view.getMeasuredWidth();
-//	        	}else{
-//	        		width = view.getWidth();
-//	        	}
-//	        	if( width == 0){
-//	        		width = loadedImage.getWidth();
-//	        	}
-	         
 	        	int height=60;
-//	        	if( view.getHeight() == 0){
-//	        		height = view.getMeasuredHeight();
-//	        	}else{
-//	        		height = view.getHeight();
-//	        	}
-//	        	if( height == 0 ){
-//	        		height = loadedImage.getHeight();
-//	        	}
 	        	BitmapScaler.scaleToFitHeight(loadedImage, height);
 	        	BitmapScaler.scaleToFitWidth(loadedImage, width);
 	        }

@@ -1,6 +1,5 @@
 package com.saba.igc.org.fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,7 +13,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.saba.igc.org.R;
-import com.saba.igc.org.activities.ProgramDetailActivity;
 import com.saba.igc.org.adapters.ProgramsArrayAdapter;
 import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.application.SabaClient;
@@ -98,16 +96,9 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				
-				
-				if(mProgramName.compareTo("Weekly Programs")==0){
-					processOnItemClick(position);
-				} else {
-					
-					Intent intent = new Intent(getActivity(), ProgramDetailActivity.class);
-					intent.putExtra("program", mPrograms.get(position));
-					startActivity(intent);
-				}
+			if(mProgramName.compareTo("Weekly Programs")==0){
+				processOnItemClick(position);
+			}
 			}
 		});
 		

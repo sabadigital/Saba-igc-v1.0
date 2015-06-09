@@ -94,6 +94,9 @@ public class PrayTime {
 	}
 
 	public static String get12HrFormatTime(String time){
+		if("-----".equals(time)== true)
+			return time;
+
 		Date date24Hours = null;
 		SimpleDateFormat simpleDateFormat12Hours = null;
 		try {

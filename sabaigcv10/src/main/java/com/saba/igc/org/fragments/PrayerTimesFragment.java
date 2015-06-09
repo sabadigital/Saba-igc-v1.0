@@ -19,6 +19,7 @@ import com.saba.igc.org.adapters.PrayTimeAdapter;
 import com.saba.igc.org.application.SabaClient;
 import com.saba.igc.org.extras.LocationBasedCityName;
 import com.saba.igc.org.extras.LocationService;
+import com.saba.igc.org.extras.PrayerLocation;
 import com.saba.igc.org.listeners.LocationListenerForPrayers;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.PrayTime;
@@ -48,12 +49,12 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private ListView	 		mLvPrayTimes;
 	private PrayTimeAdapter 	mAdapter;
 	private ProgressBar 		mPrayTimesProgressBar;
-	private boolean				mDestroyed;
+	//private boolean				mDestroyed;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		refresh();
-		mDestroyed = false;
+		//mDestroyed = false;
 	}
 
 	@Override
@@ -61,9 +62,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
 		getActivity().setTitle("Prayer Times");
-		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);		
+		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 		setupUI(view);
-
 //		mLvPrayTimes.setOnRefreshListener(new PullToRefreshListView.OnRefreshListener() {
 //			@Override
 //			public void onRefresh() {
@@ -76,17 +76,17 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		return view;
 	}
 
-	@Override
-	public void onDestroyView(){
-		super.onDestroyView();
-		mDestroyed = true;
-	}
-
-	@Override
-	public void onDestroy(){
-		super.onDestroy();
-		mDestroyed = true;
-	}
+//	@Override
+//	public void onDestroyView(){
+//		super.onDestroyView();
+//		mDestroyed = true;
+//	}
+//
+//	@Override
+//	public void onDestroy(){
+//		super.onDestroy();
+//		mDestroyed = true;
+//	}
 
 	private void setupUI(View view) {
 		mTvCityName 			= (TextView) view.findViewById(R.id.tvCityName);
@@ -104,10 +104,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	//Implementation of LocationListenerForPrayers.
 	public void locationUpdated(Location newLocation)
 	{
-		if(mDestroyed) {
-			Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Fragment has been destroyed. returning. Can't get the prayer times.");
-			return;
-		}
+//		if(mDestroyed) {
+//			Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Fragment has been destroyed. returning. Can't get the prayer times.");
+//			return;
+//		}
 
 		Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
 		// getting prayer times from http://praytime.info/
@@ -130,7 +130,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			Log.d(TAG, "prayer times - json object is null");
 			return;
 		}
-		
+		Log.d(TAG, "prayerTimes: " + response.toString());
 		mPrayTimes = PrayTime.fromJSON(response);
 		mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes); 
 		mLvPrayTimes.setAdapter(mAdapter);
@@ -153,11 +153,30 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	}
 
 	private void refresh(){
-		if(mLocationService == null)
-			mLocationService = new LocationService(
-					getActivity(), this);
-		else
-			mLocationService.startLocationManager();
+//		if(mLocationService == null)
+//			mLocationService = new LocationService(
+//					getActivity(), this);
+//		else
+//			mLocationService.startLocationManager();
+
+		// create class object
+		PrayerLocation prayerLocation = new PrayerLocation(getActivity());
+
+		// check if GPS enabled
+		if(prayerLocation.canGetLocation()){
+			Log.d(TAG, "refresh - Will try to get PrayerTimes for - Latitude: " +
+					prayerLocation.getLatitude() + " - Longitude: " + prayerLocation.getLongitude());
+
+			// getting prayer times from http://praytime.info/
+			SabaClient client = SabaClient.getInstance(getActivity());
+			client.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), prayerLocation.getLatitude(), prayerLocation.getLongitude(), this);
+
+			// initiate the request to get the city name based of current latitude and longitude.
+			LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
+			locationBasedCityName.getAddressFromLocation(prayerLocation.getLatitude(), prayerLocation.getLongitude(),
+					getActivity(), new GeocoderHandler());
+
+		}
 	}
 
 	private class GeocoderHandler extends Handler {

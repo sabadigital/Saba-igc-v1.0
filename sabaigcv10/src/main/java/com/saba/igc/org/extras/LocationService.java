@@ -61,6 +61,7 @@ public class LocationService extends Service implements LocationListener {
     public void startLocationManager() {
         mLocationManager = (LocationManager)mContext
                 .getSystemService(LOCATION_SERVICE);
+        boolean enabled = mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
         String providerName = getProviderName();
         if (mLocationManager.isProviderEnabled(providerName) == false){

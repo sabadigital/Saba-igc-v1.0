@@ -28,14 +28,23 @@ public class LocationBasedCityName {
             @Override
             public void run() {
                 Geocoder geocoder = new Geocoder(context, Locale.getDefault());
-                String result = null;
+                StringBuilder sb = new StringBuilder();
                 try {
                     List<Address> addressList = geocoder.getFromLocation(
                             latitude, longitude, 1);
                     if (addressList != null && addressList.size() > 0) {
                         Address address = addressList.get(0);
-                        if(address != null)
-                        	result = address.getAddressLine(1);
+                        if(address != null) {
+                            if(address.getLocality()==null)
+                                sb.append(address.getSubLocality());
+                            else
+                                sb.append(address.getLocality());
+
+                            sb.append(", ");
+                            sb.append(address.getAdminArea());
+                            sb.append(", ");
+                            sb.append(address.getPostalCode());
+                        }
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "Unable connect to Geocoder", e);
@@ -44,10 +53,7 @@ public class LocationBasedCityName {
                     message.setTarget(handler);
                     Bundle bundle = new Bundle();
                     message.what = 1;
-                    if (result == null) {
-                        result = "Unknown City.";
-                    }
-                    bundle.putString("cityname", result);
+                    bundle.putString("cityname", sb.toString());
                     message.setData(bundle);
                     message.sendToTarget();
                 }
