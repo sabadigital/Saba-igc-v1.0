@@ -48,7 +48,7 @@ class BitmapScaler
 public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 
 	public ProgramsArrayAdapter(Context context, List<SabaProgram> objects) {
-		super(context, R.layout.upcoming_program_item, objects);
+		super(context, R.layout.program_item, objects);
 	}
 	
 	public static class ViewHolder{
@@ -68,7 +68,7 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 		ViewHolder viewHolder =  null;
 		if(convertView == null){
 			viewHolder = new ViewHolder();
-			convertView = LayoutInflater.from(getContext()).inflate(R.layout.upcoming_program_item, parent, false);
+			convertView = LayoutInflater.from(getContext()).inflate(R.layout.program_item, parent, false);
 			viewHolder.ivProgramImage = (ImageView)convertView.findViewById(R.id.ivProgram);
 			viewHolder.tvProgramTitle = (TextView)convertView.findViewById(R.id.tvProgramTitle);
 			//viewHolder.tvProgramDescription = (EllipsizingTextView)convertView.findViewById(R.id.tvProgramDescription);

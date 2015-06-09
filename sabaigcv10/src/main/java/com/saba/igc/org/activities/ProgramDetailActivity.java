@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.saba.igc.org.R;
-import com.saba.igc.org.adapters.WeeklyProgramsArrayAdapter;
+import com.saba.igc.org.adapters.DailyProgramsArrayAdapter;
 import com.saba.igc.org.models.DailyProgram;
 import com.saba.igc.org.models.SabaProgram;
 
@@ -20,13 +20,13 @@ public class ProgramDetailActivity extends Activity {
 	TextView mProgramDetial;
 	
 	List<DailyProgram> mDailyPrograms;
-	WeeklyProgramsArrayAdapter mAdapter;
+	DailyProgramsArrayAdapter mAdapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.weekly_program_item);
+		setContentView(R.layout.daily_program_item);
 		mProgramTitle = (TextView)findViewById(R.id.tvProgramTime);
 		mProgramDetial = (TextView)findViewById(R.id.tvProgramDetail);
 		

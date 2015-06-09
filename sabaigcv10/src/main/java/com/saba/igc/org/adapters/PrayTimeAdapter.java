@@ -3,8 +3,6 @@ package com.saba.igc.org.adapters;
 import java.util.List;
 
 import android.content.Context;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,10 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.saba.igc.org.R;
-import com.saba.igc.org.adapters.WeeklyProgramsArrayAdapter.ViewHolder;
-import com.saba.igc.org.models.DailyProgram;
 import com.saba.igc.org.models.PrayTime;
-import com.saba.igc.org.models.PrayerTimes;
 
 /**
  * @author Syed Aftab Naqvi

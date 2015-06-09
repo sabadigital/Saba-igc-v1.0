@@ -9,12 +9,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.saba.igc.org.R;
-import com.saba.igc.org.adapters.WeeklyProgramsArrayAdapter;
+import com.saba.igc.org.adapters.DailyProgramsArrayAdapter;
 import com.saba.igc.org.models.DailyProgram;
 
 public class DailyProgramDetailActivity extends Activity {
 	protected ListView mLvDailyPrograms;
-	protected WeeklyProgramsArrayAdapter mAdapter;
+	protected DailyProgramsArrayAdapter mAdapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class DailyProgramDetailActivity extends Activity {
 		if(tvHeader != null)
 			tvHeader.setText(header);
 		
-		mAdapter = new WeeklyProgramsArrayAdapter(this, dailyPrograms);
+		mAdapter = new DailyProgramsArrayAdapter(this, dailyPrograms);
 		mLvDailyPrograms.setAdapter(mAdapter);
 	}
 	
