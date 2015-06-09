@@ -1,6 +1,10 @@
 package com.saba.igc.org.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.saba.igc.org.models.SabaProgram;
 
@@ -28,7 +32,13 @@ public class CommunityAnnouncementsFragment extends SabaBaseFragment {
 			mProgramName = PROGRAM_NAME;
 		}
 	}
-	
+
+	public View onCreateView(LayoutInflater inflater,
+							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+		getActivity().setTitle("Community");
+		return super.onCreateView(inflater, container, savedInstanceState);
+	}
+
 	@Override
 	protected void populatePrograms() {
 		// TODO Auto-generated method stub

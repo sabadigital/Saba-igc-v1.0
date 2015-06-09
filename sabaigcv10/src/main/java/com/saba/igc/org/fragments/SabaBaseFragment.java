@@ -1,23 +1,9 @@
 package com.saba.igc.org.fragments;
 
-import im.delight.android.time.RelativeTime;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,8 +22,19 @@ import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.DailyProgram;
 import com.saba.igc.org.models.SabaProgram;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
 import eu.erikw.PullToRefreshListView;
 import eu.erikw.PullToRefreshListView.OnRefreshListener;
+import im.delight.android.time.RelativeTime;
 
 /**
  * @author Syed Aftab Naqvi

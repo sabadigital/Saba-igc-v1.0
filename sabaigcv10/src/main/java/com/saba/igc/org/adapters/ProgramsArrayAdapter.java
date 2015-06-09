@@ -73,54 +73,17 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 			viewHolder.tvProgramTitle = (TextView)convertView.findViewById(R.id.tvProgramTitle);
 			//viewHolder.tvProgramDescription = (EllipsizingTextView)convertView.findViewById(R.id.tvProgramDescription);
 			viewHolder.tvProgramDescription = (TextView)convertView.findViewById(R.id.tvProgramDescription);
-			
-//			viewHolder.tvUpatedTime = (TextView)convertView.findViewById(R.id.tvUpatedTime);
-//			viewHolder.ivTweetImageProgressBar = (ProgressBar)convertView.findViewById(R.id.imageProgressBar);
-			
 			convertView.setTag(viewHolder);
 		}else {
 			viewHolder = (ViewHolder) convertView.getTag();
 			
 		}	
 		
-		updateTweetVew(viewHolder, program);
-//		viewHolder.tvReply.setOnClickListener(new OnClickListener() {
-//			 
-//		    @Override
-//		    public void onClick(View v) {
-//		        ((PullToRefreshListView) parent).performItemClick(v, position, 0);
-//		    }
-//		});
-//		
-//		viewHolder.tvRetweet.setOnClickListener(new OnClickListener() {
-//			 
-//		    @Override
-//		    public void onClick(View v) {
-//		    	((PullToRefreshListView) parent).performItemClick(v, position, 0);
-//		    }
-//		});
-//		
-//		viewHolder.tvFavorite.setOnClickListener(new OnClickListener() {
-//			 
-//		    @Override
-//		    public void onClick(View v) {
-//		    	((PullToRefreshListView) parent).performItemClick(v, position, 0);
-//		    }
-//		});
-//		
-//		viewHolder.ivProfileImage.setOnClickListener(new OnClickListener() {
-//			 
-//		    @Override
-//		    public void onClick(View v) {
-//		    	v.setTag(program.getUser().getScreenName());
-//		    	((PullToRefreshListView) parent).performItemClick(v, position, 0);
-//		    }
-//		});
-		
+		updateProgramsView(viewHolder, program);
 		return convertView;
 	}
 	
-	private void updateTweetVew(final ViewHolder viewHolder, SabaProgram program){
+	private void updateProgramsView(final ViewHolder viewHolder, SabaProgram program){
 		if(viewHolder == null || program == null){
 			Log.e("error", "Invalid Arguments");
 			return;
@@ -135,13 +98,35 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 				display(viewHolder.ivProgramImage, program.getImageUrl(), null);
 			}
 		}
-		
+
+		// if we are in weekly programs then we want to display the week day images.
+		if(program.getImageUrl()==null && (program.getProgramName().equalsIgnoreCase("Weekly Programs")==true) ){
+			int index = program.getTitle().indexOf('/');
+			if(index != -1){
+				String day = program.getTitle().substring(0, index);
+				if("saturday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_saturday);
+				} else if("sunday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_sunday);
+				} else if("monday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_monday);
+				} else if("tuesday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_tuesday);
+				} else if("wednesday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_wednesday);
+				} else if("thursday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_thursday);
+				} else if("friday".compareToIgnoreCase(day)==0){
+					viewHolder.ivProgramImage.setImageResource(R.drawable.ic_friday);
+				}
+			}
+		}
+
 		if(viewHolder.tvProgramTitle != null){
 			viewHolder.tvProgramTitle.setText(Html.fromHtml(program.getTitle()));
 		}
 		
 		if(viewHolder.tvProgramDescription != null){
-			Log.d("InAdapter: ", program.getDescription());
 			viewHolder.tvProgramDescription.setText(Html.fromHtml(program.getDescription()));
 
             // forgot what following line was doing but lets keep it here...

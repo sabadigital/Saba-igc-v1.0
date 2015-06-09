@@ -48,17 +48,19 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private ListView	 		mLvPrayTimes;
 	private PrayTimeAdapter 	mAdapter;
 	private ProgressBar 		mPrayTimesProgressBar;
+	private boolean				mDestroyed;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		refresh();
+		mDestroyed = false;
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater,
 			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
-		
+		getActivity().setTitle("Prayer Times");
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);		
 		setupUI(view);
 
@@ -72,6 +74,18 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 //			}
 //		});
 		return view;
+	}
+
+	@Override
+	public void onDestroyView(){
+		super.onDestroyView();
+		mDestroyed = true;
+	}
+
+	@Override
+	public void onDestroy(){
+		super.onDestroy();
+		mDestroyed = true;
 	}
 
 	private void setupUI(View view) {
@@ -90,6 +104,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	//Implementation of LocationListenerForPrayers.
 	public void locationUpdated(Location newLocation)
 	{
+		if(mDestroyed) {
+			Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Fragment has been destroyed. returning. Can't get the prayer times.");
+			return;
+		}
+
 		Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
 		// getting prayer times from http://praytime.info/
 		SabaClient client = SabaClient.getInstance(getActivity());
@@ -154,7 +173,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
                 	Log.d(TAG, "city name not found.");
                 	cityName = null;
             }
-			System.out.println("Prayer City Name: " + cityName);
+			Log.d(TAG, "Prayer City Name: " + cityName);
             mTvCityName.setText(cityName);
         }
     }

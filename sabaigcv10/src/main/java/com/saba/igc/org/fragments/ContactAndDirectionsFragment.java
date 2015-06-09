@@ -24,11 +24,8 @@ public class ContactAndDirectionsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-
-
         super.onCreateView(inflater, container, savedInstanceState);
-
+        getActivity().setTitle("Contact and Directions");
 //        View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 //
 //        View header = inflater.inflate(R.layout.header, null);

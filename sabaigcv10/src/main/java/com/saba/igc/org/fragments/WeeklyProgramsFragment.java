@@ -2,8 +2,11 @@ package com.saba.igc.org.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.saba.igc.org.activities.DailyProgramDetailActivity;
 import com.saba.igc.org.models.DailyProgram;
@@ -26,7 +29,13 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 	
 	public WeeklyProgramsFragment(){	
 	}
-	
+
+	public View onCreateView(LayoutInflater inflater,
+							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+		getActivity().setTitle("Weekly Schedule");
+		return super.onCreateView(inflater, container, savedInstanceState);
+	}
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);		
