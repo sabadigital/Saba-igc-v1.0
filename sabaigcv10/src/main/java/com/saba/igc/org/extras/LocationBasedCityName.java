@@ -42,8 +42,10 @@ public class LocationBasedCityName {
 
                             sb.append(", ");
                             sb.append(address.getAdminArea());
-                            sb.append(", ");
-                            sb.append(address.getPostalCode());
+                            if(address.getPostalCode() != null) {
+                                sb.append(", ");
+                                sb.append(address.getPostalCode());
+                            }
                         }
                     }
                 } catch (IOException e) {

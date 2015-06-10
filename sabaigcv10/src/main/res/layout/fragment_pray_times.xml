@@ -20,16 +20,18 @@
         android:gravity="center"
         android:layout_below="@+id/tvCityName" 
         android:text="@string/english_date" 
-        android:layout_marginTop = "5dp"/>
+        android:layout_marginTop = "5dp"
+        android:layout_marginBottom = "5dp"/>
 
+    <!-- Change ListView height 'from wrap_content' to 'fill_parent'or
+     'match_parent'......it might work as it worked for me. –  ASP Dec 6 '13 at 7:38 -->
     <ListView
         android:id="@+id/lvPrayTimes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvEnglishDate"
-        android:divider="@null"
-        android:dividerHeight="0dp" 
-        android:layout_marginTop = "15dp">
+        android:layout_height="fill_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/tvHijriDate">
 
     </ListView>
     
@@ -39,5 +41,17 @@
           android:id="@+id/prayTimesProgressBar"
           style="@android:style/Widget.ProgressBar.Large"
           android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hijri Date"
+        android:id="@+id/tvHijriDate"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvEnglishDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom = "10dp"/>
 
 </RelativeLayout>

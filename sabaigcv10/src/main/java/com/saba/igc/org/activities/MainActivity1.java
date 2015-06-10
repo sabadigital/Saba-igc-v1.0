@@ -115,8 +115,10 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 			return;
 
 		try{
-			if(response.getString("hijridate") != null){
-				Log.d(TAG, "HijriDate: " + response.getString("hijridate"));
+			String hijriDate = response.getString("hijridate");
+			if(hijriDate != null){
+				Log.d(TAG, "HijriDate: " + hijriDate);
+				SabaClient.getInstance(this).saveHijriDate(hijriDate);
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();

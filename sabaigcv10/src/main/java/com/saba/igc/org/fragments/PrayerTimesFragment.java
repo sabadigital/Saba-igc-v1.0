@@ -45,12 +45,13 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	
 	private final String TAG = "PrayerTimesFragment";
 	private TextView 			mTvCityName;
+	private TextView 			mTvHijriDate;
 	private List<PrayTime> 		mPrayTimes;
 	private ListView	 		mLvPrayTimes;
 	private PrayTimeAdapter 	mAdapter;
 	private ProgressBar 		mPrayTimesProgressBar;
-	PrayerLocation 				mPrayerLocationService;
-
+	private PrayerLocation 		mPrayerLocationService;
+	private boolean				mPrayerTimesFromWebInProgress;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -75,6 +76,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		mPrayerLocationService.stopLocationService();
 	}
 
+//	@Override
+//	public void onAttach(){
+//
+//	}
+
 	@Override
 	public void onDestroy(){
 		super.onDestroy();
@@ -82,6 +88,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	private void setupUI(View view) {
 		mTvCityName 			= (TextView) view.findViewById(R.id.tvCityName);
+		mTvHijriDate			= (TextView) view.findViewById(R.id.tvHijriDate);
 		TextView tvTodayDate 	= (TextView) view.findViewById(R.id.tvEnglishDate);
 		//mLvPrayTimes 			= (eu.erikw.PullToRefreshListView) view.findViewById(R.id.lvPrayTimes);
 		mLvPrayTimes 			= (ListView) view.findViewById(R.id.lvPrayTimes);
@@ -90,6 +97,14 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		if(tvTodayDate != null){
 			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
 			tvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));
+		}
+
+		String hijriDate = SabaClient.getInstance(getActivity()).getHijriDate();
+		if(mTvHijriDate != null){
+			mTvHijriDate.setText(hijriDate);
+		}
+		if(hijriDate==null || hijriDate.isEmpty()){
+			SabaClient.getInstance(getActivity()).getHijriDate("hijriDate", this);
 		}
 	}
 
@@ -118,13 +133,24 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 		if(programName.compareToIgnoreCase("hijriDate") == 0){
 			try{
-				if(response.getString("hijridate") != null){
-					Log.d(TAG, "HijriDate: " + response.getString("hijridate"));
+				String hijriDate = response.getString("hijridate");
+				if(hijriDate != null){
+					Log.d(TAG, "HijriDate: " + hijriDate);
+					if(mTvHijriDate != null){
+						mTvHijriDate.setText(hijriDate);
+					}
+					SabaClient.getInstance(getActivity()).saveHijriDate(hijriDate);
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
+			} finally {
+				if(mPrayerTimesFromWebInProgress == true)
+					mPrayTimesProgressBar.setVisibility(View.VISIBLE);
+
+				return; // we should return from here. Processing of hijriDate is done here.
 			}
 		}
+		mPrayerTimesFromWebInProgress = false;
 
 		// Handling data returned from http://praytime.info
 		//mLvPrayTimes.onRefreshComplete();
@@ -190,7 +216,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			int index = cityName.indexOf(',');
 			if(index != -1){
 				String city = cityName.substring(0, index);
-				getPrayerTimes(city);
+				if(!city.isEmpty())
+					getPrayerTimes(city);
 			}
         }
     }
@@ -210,6 +237,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			mPrayTimes = new ArrayList<PrayTime>(prayerTimes.size());
 			PrayerTimes prayerTime = prayerTimes.get(0);
 
+			if(prayerTime == null){
+				Log.d(TAG, "Something went wrong. Dabatbase shoudn't return null.");
+				return;
+			}
 			// Please don't change the order. It might effect the dispplay order.
 			mPrayTimes.add(new PrayTime("Imsaak", prayerTime.getImsaak()));
 			mPrayTimes.add(new PrayTime("Fajr", prayerTime.getFajar()));
@@ -228,6 +259,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				Log.d(TAG, "getPrayerTimes - getting PrayerTimes for - Latitude: " +
 						mPrayerLocationService.getLatitude() + " - Longitude: " + mPrayerLocationService.getLongitude());
 
+				mPrayerTimesFromWebInProgress = true;
 				// getting prayer times from http://praytime.info/
 				SabaClient client = SabaClient.getInstance(getActivity());
 				client.getPrayTimes(getCurrentTimezoneOffsetInMinutes(),

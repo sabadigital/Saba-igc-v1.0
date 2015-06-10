@@ -81,6 +81,7 @@ public class SabaApplication extends Application {
 	    config1.addModelClasses(PrayerTimes.class);
 	    config1.addModelClasses(SabaProgram.class);
 	    config1.addModelClasses(DailyProgram.class);
+
 	    ActiveAndroid.initialize(config1.create());
 	    
 	    
