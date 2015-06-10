@@ -208,7 +208,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			Log.d(TAG, "Prayer City Name: " + cityName);
             mTvCityName.setText(cityName);
 
-			if(cityName == null) {
+			if(cityName == null || cityName.isEmpty()) {
 				mPrayTimesProgressBar.setVisibility(View.GONE);
 				return;
 			}
