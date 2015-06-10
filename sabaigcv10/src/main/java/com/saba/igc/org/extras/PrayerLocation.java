@@ -18,29 +18,20 @@ import android.provider.Settings;
 import android.util.Log;
 
 public class PrayerLocation extends Service implements LocationListener {
+    // The minimum distance to change Updates in meters
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 50; // 10 meters
+    // The minimum time between updates in milliseconds
+    private static final long MIN_TIME_BW_UPDATES = 1000 * 30; // 30 seconds
 
     private final Context mContext;
-
-    // flag for GPS status
     boolean mIsGPSEnabled = false;
-
-    // flag for network status
     boolean mIsNetworkEnabled = false;
-
-    // flag for GPS status
     boolean mCanGetLocation = false;
 
     Location mLocation; // location
     double mLatitude; // latitude
     double mLongitude; // longitude
 
-    // The minimum distance to change Updates in meters
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 1; // 1 meters
-
-    // The minimum time between updates in milliseconds
-    private static final long MIN_TIME_BW_UPDATES = 1000 * 30; // 30 seconds
-
-    // Declaring a Location Manager
     protected LocationManager mLocationManager;
 
     public PrayerLocation(Context context) {
@@ -110,15 +101,12 @@ public class PrayerLocation extends Service implements LocationListener {
      * Stop using GPS listener
      * Calling this function will stop using GPS in your app
      * */
-    public void stopUsingGPS(){
+    public void stopLocationService(){
         if(mLocationManager != null){
-            mLocationManager.removeUpdates(PrayerLocation.this);
+            mLocationManager.removeUpdates(this);
         }
     }
 
-    /**
-     * Function to get latitude
-     * */
     public double getLatitude(){
         if(mLocation != null){
             mLatitude = mLocation.getLatitude();
@@ -128,15 +116,11 @@ public class PrayerLocation extends Service implements LocationListener {
         return mLatitude;
     }
 
-    /**
-     * Function to get longitude
-     * */
     public double getLongitude(){
         if(mLocation != null){
             mLongitude = mLocation.getLongitude();
         }
 
-        // return longitude
         return mLongitude;
     }
 
@@ -156,10 +140,10 @@ public class PrayerLocation extends Service implements LocationListener {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext);
 
         // Setting Dialog Title
-        alertDialog.setTitle("GPS is settings");
+        alertDialog.setTitle("Location Settings");
 
         // Setting Dialog Message
-        alertDialog.setMessage("GPS is not enabled. Do you want to go to settings menu?");
+        alertDialog.setMessage("Locaton is NOT enabled. Do you want to go to settings menu?");
 
         // On pressing Settings button
         alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
@@ -182,6 +166,7 @@ public class PrayerLocation extends Service implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
+        mLocation = location;
     }
 
     @Override

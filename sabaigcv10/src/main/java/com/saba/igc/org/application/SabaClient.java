@@ -25,6 +25,8 @@ public class SabaClient {
 	private static final String SABA_BASE_URL = "http://www.saba-igc.org/mobileapp/datafeedproxy.php?sheetName=weekly&sheetId=";
 	private static String PRAY_TIME_INFO_URL = "http://praytime.info/getprayertimes.php?lat=34.024899&lon=-117.89730099999997&gmt=-480&m=11&d=31&y=2014&school=0";
 	private static String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=";
+	private static String HIJRI_DATE_URL = "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php";
+
 	private static final int TIME_OUT = 30000;
 	
 //	private class ReadFromDatabase extends AsyncTask<String, Void, List<SabaProgram> > {
@@ -85,10 +87,10 @@ public class SabaClient {
     	client.setTimeout(TIME_OUT);
     	
     	// trigger the network request
-    	client.get(url, new JsonHttpResponseHandler(){
+    	client.get(url, new JsonHttpResponseHandler() {
 			@Override
 			public void onFailure(int statusCode, Header[] headers,
-					Throwable throwable, JSONObject errorResponse) {
+								  Throwable throwable, JSONObject errorResponse) {
 				super.onFailure(statusCode, headers, throwable, errorResponse);
 				throwable.printStackTrace();
 				targert.processJsonObject(programName, errorResponse);
@@ -128,18 +130,18 @@ public class SabaClient {
 
 			@Override
 			public void onSuccess(int statusCode, Header[] headers,
-					JSONArray response) {
+								  JSONArray response) {
 				super.onSuccess(statusCode, headers, response);
 				targert.processJsonObject(programName, response);
 			}
-			
+
 			@Override
 			public void onSuccess(int statusCode, Header[] headers,
-					JSONObject response) {
+								  JSONObject response) {
 				super.onSuccess(statusCode, headers, response);
 				targert.processJsonObject(programName, response);
 			}
-    	});
+		});
 	}
 
 	public void getCachedPrograms(String string, SabaServerResponseListener target) {
@@ -147,7 +149,13 @@ public class SabaClient {
 		//mTarget = target;
 		//new ReadFromDatabase().execute(string);
 	}
-	
+
+	public void getHijriDate(String hijriDate, SabaServerResponseListener target) {
+
+		//7mTarget = target;
+		sendRequest(hijriDate, HIJRI_DATE_URL, target);
+	}
+
 	public void getPrayTimes(String timeZoneOffsetInMinutes, double latitude, double longitude, SabaServerResponseListener target) {
 		StringBuilder sb = new StringBuilder(PRAY_TIME_INFO_BASE_URL);
 

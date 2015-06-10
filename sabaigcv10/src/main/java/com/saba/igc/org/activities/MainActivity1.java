@@ -3,26 +3,34 @@ package com.saba.igc.org.activities;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.saba.igc.org.R;
+import com.saba.igc.org.application.SabaClient;
 import com.saba.igc.org.fragments.CommunityAnnouncementsFragment;
 import com.saba.igc.org.fragments.ContactAndDirectionsFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
 import com.saba.igc.org.fragments.UpcomingProgramsFragment;
 import com.saba.igc.org.fragments.WeeklyProgramsFragment;
+import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.navdrawer.FragmentNavigationDrawer;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * @author Syed Aftab Naqvi
  * @create December, 2014
  * @version 1.0
  */
-public class MainActivity1 extends FragmentActivity {
+public class MainActivity1 extends FragmentActivity implements SabaServerResponseListener {
 	private FragmentNavigationDrawer dlDrawer;
+	private final String TAG = "MainActivity1";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +38,7 @@ public class MainActivity1 extends FragmentActivity {
 		setContentView(R.layout.activity_main1);
 		// Find our drawer view
 		dlDrawer = (FragmentNavigationDrawer) findViewById(R.id.drawer_layout);
-
+		SabaClient.getInstance(this).getHijriDate("HijriDate", this);
         ListView lvDrawer = (ListView) findViewById(R.id.lvDrawer);
 
 //        (R.layout.fragment_pray_times, container, false);
@@ -100,7 +108,27 @@ public class MainActivity1 extends FragmentActivity {
 		dlDrawer.getDrawerToggle().onConfigurationChanged(newConfig);
 	}
 
-	
+	@Override
+	public void processJsonObject(String programName, JSONObject response) {
+		Log.d(TAG, "HijriDate: JSON response." + response);
+		if(response == null)
+			return;
+
+		try{
+			if(response.getString("hijridate") != null){
+				Log.d(TAG, "HijriDate: " + response.getString("hijridate"));
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void processJsonObject(String programName, JSONArray response) {
+
+	}
+
+
 	// -------------------------- below code was used to generate Database with prayer times ----------------
 	
 //	populateDB("Gilroy", R.raw.gilroy_islamiccal_2009);

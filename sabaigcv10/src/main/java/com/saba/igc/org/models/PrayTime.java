@@ -12,11 +12,11 @@ public class PrayTime {
 	private String mName;
 	private String mTime;
 	
-	PrayTime(){
+	public PrayTime(){
 		
 	}
 	
-	PrayTime(String name, String time){
+	public PrayTime(String name, String time){
 		mName = name;
 		mTime = time;
 	}
@@ -24,7 +24,6 @@ public class PrayTime {
 	public String getName() {
 		return mName;
 	}
-
 	public String getTime() {
 		return mTime;
 	}
