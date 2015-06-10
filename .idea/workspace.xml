@@ -10,24 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c1556e8-2c73-4fe4-ab94-0fce5c25bb49" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger7010264530171908041.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/buildConfig/test/debug/com/saba/igc/org/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/test/debug/com/saba/igc/org/test/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/aidl/test/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/manifests/test/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug-test.ap_" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment$GeocoderHandler.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment$GeocoderHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$integer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" />
@@ -35,49 +19,26 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaApplication.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b4062bdd6f839d0fe53acb4aae8eab0fe14db184.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b4062bdd6f839d0fe53acb4aae8eab0fe14db184.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-df9fa7dacc71b9d9cee40a5e20b3aa05b7a40faa.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-df9fa7dacc71b9d9cee40a5e20b3aa05b7a40faa.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" afterPath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-30cec9aee961d0b4d5f3a2378d70416ff5bbbe9d.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-30cec9aee961d0b4d5f3a2378d70416ff5bbbe9d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/resources-debug-test.ap_" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/res/resources-debug-test.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/LocationBasedCityName.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/LocationBasedCityName.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/assets/debug/Saba.db" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/assets/debug/Saba.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/assets/Saba.db" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/assets/Saba.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaApplication.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaClient.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/fragment_pray_times.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/fragment_pray_times.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_pray_times.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_pray_times.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/pray_time_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/pray_time_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/pray_time_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/pray_time_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/activity_daily_programs_detail.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/activity_daily_programs_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_daily_programs_detail.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_daily_programs_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/daily_program_header.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/daily_program_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_header.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/daily_program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/daily_program_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/program_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Saba-igc-v1.0.iws" />
@@ -99,22 +60,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PrayerTimesFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java">
+      <file leaf-file-name="fragment_pray_times.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_pray_times.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7115386">
-              <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2493#2494#0" expanded="true" />
-                <element signature="e#2517#2518#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-5.62069">
+              <caret line="32" column="35" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="35" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_prayer_times.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_prayer_times.xml">
+      <file leaf-file-name="daily_program_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.586207">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="program_item.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5210918">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daily_program_header.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_header.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.586207">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_program_detail.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_program_detail.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -126,100 +125,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationBasedCityName.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/LocationBasedCityName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1388889">
-              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2">
-              <caret line="120" column="68" selection-start-line="120" selection-start-column="68" selection-end-line="120" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_pray_times.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_pray_times.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.75862">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pray_time_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/pray_time_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6551723">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <element signature="e#524#545#0" expanded="true" />
-                <element signature="e#1029#1050#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SabaApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.04">
-              <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SabaClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.4">
-              <caret line="211" column="16" selection-start-line="211" selection-start-column="16" selection-end-line="211" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6901#6902#0" expanded="true" />
-                <element signature="e#6949#6950#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateFormat.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../android-sdk-macosx/platforms/android-19/android.jar!/java/text/DateFormat.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.64">
-              <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-              <folding>
-                <element signature="e#2030#2031#0" expanded="true" />
-                <element signature="e#2081#2082#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrayerLocation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/PrayerLocation.java">
+      <file leaf-file-name="DailyProgramDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/DailyProgramDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="103" column="35" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_daily_programs_detail.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_daily_programs_detail.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.896552">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WeeklyProgramsFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/WeeklyProgramsFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="78" column="56" selection-start-line="78" selection-start-column="56" selection-end-line="78" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SabaBaseFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProgramsArrayAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.6">
+              <caret line="78" column="87" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2138,9 +2092,7 @@
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/UpcomingProgramsFragment.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/upcoming_program_item.xml" />
-        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java" />
-        <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/LocationTracking.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/Location.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml" />
@@ -2156,6 +2108,12 @@
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/LocationBasedCityName.java" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/weekly_program_item.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_header.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_daily_programs_detail.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_item.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" />
       </list>
     </option>
   </component>
@@ -2558,6 +2516,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sabaigcv10/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable" />
     </key>
     <key name="android.template.packageName">
@@ -2771,7 +2730,7 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34421575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34421575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21774194" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2872,36 +2831,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_program_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml">
@@ -2973,14 +2907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/WeeklyProgramsFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.6">
-          <caret line="36" column="5" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.6">
@@ -3025,50 +2951,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_header.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.827586">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.4827585">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.793103">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/ProgramDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-52.08">
-          <caret line="132" column="112" selection-start-line="132" selection-start-column="112" selection-end-line="132" selection-end-column="112" />
         </state>
       </provider>
     </entry>
@@ -3111,29 +2997,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="71" selection-start-line="108" selection-start-column="71" selection-end-line="108" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/UpcomingProgramsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="67" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/DailyProgramDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3202,8 +3070,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="131" column="36" selection-start-line="131" selection-start-column="36" selection-end-line="131" selection-end-column="36" />
           <folding>
-            <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1345#1346#0" expanded="false" />
+            <element signature="e#1371#1372#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3225,42 +3093,6 @@
           <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_prayer_times.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/pray_time_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6551723">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="e#524#545#0" expanded="true" />
-            <element signature="e#1029#1050#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_pray_times.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.75862">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaClient.java">
@@ -3299,18 +3131,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="35" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/extras/LocationBasedCityName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1388889">
+        <state vertical-scroll-proportion="0.0">
           <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/weekly_program_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.310345">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_prayer_times.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="89.55173">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/pray_time_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_pray_times.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.62069">
+          <caret line="32" column="35" selection-start-line="31" selection-start-column="8" selection-end-line="32" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_program_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.6">
+          <caret line="78" column="87" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/WeeklyProgramsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="56" selection-start-line="78" selection-start-column="56" selection-end-line="78" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_header.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.586207">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/DailyProgramDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_daily_programs_detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.896552">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/daily_program_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.586207">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5210918">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

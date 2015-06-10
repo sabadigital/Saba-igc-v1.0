@@ -69,7 +69,12 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 		ViewHolder viewHolder =  null;
 		if(convertView == null){
 			viewHolder = new ViewHolder();
-			convertView = LayoutInflater.from(getContext()).inflate(R.layout.program_item, parent, false);
+			if(program.getProgramName().equalsIgnoreCase("Weekly Programs")==true){
+				convertView = LayoutInflater.from(getContext()).inflate(R.layout.weekly_program_item, parent, false);
+			} else {
+				convertView = LayoutInflater.from(getContext()).inflate(R.layout.program_item, parent, false);
+			}
+
 			viewHolder.ivProgramImage = (ImageView)convertView.findViewById(R.id.ivProgram);
 			viewHolder.tvProgramTitle = (TextView)convertView.findViewById(R.id.tvProgramTitle);
 			//viewHolder.tvProgramDescription = (EllipsizingTextView)convertView.findViewById(R.id.tvProgramDescription);

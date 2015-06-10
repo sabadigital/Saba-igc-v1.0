@@ -22,16 +22,14 @@
         android:id="@+id/tvProgramDescription"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:layout_alignStart="@+id/tvProgramTitle"
-        android:layout_alignEnd="@+id/tvProgramTitle"
-        android:layout_below="@+id/tvProgramTitle"
         android:text="@string/program_description"
-        android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
         android:paddingEnd="0dp"
-        android:linksClickable="true"/>
+        android:linksClickable="true"
+        android:layout_below="@+id/ivProgram"
+        android:layout_alignStart="@+id/ivProgram"
+        android:layout_alignEnd="@+id/tvProgramTitle"
+        android:layout_marginTop="5dp"/>
 
     <TextView
         android:id="@+id/tvProgramTitle"
@@ -45,7 +43,8 @@
         android:layout_marginEnd="10dp"
         android:paddingStart="10dp"
         android:paddingEnd="0dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/ivProgram" />
 
 </RelativeLayout>
 

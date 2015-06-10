@@ -529,6 +529,7 @@ containing a value of this type.
         public static final int pray_time_item=0x7f03000c;
         public static final int program_item=0x7f03000d;
         public static final int ptr_header=0x7f03000e;
+        public static final int weekly_program_item=0x7f03000f;
     }
     public static final class plurals {
         public static final int in_x_days=0x7f070000;

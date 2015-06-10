@@ -214,6 +214,7 @@ int layout fragment_prayer_times 0x7f03000b
 int layout pray_time_item 0x7f03000c
 int layout program_item 0x7f03000d
 int layout ptr_header 0x7f03000e
+int layout weekly_program_item 0x7f03000f
 int plurals in_x_days 0x7f070000
 int plurals in_x_hours 0x7f070001
 int plurals in_x_minutes 0x7f070002

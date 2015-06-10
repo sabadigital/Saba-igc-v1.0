@@ -6,11 +6,11 @@
 	<ListView
     	android:id="@+id/lvDailyPrograms"
     	android:layout_width="match_parent"
-    	android:layout_height="wrap_content"
+    	android:layout_height="match_parent"
     	android:layout_alignParentStart="true"
     	android:layout_below="@+id/tvHeader"
-    	android:divider="@null"
-		android:dividerHeight="0dp" />
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
 
     <TextView
         android:id="@+id/tvHeader"
@@ -19,12 +19,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:text="@string/header" 
+        android:text="@string/header"
         android:background="#000000"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"/>
 
