@@ -29,7 +29,8 @@
         android:layout_below="@+id/ivProgram"
         android:layout_alignStart="@+id/ivProgram"
         android:layout_alignEnd="@+id/tvProgramTitle"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:textIsSelectable="true"/>
 
     <TextView
         android:id="@+id/tvProgramTitle"

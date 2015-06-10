@@ -73,7 +73,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	@Override
 	public void onDestroyView(){
 		super.onDestroyView();
-		mPrayerLocationService.stopLocationService();
+		Log.d(TAG, "onDestroyView");
+		//mPrayerLocationService.stopLocationService();
 	}
 
 //	@Override
