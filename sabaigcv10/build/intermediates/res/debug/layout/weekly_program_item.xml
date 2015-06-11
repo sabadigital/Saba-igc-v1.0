@@ -25,7 +25,7 @@
         android:text="@string/program_description"
         android:layout_marginBottom="10dp"
         android:paddingStart="10dp"
-        android:paddingEnd="0dp"
+        android:paddingEnd="10dp"
         android:linksClickable="true"
         android:layout_alignStart="@+id/ivProgram"
         android:layout_below="@+id/ivProgram"

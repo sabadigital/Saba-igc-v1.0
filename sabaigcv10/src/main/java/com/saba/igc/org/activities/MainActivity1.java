@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.application.SabaClient;
@@ -36,21 +37,20 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main1);
+
+
+
 		// Find our drawer view
 		dlDrawer = (FragmentNavigationDrawer) findViewById(R.id.drawer_layout);
 		SabaClient.getInstance(this).getHijriDate("HijriDate", this);
         ListView lvDrawer = (ListView) findViewById(R.id.lvDrawer);
 
-//        (R.layout.fragment_pray_times, container, false);
-//
-//        View view = inflater.inflate(R.layout.activity_main, container, false);
-//
-//        View header = getLayoutInflater().inflate(R.id.tvProgramHeader);
-//        lvDrawer.addHeaderView(header);
+		// Populate the Navigtion Drawer with options
+		RelativeLayout drawerPane = (RelativeLayout) findViewById(R.id.drawerPane);
+
 		// Setup drawer view
 		dlDrawer.setupDrawerConfiguration(lvDrawer,
-				R.layout.drawer_nav_item, R.id.flContent);
-
+				R.layout.drawer_nav_item, R.id.mainContent, drawerPane);
 
 		// Add nav items
 		dlDrawer.addNavItem("Weekly Schedule", R.drawable.ic_weekly_chedule1, "Weekly Schedule", WeeklyProgramsFragment.class);
@@ -61,7 +61,7 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 
 		// Select default
 		if (savedInstanceState == null) {
-			dlDrawer.selectDrawerItem(0);	
+			dlDrawer.selectDrawerItem(0);
 		}
 	}
 
@@ -69,7 +69,7 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 	public boolean onPrepareOptionsMenu(Menu menu) {
 		// If the nav drawer is open, hide action items related to the content
 		if (dlDrawer.isDrawerOpen()) {
-			// Uncomment to hide menu items                        
+			// Uncomment to hide menu items
 			// menu.findItem(R.id.mi_test).setVisible(false);
 		}
 		return super.onPrepareOptionsMenu(menu);
@@ -79,7 +79,7 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		// Uncomment to inflate menu items to Action Bar      
-		// inflater.inflate(R.menu.main, menu);
+		inflater.inflate(R.menu.prayer_times_fragment_menu, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
 
@@ -89,6 +89,12 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 		// ActionBarDrawerToggle will take care of this.
 		if (dlDrawer.getDrawerToggle().onOptionsItemSelected(item)) {
 			return true;
+		}
+
+		switch (item.getItemId()) {
+			// action with ID action_refresh was selected
+			case R.id.refreshFragment:
+				break;
 		}
 
 		return super.onOptionsItemSelected(item);
@@ -129,6 +135,7 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 	public void processJsonObject(String programName, JSONArray response) {
 
 	}
+
 
 
 	// -------------------------- below code was used to generate Database with prayer times ----------------

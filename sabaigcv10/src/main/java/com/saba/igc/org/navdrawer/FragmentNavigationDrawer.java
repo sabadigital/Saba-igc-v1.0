@@ -17,13 +17,15 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.NavDrawerListAdapter;
 import com.saba.igc.org.models.NavDrawerItem;
 
 import java.util.ArrayList;
- 
+ // Another good reference of having a profileView in NavigationDrawer
+ //http://codetheory.in/android-navigation-drawer/
 /**
  * @author Syed Aftab Naqvi
  * @create December, 2014
@@ -36,7 +38,14 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 	private ArrayList<NavDrawerItem> navDrawerItems;
 	private ArrayList<FragmentNavItem> drawerNavItems;    
 	private int drawerContainerRes;
- 
+	private RelativeLayout mDrawerPane;
+
+
+	private ActionBarDrawerToggle mDrawerToggle;
+	//private DrawerLayout mDrawerLayout;
+
+
+
 	public FragmentNavigationDrawer(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 	}
@@ -50,7 +59,8 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 	}
     
 	// setupDrawerConfiguration((ListView) findViewById(R.id.lvDrawer), R.layout.drawer_list_item, R.id.flContent);
-	public void setupDrawerConfiguration(ListView drawerListView, int drawerItemRes, int drawerContainerRes) {
+	public void setupDrawerConfiguration(ListView drawerListView, int drawerItemRes, int drawerContainerRes, RelativeLayout drawerPane) {
+		mDrawerPane = drawerPane;
 		// Setup navigation items array
 		drawerNavItems = new ArrayList<FragmentNavigationDrawer.FragmentNavItem>();
 		navDrawerItems = new ArrayList<NavDrawerItem>();
@@ -69,7 +79,7 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
 
-		// Set the adapter for the list view
+			// Set the adapter for the list view
 		drawerAdapter = new NavDrawerListAdapter(getActivity(), navDrawerItems);
 		lvDrawer.setAdapter(drawerAdapter);
 	}
@@ -105,7 +115,8 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 		// Highlight the selected item, update the title, and close the drawer
 		lvDrawer.setItemChecked(position, true);
 		setTitle(navItem.getTitle());
-		closeDrawer(lvDrawer);
+		//closeDrawer(lvDrawer);
+		closeDrawer(mDrawerPane);
 		//openDrawer(lvDrawer);
 	}
 	
@@ -182,6 +193,6 @@ public class FragmentNavigationDrawer extends DrawerLayout {
 	}
  
 	public boolean isDrawerOpen() {
-		return isDrawerOpen(lvDrawer);
+		return isDrawerOpen(mDrawerPane);
 	}
 }
