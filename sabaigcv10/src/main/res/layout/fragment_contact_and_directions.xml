@@ -1,8 +1,128 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.saba.igc.org.fragments.ContactAndDirectionsFragment">
+    android:orientation="vertical"
+    android:layout_margin = "15dp">
 
-    <!-- TODO: Update blank fragment layout -->
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Inquiries"
+            android:id="@+id/tvGeneralInquiries"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saba@saba-igc.org"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:id="@+id/tvGeneralInquireEmail"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvGeneralInquiries"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imam and Residant Aalim (Dr. Nabi Raza Adidi)"
+            android:id="@+id/tvImamLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvGeneralInquireEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aalim@saba-igc.org"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:id="@+id/tvImamValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvImamLabel"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School of Ahlul'Bait - Sunday School"
+            android:id="@+id/tvSabaSchoolLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvImamValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saba-admin@saba-igc.org"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:id="@+id/tvSabaSchoolValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvSabaSchoolLabel"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website Support"
+            android:id="@+id/webSupportLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvSabaSchoolValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="webmaster@saba-igc.org"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:id="@+id/webSupportValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/webSupportLabel"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:id="@+id/addressLabel"
+        android:layout_alignStart="@+id/tvGeneralInquiries"
+        android:layout_below="@+id/webSupportValue"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop = "15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4415 Fortran Ct. San Jose, CA 95134 (408-946-5700)"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:id="@+id/addressValue"
+        android:layout_alignStart="@+id/tvGeneralInquiries"
+        android:layout_below="@+id/addressLabel"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:autoLink="phone|map" />
+
+</RelativeLayout>

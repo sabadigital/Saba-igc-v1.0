@@ -44,18 +44,18 @@
         <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-973a5fad46b17f5c72007457328c70fc6e6bcfca.jar" />
     </item>
     <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ca7b793c0eb20cae6e76ea9edf2076507993bda7">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
-    </item>
-    <item
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7fc3d8089e04e5f9a27fbcf1f07259921effa1d2">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
     </item>
     <item
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/activeandroid-3.1-SNAPSHOT.jar"
@@ -145,7 +145,7 @@
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="6e766845a22b8d0b4b739a138e3c974654aaa0e6">
+        sha1="ae1306bdf7826b67337e2766e6bfdf975ba40047">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
     </item>
     <item

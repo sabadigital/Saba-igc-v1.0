@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.saba.igc.org"
-        minSdkVersion 19
-        targetSdkVersion 19
+        minSdkVersion 14
+        targetSdkVersion 21
     }
 
     buildTypes {
