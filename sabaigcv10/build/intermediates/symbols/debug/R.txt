@@ -1,40 +1,49 @@
 int attr adSize 0x7f010000
 int attr adSizes 0x7f010001
 int attr adUnitId 0x7f010002
-int attr appTheme 0x7f010016
-int attr buyButtonAppearance 0x7f01001d
-int attr buyButtonHeight 0x7f01001a
-int attr buyButtonText 0x7f01001c
-int attr buyButtonWidth 0x7f01001b
-int attr cameraBearing 0x7f010007
-int attr cameraTargetLat 0x7f010008
-int attr cameraTargetLng 0x7f010009
-int attr cameraTilt 0x7f01000a
-int attr cameraZoom 0x7f01000b
-int attr circleCrop 0x7f010005
-int attr environment 0x7f010017
-int attr fragmentMode 0x7f010019
-int attr fragmentStyle 0x7f010018
-int attr imageAspectRatio 0x7f010004
-int attr imageAspectRatioAdjust 0x7f010003
-int attr liteMode 0x7f01000c
-int attr mapType 0x7f010006
-int attr maskedWalletDetailsBackground 0x7f010020
-int attr maskedWalletDetailsButtonBackground 0x7f010022
-int attr maskedWalletDetailsButtonTextAppearance 0x7f010021
-int attr maskedWalletDetailsHeaderTextAppearance 0x7f01001f
-int attr maskedWalletDetailsLogoImageType 0x7f010024
-int attr maskedWalletDetailsLogoTextColor 0x7f010023
-int attr maskedWalletDetailsTextAppearance 0x7f01001e
-int attr uiCompass 0x7f01000d
-int attr uiMapToolbar 0x7f010015
-int attr uiRotateGestures 0x7f01000e
-int attr uiScrollGestures 0x7f01000f
-int attr uiTiltGestures 0x7f010010
-int attr uiZoomControls 0x7f010011
-int attr uiZoomGestures 0x7f010012
-int attr useViewLifecycle 0x7f010013
-int attr zOrderOnTop 0x7f010014
+int attr appTheme 0x7f01001f
+int attr border 0x7f010003
+int attr border_color 0x7f010004
+int attr border_width 0x7f010005
+int attr buyButtonAppearance 0x7f010026
+int attr buyButtonHeight 0x7f010023
+int attr buyButtonText 0x7f010025
+int attr buyButtonWidth 0x7f010024
+int attr cameraBearing 0x7f010010
+int attr cameraTargetLat 0x7f010011
+int attr cameraTargetLng 0x7f010012
+int attr cameraTilt 0x7f010013
+int attr cameraZoom 0x7f010014
+int attr circleCrop 0x7f01000e
+int attr circularImageViewStyle 0x7f01000b
+int attr environment 0x7f010020
+int attr fragmentMode 0x7f010022
+int attr fragmentStyle 0x7f010021
+int attr imageAspectRatio 0x7f01000d
+int attr imageAspectRatioAdjust 0x7f01000c
+int attr liteMode 0x7f010015
+int attr mapType 0x7f01000f
+int attr maskedWalletDetailsBackground 0x7f010029
+int attr maskedWalletDetailsButtonBackground 0x7f01002b
+int attr maskedWalletDetailsButtonTextAppearance 0x7f01002a
+int attr maskedWalletDetailsHeaderTextAppearance 0x7f010028
+int attr maskedWalletDetailsLogoImageType 0x7f01002d
+int attr maskedWalletDetailsLogoTextColor 0x7f01002c
+int attr maskedWalletDetailsTextAppearance 0x7f010027
+int attr selector 0x7f010006
+int attr selector_color 0x7f010007
+int attr selector_stroke_color 0x7f010008
+int attr selector_stroke_width 0x7f010009
+int attr shadow 0x7f01000a
+int attr uiCompass 0x7f010016
+int attr uiMapToolbar 0x7f01001e
+int attr uiRotateGestures 0x7f010017
+int attr uiScrollGestures 0x7f010018
+int attr uiTiltGestures 0x7f010019
+int attr uiZoomControls 0x7f01001a
+int attr uiZoomGestures 0x7f01001b
+int attr useViewLifecycle 0x7f01001c
+int attr zOrderOnTop 0x7f01001d
 int color common_action_bar_splitter 0x7f050000
 int color common_signin_btn_dark_text_default 0x7f050001
 int color common_signin_btn_dark_text_disabled 0x7f050002
@@ -341,11 +350,22 @@ int[] styleable AdsAttrs { 0x7f010000, 0x7f010001, 0x7f010002 }
 int styleable AdsAttrs_adSize 0
 int styleable AdsAttrs_adSizes 1
 int styleable AdsAttrs_adUnitId 2
-int[] styleable LoadingImageView { 0x7f010003, 0x7f010004, 0x7f010005 }
+int[] styleable CircularImageView { 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a }
+int styleable CircularImageView_border 0
+int styleable CircularImageView_border_color 1
+int styleable CircularImageView_border_width 2
+int styleable CircularImageView_selector 3
+int styleable CircularImageView_selector_color 4
+int styleable CircularImageView_selector_stroke_color 5
+int styleable CircularImageView_selector_stroke_width 6
+int styleable CircularImageView_shadow 7
+int[] styleable CustomCircularImageViewTheme { 0x7f01000b }
+int styleable CustomCircularImageViewTheme_circularImageViewStyle 0
+int[] styleable LoadingImageView { 0x7f01000c, 0x7f01000d, 0x7f01000e }
 int styleable LoadingImageView_circleCrop 2
 int styleable LoadingImageView_imageAspectRatio 1
 int styleable LoadingImageView_imageAspectRatioAdjust 0
-int[] styleable MapAttrs { 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015 }
+int[] styleable MapAttrs { 0x7f01000f, 0x7f010010, 0x7f010011, 0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015, 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019, 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e }
 int styleable MapAttrs_cameraBearing 1
 int styleable MapAttrs_cameraTargetLat 2
 int styleable MapAttrs_cameraTargetLng 3
@@ -362,12 +382,12 @@ int styleable MapAttrs_uiZoomControls 11
 int styleable MapAttrs_uiZoomGestures 12
 int styleable MapAttrs_useViewLifecycle 13
 int styleable MapAttrs_zOrderOnTop 14
-int[] styleable WalletFragmentOptions { 0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019 }
+int[] styleable WalletFragmentOptions { 0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022 }
 int styleable WalletFragmentOptions_appTheme 0
 int styleable WalletFragmentOptions_environment 1
 int styleable WalletFragmentOptions_fragmentMode 3
 int styleable WalletFragmentOptions_fragmentStyle 2
-int[] styleable WalletFragmentStyle { 0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e, 0x7f01001f, 0x7f010020, 0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024 }
+int[] styleable WalletFragmentStyle { 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d }
 int styleable WalletFragmentStyle_buyButtonAppearance 3
 int styleable WalletFragmentStyle_buyButtonHeight 0
 int styleable WalletFragmentStyle_buyButtonText 2

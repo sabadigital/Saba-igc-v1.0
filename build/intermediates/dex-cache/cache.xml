@@ -40,7 +40,7 @@
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="de4fed0ecc483ae66206fdb4ed8ee0b34769bc63">
+        sha1="57cdafa22a1d680aef14e0e306917b893d187806">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
     </item>
     <item
@@ -86,6 +86,13 @@
         <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-77f81bfdf4895e64dd4c0ca8cfc7232aafa0d2a0.jar" />
     </item>
     <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.pkmmte.view/circularimageview/1.1/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-eb49f97fad7bd3a29b4620f7617cd2e8a57ad0de.jar" />
+    </item>
+    <item
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -107,18 +114,18 @@
         <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-88c3e9b9702b1081aaebdae8e5e6181c92ad2f09.jar" />
     </item>
     <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-a5b90269440a798361bde9da01c71c4fd009a205.jar" />
-    </item>
-    <item
         jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/codepath-utils.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
         <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-bcac9bb3cee54f55c4486530faac7d5209dd9ffb.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-a5b90269440a798361bde9da01c71c4fd009a205.jar" />
     </item>
     <item
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/android-async-http-1.4.5.jar"
@@ -131,7 +138,7 @@
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="dead1118398f0cd8215eec82e4fcce96e10bb359">
+        sha1="1e287e84b54c2351b6b5ac2782df93a3b805cc5d">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
     </item>
     <item

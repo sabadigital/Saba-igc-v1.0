@@ -38,15 +38,13 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main1);
 
-
-
 		// Find our drawer view
 		dlDrawer = (FragmentNavigationDrawer) findViewById(R.id.drawer_layout);
 		SabaClient.getInstance(this).getHijriDate("HijriDate", this);
         ListView lvDrawer = (ListView) findViewById(R.id.lvDrawer);
 
 		// Populate the Navigtion Drawer with options
-		RelativeLayout drawerPane = (RelativeLayout) findViewById(R.id.drawerPane);
+		RelativeLayout drawerPane = (RelativeLayout)findViewById(R.id.drawerPane);
 
 		// Setup drawer view
 		dlDrawer.setupDrawerConfiguration(lvDrawer,
@@ -136,7 +134,27 @@ public class MainActivity1 extends FragmentActivity implements SabaServerRespons
 
 	}
 
-
+//	public static Bitmap getRoundedCornerBitmap(Bitmap bitmap) {
+//		Bitmap output = Bitmap.createBitmap(bitmap.getWidth(),
+//				bitmap.getHeight(), Config.ARGB_8888);
+//		Canvas canvas = new Canvas(output);
+//
+//		final int color = 0xff424242;
+//		final Paint paint = new Paint();
+//		final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
+//		final RectF rectF = new RectF(rect);
+//		final float roundPx = 12;
+//
+//		paint.setAntiAlias(true);
+//		canvas.drawARGB(0, 0, 0, 0);
+//		paint.setColor(color);
+//		canvas.drawRoundRect(rectF, roundPx, roundPx, paint);
+//
+//		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
+//		canvas.drawBitmap(bitmap, rect, rect, paint);
+//
+//		return output;
+//	}
 
 	// -------------------------- below code was used to generate Database with prayer times ----------------
 	
