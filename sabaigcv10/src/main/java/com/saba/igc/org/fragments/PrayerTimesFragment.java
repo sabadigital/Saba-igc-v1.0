@@ -158,8 +158,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		//{"Fajr":"05:59","Isha":"18:18","Asr":"14:43","Dhuhr":"12:11","Sunset":"17:01","Sunrise":"07:21","Maghrib":"17:19","Imsaak":"05:48"}
 		Log.d(TAG, "prayerTimes: " + response.toString());
 		mPrayTimes = PrayTime.fromJSON(response);
-		mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes); 
-		mLvPrayTimes.setAdapter(mAdapter);
+		if(getActivity() != null) {
+			mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes);
+			mLvPrayTimes.setAdapter(mAdapter);
+		}
 	}
 
 	@Override
