@@ -1,0 +1,6 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/map"
+    tools:context="com.saba.igc.org.activities.MapActivity"
+    android:name="com.google.android.gms.maps.SupportMapFragment" />
+<!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/activity_map.xml -->

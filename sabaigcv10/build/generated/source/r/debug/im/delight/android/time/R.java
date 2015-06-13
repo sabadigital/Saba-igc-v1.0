@@ -8,11 +8,11 @@ package im.delight.android.time;
 
 public final class R {
 	public static final class plurals {
-		public static final int in_x_days = 0x7f080000;
-		public static final int in_x_hours = 0x7f080001;
-		public static final int in_x_minutes = 0x7f080002;
-		public static final int x_days_ago = 0x7f080003;
-		public static final int x_hours_ago = 0x7f080004;
-		public static final int x_minutes_ago = 0x7f080005;
+		public static final int in_x_days = 0x7f0b0000;
+		public static final int in_x_hours = 0x7f0b0001;
+		public static final int in_x_minutes = 0x7f0b0002;
+		public static final int x_days_ago = 0x7f0b0003;
+		public static final int x_hours_ago = 0x7f0b0004;
+		public static final int x_minutes_ago = 0x7f0b0005;
 	}
 }

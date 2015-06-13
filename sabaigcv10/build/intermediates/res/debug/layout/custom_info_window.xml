@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="240dp"
+    android:layout_height="100dp"
+    android:background="@android:color/holo_green_dark"
+    android:padding="8dp"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/ivInfoWindowSaba"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="visible"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/ivInfoWindowSaba"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvInfoWindowName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SABA Islamic Center"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:id="@+id/tvInfoWindowAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="4dp"
+            android:text="4415 Fortran Ct. San Jose, CA 95134"
+            android:textColor="#fff"
+            android:maxLines="3"
+            android:textSize="12sp"
+            android:textIsSelectable="true"/>
+    </LinearLayout>
+</RelativeLayout><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/custom_info_window.xml -->

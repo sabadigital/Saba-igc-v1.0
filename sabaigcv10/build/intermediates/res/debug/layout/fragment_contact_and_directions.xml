@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_margin = "15dp">
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin = "15dp">
 
 
         <TextView
@@ -16,7 +22,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true"
             android:textAlignment="textStart"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +35,8 @@
             android:layout_below="@+id/tvGeneralInquiries"
             android:layout_alignParentEnd="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:autoLink="email" />
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,7 +48,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop = "15dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,7 +61,8 @@
             android:layout_below="@+id/tvImamLabel"
             android:layout_alignParentEnd="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:autoLink="email" />
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -64,7 +74,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop = "15dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,7 +87,8 @@
             android:layout_below="@+id/tvSabaSchoolLabel"
             android:layout_alignParentEnd="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:autoLink="email" />
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,7 +100,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop = "15dp"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -100,29 +113,52 @@
             android:layout_below="@+id/webSupportLabel"
             android:layout_alignParentEnd="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:autoLink="email" />
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address:"
-        android:id="@+id/addressLabel"
-        android:layout_alignStart="@+id/tvGeneralInquiries"
-        android:layout_below="@+id/webSupportValue"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop = "15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:id="@+id/addressLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/webSupportValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textIsSelectable="true"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4415 Fortran Ct. San Jose, CA 95123 (408-946-5700)"
-        android:textColorLink="@android:color/holo_green_dark"
-        android:id="@+id/addressValue"
-        android:layout_alignStart="@+id/tvGeneralInquiries"
-        android:layout_below="@+id/addressLabel"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:autoLink="phone|map" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4415 Fortran Ct. San Jose, CA 95134 (408-946-5700)"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:id="@+id/addressValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/addressLabel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="phone|email|map|web|all"
+            android:textIsSelectable="true"
+            android:clickable="true" />
 
-</RelativeLayout><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map View"
+            android:id="@+id/tvMapView"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/addressValue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop = "15dp"
+            android:layout_marginBottom = "35dp"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:linksClickable="false"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorLink="@android:color/holo_green_dark"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml -->
