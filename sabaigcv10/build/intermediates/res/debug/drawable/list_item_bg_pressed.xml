@@ -4,8 +4,8 @@
 
     <!-- light gray : #cccccc-->
   <gradient
-      android:startColor="#cccccc"
-      android:endColor="#cccccc"
+      android:startColor="#666666"
+      android:endColor="#666666"
       android:angle="90" />
 </shape>
 <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml -->

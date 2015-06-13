@@ -5,516 +5,55 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c1556e8-2c73-4fe4-ab94-0fce5c25bb49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_map.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/debug/res/values/google_maps_api.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/release/res/values/google_maps_api.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appinvite_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appstate_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_cast_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_drive_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_fitness_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_games_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gcm_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_identity_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_panorama_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_plus_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wallet_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wearable_7_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_21_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_21_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger8544880373353896934.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/buildConfig/test/debug/com/saba/igc/org/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/test/debug/com/saba/igc/org/test/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.0/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.0/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.0/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.0/res/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/aidl/android/support/v4/app/INotificationSideChannel.aidl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/proguard.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/color/common_signin_btn_text_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/color/common_signin_btn_text_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/color/wallet_primary_text_holo_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/color/wallet_secondary_text_holo_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_full_open_on_phone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_ic_googleplayservices.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-hdpi/powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-mdpi/powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-tvdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-tvdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-tvdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-tvdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xhdpi/powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_icon_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_disabled_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_disabled_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_focus_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_focus_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_normal_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_normal_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_pressed_dark.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/common_signin_btn_text_pressed_light.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/ic_plusone_medium_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/ic_plusone_small_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/ic_plusone_standard_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/ic_plusone_tall_off_client.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/powered_by_google_dark.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable-xxhdpi/powered_by_google_light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable/common_signin_btn_icon_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable/common_signin_btn_icon_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable/common_signin_btn_text_dark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/drawable/common_signin_btn_text_light.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/raw/gtm_analytics" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-af/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-am/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ar/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-bg/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-bn-rBD/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ca/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-cs/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-da/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-de/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-el/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-en-rGB/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-en-rIN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-es-rUS/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-es/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-es/wallet_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-et-rEE/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-eu-rES/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-fa/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-fi/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-fr-rCA/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-fr/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-gl-rES/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-hi/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-hr/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-hu/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-hy-rAM/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-in/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-is-rIS/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-it/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-iw/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ja/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ka-rGE/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-kk-rKZ/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-km-rKH/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-kn-rIN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ko/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ky-rKG/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-lo-rLA/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-lt/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-lv/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-mk-rMK/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ml-rIN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-mn-rMN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-mr-rIN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ms-rMY/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-my-rMM/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-nb/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ne-rNP/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-nl/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-pl/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-pt-rBR/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-pt-rPT/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-pt/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ro/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ru/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-si-rLK/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-sk/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-sl/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-sr/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-sv/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-sw/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ta-rIN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-te-rIN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-th/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-tl/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-tr/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-uk/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-ur-rPK/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-uz-rUZ/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-vi/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-zh-rCN/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-zh-rHK/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-zh-rTW/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values-zu/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_ads_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_iap_style.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/admob_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/common_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/maps_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/version.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/aidl/test/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/manifests/test/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b4062bdd6f839d0fe53acb4aae8eab0fe14db184.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b7e797fd8e2820fa50b15cd789b2e83fc4c965e5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-df9fa7dacc71b9d9cee40a5e20b3aa05b7a40faa.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-30cec9aee961d0b4d5f3a2378d70416ff5bbbe9d.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-fdbc3d86c7d357ee4496918405a41bcc02b38d72.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug-test.ap_" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_6_5_87.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_22_2_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_21_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/BitmapScaler.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/BitmapScaler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/BuildConfig.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/ContactAndDirectionsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/ContactAndDirectionsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/Content.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/Content.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/DailyProgram.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/DailyProgram.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/DailyProgramDetailActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/DailyProgramDetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/DailyProgramsArrayAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/DailyProgramsArrayAdapter$ViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/DailyProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/DailyProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeEndStrategy.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeEndStrategy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeMiddleStrategy.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeMiddleStrategy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeNoneStrategy.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeNoneStrategy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeStartStrategy.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeStartStrategy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeStrategy.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView$EllipsizeStrategy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/EllipsizingTextView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer$FragmentDrawerItemListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer$FragmentDrawerItemListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer$FragmentNavItem.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer$FragmentNavItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/GeneralAnnouncementsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/GeneralAnnouncementsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/HijriDate.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/HijriDate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationBasedCityName.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/listeners/LocationListenerForPrayers.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/listeners/LocationListenerForPrayers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationService.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/LocationService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/NavDrawerItem.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/NavDrawerItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter$ViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MapActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MapActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/PrayTime.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/PrayTime.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter$ViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayTimeCalculator.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayTimeCalculator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayerLocation$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayerLocation$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayerLocation$2.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayerLocation$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayerLocation.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/PrayerLocation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/PrayerTimes.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/PrayerTimes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment$GeocoderHandler.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment$GeocoderHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/ProgramDetailActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/ProgramDetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter$ViewHolder.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$HeaderAnimationListener$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$HeaderAnimationListener$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$HeaderAnimationListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$HeaderAnimationListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$OnRefreshListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$OnRefreshListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$PTROnGlobalLayoutListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$PTROnGlobalLayoutListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$PTROnItemClickListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$PTROnItemClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$PTROnItemLongClickListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$PTROnItemLongClickListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$State.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView$State.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$attr.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$attr.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/pkmmte/view/R$attr.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/pkmmte/view/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$attr.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$dimen.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$dimen.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$integer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$integer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$menu.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$menu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/im/delight/android/time/R$plurals.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/im/delight/android/time/R$plurals.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$raw.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$raw.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$string.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$string.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/pkmmte/view/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/pkmmte/view/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/pkmmte/view/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/pkmmte/view/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/im/delight/android/time/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/im/delight/android/time/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaApplication.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/SabaBaseFragment$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/SabaBaseFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/SabaBaseFragment$2.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/SabaBaseFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/SabaBaseFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/SabaBaseFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/application/SabaClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/SabaDatabaseHelper.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/SabaDatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/SabaProgram$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/SabaProgram$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/SabaProgram.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/models/SabaProgram.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/listeners/SabaServerResponseListener.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/listeners/SabaServerResponseListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation$Point$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation$Point$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation$Point.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation$Point.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/extras/SimpleLocation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/SplashScreenActivity$1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/SplashScreenActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/SplashScreenActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/SplashScreenActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/UpcomingProgramsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/UpcomingProgramsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/WeeklyProgramsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/WeeklyProgramsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-eb49f97fad7bd3a29b4620f7617cd2e8a57ad0de.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-eb49f97fad7bd3a29b4620f7617cd2e8a57ad0de.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-hdpi-v4/common_full_open_on_phone.png" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-hdpi-v4/common_full_open_on_phone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" afterPath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/resources-debug-test.ap_" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/res/resources-debug-test.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/ContactAndDirectionsFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/ContactAndDirectionsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/pkmmte/view/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/pkmmte/view/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/im/delight/android/time/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/im/delight/android/time/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build.gradle" afterPath="$PROJECT_DIR$/sabaigcv10/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_icon_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_icon_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/common_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/common_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/common_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/fragment_contact_and_directions.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/fragment_contact_and_directions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/tmp/dex/debug/inputList.txt" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/tmp/dex/debug/inputList.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/activity_main1.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/activity_main1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/drawer_nav_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/drawer_nav_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/list_item_bg_normal.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/list_item_bg_normal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_normal.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_normal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/list_item_bg_pressed.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable/list_item_bg_pressed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/program_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/sabaigcv10.iml" afterPath="$PROJECT_DIR$/sabaigcv10/sabaigcv10.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-af/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-af/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-am/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-am/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ar/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ar/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-bg/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-bg/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-bn-rBD/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-bn-rBD/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ca/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ca/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-cs/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-cs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-da/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-da/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-de/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-de/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-el/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-el/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-en-rGB/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-en-rIN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-en-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-es/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-es/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-es-rUS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-et-rEE/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-et-rEE/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-eu-rES/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-eu-rES/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fa/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fi/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fr/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-fr-rCA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-gl-rES/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-gl-rES/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hi/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hr/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hu/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hy-rAM/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-hy-rAM/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-in/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-in/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-is-rIS/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-is-rIS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-it/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-it/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-iw/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-iw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ja/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ja/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ka-rGE/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ka-rGE/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-kk-rKZ/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-kk-rKZ/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-km-rKH/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-km-rKH/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-kn-rIN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-kn-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ko/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ko/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ky-rKG/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ky-rKG/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-lo-rLA/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-lo-rLA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-lt/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-lt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-lv/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-lv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-mk-rMK/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-mk-rMK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ml-rIN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ml-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-mn-rMN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-mn-rMN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-mr-rIN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-mr-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ms-rMY/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ms-rMY/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-my-rMM/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-my-rMM/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-nb/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-nb/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ne-rNP/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ne-rNP/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-nl/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-nl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pl/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pt/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pt-rBR/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pt-rBR/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-pt-rPT/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ro/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ro/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ru/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ru/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-si-rLK/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-si-rLK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sk/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sl/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sr/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sv/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sw/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-sw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ta-rIN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ta-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-te-rIN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-te-rIN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-th/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-th/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-tl/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-tl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-tr/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-tr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-uk/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-uk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ur-rPK/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-ur-rPK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-uz-rUZ/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-uz-rUZ/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v11/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v11/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v14/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v14/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-vi/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-vi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zh-rCN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zh-rHK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zh-rTW/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zu/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-zu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/wallet_primary_text_holo_light.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/wallet_primary_text_holo_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/wallet_secondary_text_holo_dark.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/color/wallet_secondary_text_holo_dark.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Saba-igc-v1.0.iws" />
@@ -536,11 +75,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MapActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_main1.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="93" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
+            <state vertical-scroll-proportion="-0.48550725">
+              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -548,112 +100,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_maps_api.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/debug/res/values/google_maps_api.xml">
+      <file leaf-file-name="drawer_nav_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_item.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4710145">
-              <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+            <state vertical-scroll-proportion="-7.6551723">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactAndDirectionsFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/ContactAndDirectionsFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="e#1496#1735#0" expanded="true" />
-                <element signature="e#1734#1735#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Spanned.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../android-sdk-macosx/sources/android-21/android/text/Spanned.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_contact_and_directions.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="65" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_map.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_map.xml">
+      <file leaf-file-name="list_selector.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/list_selector.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="program_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml">
+      <file leaf-file-name="list_row_background.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_row_background.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.862069">
-              <caret line="32" column="39" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="36" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom_info_window.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/custom_info_window.xml">
-          <provider editor-type-id="text-editor">
+      <file leaf-file-name="list_selector.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_selector.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="46" column="61" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="61" />
+              <caret line="3" column="90" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="90" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer">
+        </entry>
+      </file>
+      <file leaf-file-name="list_item_bg_normal.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_normal.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_item_bg_pressed.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selector_gray_black.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/selector_gray_black.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ptr_pulltorefresh_arrow.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/ptr_pulltorefresh_arrow.png">
+          <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-              <folding>
-                <element signature="e#2454#2479#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomInfoWindowAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/CustomInfoWindowAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -663,8 +186,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="resourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -2857,8 +2380,6 @@
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" />
-        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml" />
-        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_row_background.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml" />
@@ -2867,9 +2388,14 @@
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/custom_info_window.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/debug/res/values/google_maps_api.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/CustomInfoWindowAdapter.java" />
-        <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/ContactAndDirectionsFragment.java" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_normal.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_item.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/selector_gray_black.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" />
       </list>
     </option>
   </component>
@@ -2972,46 +2498,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles.xml" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Saba-igc-v1.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabaigcv10" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Saba-igc-v1.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabaigcv10" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -3028,6 +2514,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Saba-igc-v1.0" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sabaigcv10" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3103,51 +2607,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="extras" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Saba-igc-v1.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabaigcv10" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Saba-igc-v1.0" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sabaigcv10" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adapters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3517,7 +2977,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java</url>
-          <line>70</line>
+          <line>76</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
@@ -3533,100 +2993,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/SplashScreenActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/adapters/ProgramsArrayAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/eu/erikw/PullToRefreshListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="526" column="0" selection-start-line="526" selection-start-column="0" selection-end-line="526" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../android-sdk-macosx/platforms/android-19/data/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.259259">
-          <caret line="172" column="17" selection-start-line="172" selection-start-column="17" selection-end-line="172" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_selector.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1034484">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_row_background.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/weekly_program_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.586207">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3685,14 +3051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -3871,44 +3229,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6896553">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
           <folding>
             <element signature="e#2454#2479#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.862069">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="93" selection-start-line="73" selection-start-column="93" selection-end-line="73" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3936,8 +3262,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#1496#1735#0" expanded="true" />
-            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1496#1735#0" expanded="false" />
+            <element signature="e#1734#1735#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3977,9 +3303,137 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/debug/res/values/google_maps_api.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4710145">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/program_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.551723">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/application/SabaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/UpcomingProgramsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/PrayerTimesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/list_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/list_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_row_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_normal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_item_bg_pressed.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-mdpi/ptr_pulltorefresh_arrow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6551723">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/list_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="90" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/drawable/selector_gray_black.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.48550725">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

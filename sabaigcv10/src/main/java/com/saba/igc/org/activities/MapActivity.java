@@ -60,8 +60,14 @@ public class MapActivity extends FragmentActivity  implements OnInfoWindowClickL
                 .snippet("4415 Fortran Ct. San Jose, CA 95134")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
         saba.showInfoWindow();
-        //mMap.setMyLocationEnabled(true);
-        //mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.setMyLocationEnabled(true);
+
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setCompassEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
+        mMap.getUiSettings().setAllGesturesEnabled(true);
+        mMap.setTrafficEnabled(true);
+
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SABA_LOCATION, DEFAULT_ZOOM));
         mMap.setOnInfoWindowClickListener(this);
     }
