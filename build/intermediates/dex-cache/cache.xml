@@ -2,74 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b1e6c4901671b49e1d87f90d72f3e9b573184387.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/classes.jar"
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-eb9baa204f3dc92223c0bcc29f033d833826799d.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-dbb45707791d17e565a411ab81943acf88f4cc60.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-1032f53c12259401de5332db6d880c3973db6885.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-bf27bced3dea49dc70b6f10c3a1751be17275b9e.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-56d1d121b19e17c5f5be5d898cfa8dead67fcba1.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/codepath-utils.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-6ac0a1a2c43cda052ebd9c755dc7fbd9cbf8bfb4.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c93d48d8ab94d7c11378f33fe5de2f5355e2a8c6.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1f4a9393516691d9c7a24fa8bdfa0b9eb32cfb1c">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-973a5fad46b17f5c72007457328c70fc6e6bcfca.jar" />
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a3620aff4e31d91284c5f0552242ff79167c7c19.jar" />
     </item>
     <item
         jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/activeandroid-3.1-SNAPSHOT.jar"
@@ -79,235 +16,18 @@
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" />
     </item>
     <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-e8ab77d19826bd0b66ff4263800b9e7425b8988b.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e750078d4db98d2d4d4a21956e025b92414b605e.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6d99dd24e53d06f8b6d8990e6fb06f0067966611">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-72de8170d480db265977ab731879c876d4e9fb48.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-cfb5baa5bd879b862c636f6285e89a623fe7d0f4.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a4e42dd06a52b22c655fc39bdbdc35623cd290a8.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/activeandroid-3.1-SNAPSHOT.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6bede33d5bb966f604fc8ba264fea0297730225c">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-77f81bfdf4895e64dd4c0ca8cfc7232aafa0d2a0.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.pkmmte.view/circularimageview/1.1/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-eb49f97fad7bd3a29b4620f7617cd2e8a57ad0de.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-ab7104e54c04a32d57e2bc47c91acbe4a2283bf9.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-2f8e48479fa828700f8646a0aa6b959c60f1d6bb.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-ecde805b0445c3f4dbcb41ec4db28cad45cbd636.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/commons-io-2.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-88c3e9b9702b1081aaebdae8e5e6181c92ad2f09.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-a5b90269440a798361bde9da01c71c4fd009a205.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/codepath-utils.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-bcac9bb3cee54f55c4486530faac7d5209dd9ffb.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/android-async-http-1.4.5.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="5f8a48e54351d00b4aa2d6c83a9e0eb574e71ec7">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8374685a3966ad54f701262a8e7f8c5f39ffe9c1.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a2a61ab667725971ec2eded831057b55d426ef38.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-69cc520e64e88c7db2f98205df13eae695e56143.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-f68d7df6267b084d91c2d0b4fc89191db3ce79f9.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-3409456460c7876d0872eeaad64442e6d4622525.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-86481374c35e17452eb59071fed1f14879ca6435.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-aeeaf68134b6cc4eb6b16afc66ffb0323c7c85e3.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/android-async-http-1.4.5.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-df0c61b40402537e736fb2f4ba9f9739a86b066d.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="21c736f3d781ac077d09fb2dafd970de39b742ee">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8a6c33013a22973d5e5a8840f7604d4644417afc.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-d4cbf5f8b275b8152be8f27efb0ddd8c70bee127.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d405025c600055237c171a0bbabaa49d69696573">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-7933a164bcd4d7a745505c49a6fbb22242957c03.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c189f664099d2df4199598fe41b63233ed97069e.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-dbc265c4cb3a304afad1bc89d567a72038ceda58.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-5431f8407af290e886aba410dbef3c7e04b1a78c.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-cce9d5c1e6f9741b2575d438e195ba34040c490d.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-1aa9fbddd44b03520a22cb771ebb2f4b898e5708.jar" />
-    </item>
-    <item
-        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/classes.jar"
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/jars/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="02bac2dc792d78241077861566f2c82da955e7fa">
-        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-1f1a76faa9f4819138809a8786189e5d866835bb.jar" />
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-abe919912c7bf74e14d636e37f84f27270f2b489.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="97f7e239e86ef994de894818fdd8a71d2e89d6aa">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-30ed2c7281fc78b810b437bff532a9148c93fd56.jar" />
     </item>
     <item
         jar="/Users/snaqvi/Dev/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
@@ -322,6 +42,293 @@
         revision="21.1.2"
         sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
         <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a38992433434d88ce10bec1ef6676755c92fddf0.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-8a6c33013a22973d5e5a8840f7604d4644417afc.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-519c69342d86b75aee55875c4960d8b2d65bebfc.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b95517d6b22dac240405e192f34472b0892829b5.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/codepath-utils.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-bcac9bb3cee54f55c4486530faac7d5209dd9ffb.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.pkmmte.view/circularimageview/1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a54c589c800db27d2f3077c6bab0aea28008544f.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/universal-image-loader-1.8.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="eee81e43531ce82db1781c5a8b27781ca384eede">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-a5b90269440a798361bde9da01c71c4fd009a205.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-56d1d121b19e17c5f5be5d898cfa8dead67fcba1.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1f4a9393516691d9c7a24fa8bdfa0b9eb32cfb1c">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-973a5fad46b17f5c72007457328c70fc6e6bcfca.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-bac9f21eb8aed4200d1a7e106725bfa2b69097e4.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a65201320d2d61dbc11db2d828eb5f6afbbc3c8a.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c54be0fd77fd930066b1c3e1713fbc719e313fbb.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-00bd8ef7c521c446187b7c0382dd48392c5adaa5.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-b17efd595b83fdfc1ad68c53fe3712d90879f6be.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6c1ecac62c161d2c7fdf0ebf163e42679d27fed8">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a6bd6141d99540dcc19586cf5f77960c5f5a86c6.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-bf27bced3dea49dc70b6f10c3a1751be17275b9e.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a292b6fc0707fe83359e2c07c25a396fb71e8560.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-3e33125224acc861d3dafdb55ff965ae2eac37a2.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/activeandroid-3.1-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6bede33d5bb966f604fc8ba264fea0297730225c">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-77f81bfdf4895e64dd4c0ca8cfc7232aafa0d2a0.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/googleplayservices_lib/build/libs/googleplayservices_lib.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="be63a337a92625a7ddb8ee7ed1651807bd85843f">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-ed4c4c8be3e22b8dfb5359ce67514f8c03115688.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-14e65b70c2ede217222d1c0de3de7075fc8a31b3.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-7405f10cb79c03fa1e320f7318c0f0994ef3e68d.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-bdf23a4fd7fdfc01c1ee940ddfc5b464173b9a2f.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/commons-io-2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-88c3e9b9702b1081aaebdae8e5e6181c92ad2f09.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e95c906ebc214382b2ae3ce6f31646180c1c3990.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-952d5479a3a097cf39c4f5ea8cc804b731fa4341.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-86481374c35e17452eb59071fed1f14879ca6435.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-5f10608b5af8718391f80cb36afe3f8805904cb6.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-f7541e2d03599ab4f0e41d8b73408de6c68421a2.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a020b4595fca024deca50aec7289505a3f768f51.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/libs/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-bf707564c6879cd5d7af62a580b881b0082ef1d6.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/exploded-aar/Saba-igc.v1.0/androidTime/unspecified/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6d99dd24e53d06f8b6d8990e6fb06f0067966611">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-72de8170d480db265977ab731879c876d4e9fb48.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-2d6c48111d3fd93bb2d1f5429c1c6a598ca5ee1d.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/libs/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/snaqvi/Downloads/Saba-igc.v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-df0c61b40402537e736fb2f4ba9f9739a86b066d.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c086511be06b62a4d24d22e88c71cbae072cc83e.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-37969df51ca7caa895fd680b4c01d353ff580a2e.jar" />
+    </item>
+    <item
+        jar="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e1ec0cb1a0a9b7cfa65390dc736559af1a7eedc0.jar" />
     </item>
 
 </items>

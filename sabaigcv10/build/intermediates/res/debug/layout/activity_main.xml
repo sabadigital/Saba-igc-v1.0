@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/tvLastRefreshed" 
+        android:layout_below="@+id/tvLastRefreshed"
         android:divider="@null"
 		android:dividerHeight="0dp">
 
@@ -30,7 +30,7 @@
 	    android:layout_alignParentTop="true"
 	    android:text="@string/last_refreshed_label" 
 	    android:layout_marginStart="8dp"
-	    android:paddingStart="10dp"
+	    android:paddingLeft="10dp"
 	    android:paddingEnd="0dp"/>
 
 	<TextView
@@ -42,7 +42,7 @@
 	    android:text="@string/last_refrshed_value" 
 	    android:layout_marginEnd="8dp"
 	    android:paddingEnd="10dp"
-	    android:paddingStart="0dp"/>
+	    android:paddingLeft="0dp"/>
 
 </RelativeLayout>
 <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/activity_main.xml -->

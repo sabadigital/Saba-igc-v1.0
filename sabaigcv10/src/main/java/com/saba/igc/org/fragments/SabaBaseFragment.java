@@ -1,5 +1,6 @@
 package com.saba.igc.org.fragments;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -86,7 +87,14 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 				e.printStackTrace();
 			}
         }
-        
+
+		// set divider in weekly programs
+		if(mProgramName.compareTo("Weekly Programs")==0){
+			ColorDrawable sage = new ColorDrawable(getResources().getColor(R.color.divider));
+			mLvPrograms.setDivider(sage);
+			mLvPrograms.setDividerHeight(1);
+		}
+
 		mAdapter = new ProgramsArrayAdapter(getActivity(), mPrograms);
 		mLvPrograms.setAdapter(mAdapter);
 		
@@ -96,9 +104,9 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-			if(mProgramName.compareTo("Weekly Programs")==0){
-				processOnItemClick(position);
-			}
+				if(mProgramName.compareTo("Weekly Programs")==0){
+					processOnItemClick(position);
+				}
 			}
 		});
 		
