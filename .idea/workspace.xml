@@ -5,267 +5,21 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7c1556e8-2c73-4fe4-ab94-0fce5c25bb49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/buildConfig/test/debug/im/delight/android/time/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/r/test/debug/im/delight/android/time/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/generated/source/r/test/debug/im/delight/android/time/test/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-de/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-es/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-fr/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-it/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-nb/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-pt-rBR/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/res/values-pt-rPT/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/test/debug/im/delight/android/time/R$plurals.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/test/debug/im/delight/android/time/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/test/debug/im/delight/android/time/test/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/test/debug/im/delight/android/time/test/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/test/debug/im/delight/android/time/test/R$plurals.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/classes/test/debug/im/delight/android/time/test/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/aidl/test/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/test/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/manifests/tmp/manifestMerger5850580759698635124.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/resources-debug-test.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-de/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-es/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-fr/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-it/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-nb/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-pt-rBR/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values-pt-rPT/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/res/test/debug/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/symbols/test/debug/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/buildConfig/test/debug/com/saba/igc/org/test/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/test/debug/com/saba/igc/org/test/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/aidl/test/debug/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/test/debug/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/manifests/test/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-hdpi/ic_weekly_chedule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/drawable-hdpi/ic_weekly_chedule1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/drawer_nav_header.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/menu/menu_main2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug-test.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/resources-debug.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/tmp/dex/debug/inputList.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/manifest-merger-debug-report.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_weekly_chedule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/drawer_nav_header.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/menu/menu_main2.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_weekly_chedule1.png" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/drawable-hdpi/ic_weekly_schedule.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/ContactAndDirectionsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/ContactAndDirectionsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/DailyProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/DailyProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/navdrawer/FragmentNavigationDrawer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/GeneralAnnouncementsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/GeneralAnnouncementsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MainActivity1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MapActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/MapActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/NavDrawerListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/PrayTimeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/PrayerTimesFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/ProgramDetailActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/ProgramDetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/adapters/ProgramsArrayAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/eu/erikw/PullToRefreshListView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/ads/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/ads/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/analytics/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/analytics/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appstate/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appstate/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/cast/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/cast/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/drive/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/drive/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/fitness/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/fitness/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/games/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/games/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/gcm/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/gcm/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/identity/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/identity/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/location/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/location/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/maps/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/maps/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/nearby/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/nearby/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/panorama/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/panorama/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/plus/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/plus/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wallet/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wallet/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wearable/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wearable/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$color.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$dimen.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/ads/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/ads/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/analytics/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/analytics/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appstate/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appstate/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/cast/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/cast/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/drive/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/drive/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/fitness/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/fitness/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/games/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/games/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/gcm/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/gcm/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/identity/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/identity/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/location/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/location/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/maps/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/maps/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/nearby/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/nearby/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/panorama/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/panorama/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/plus/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/plus/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wallet/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wallet/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wearable/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wearable/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$drawable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$integer.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$layout.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$menu.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$plurals.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$string.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/design/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/cardview/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/android/support/v7/mediarouter/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/ads/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/ads/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/analytics/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/analytics/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appinvite/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appstate/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/appstate/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/cast/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/cast/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/drive/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/drive/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/fitness/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/fitness/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/games/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/games/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/gcm/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/gcm/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/identity/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/identity/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/location/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/location/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/maps/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/maps/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/nearby/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/nearby/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/panorama/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/panorama/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/plus/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/plus/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/safetynet/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wallet/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wallet/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wearable/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/google/android/gms/wearable/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/SplashScreenActivity.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/activities/SplashScreenActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/UpcomingProgramsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/UpcomingProgramsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/WeeklyProgramsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/WeeklyProgramsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/WeeklyProgramsTabsFragment.class" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/classes/debug/com/saba/igc/org/fragments/WeeklyProgramsTabsFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/activeandroid-3.1-SNAPSHOT-f90e45a94dbf83830c93ffd7fe5603a47198d86f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-3b710f8088d4c4fb0b1457f89c2b88b6f23e4379.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" afterPath="$PROJECT_DIR$/androidTime/build/outputs/aar/androidTime-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-00bd8ef7c521c446187b7c0382dd48392c5adaa5.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-00bd8ef7c521c446187b7c0382dd48392c5adaa5.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-14e65b70c2ede217222d1c0de3de7075fc8a31b3.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-14e65b70c2ede217222d1c0de3de7075fc8a31b3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-2d6c48111d3fd93bb2d1f5429c1c6a598ca5ee1d.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-2d6c48111d3fd93bb2d1f5429c1c6a598ca5ee1d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-30ed2c7281fc78b810b437bff532a9148c93fd56.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-30ed2c7281fc78b810b437bff532a9148c93fd56.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-37969df51ca7caa895fd680b4c01d353ff580a2e.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-37969df51ca7caa895fd680b4c01d353ff580a2e.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-3e33125224acc861d3dafdb55ff965ae2eac37a2.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-3e33125224acc861d3dafdb55ff965ae2eac37a2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-519c69342d86b75aee55875c4960d8b2d65bebfc.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-519c69342d86b75aee55875c4960d8b2d65bebfc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-5f10608b5af8718391f80cb36afe3f8805904cb6.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-5f10608b5af8718391f80cb36afe3f8805904cb6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-7405f10cb79c03fa1e320f7318c0f0994ef3e68d.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-7405f10cb79c03fa1e320f7318c0f0994ef3e68d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-952d5479a3a097cf39c4f5ea8cc804b731fa4341.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-952d5479a3a097cf39c4f5ea8cc804b731fa4341.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a020b4595fca024deca50aec7289505a3f768f51.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a020b4595fca024deca50aec7289505a3f768f51.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a292b6fc0707fe83359e2c07c25a396fb71e8560.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a292b6fc0707fe83359e2c07c25a396fb71e8560.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a3620aff4e31d91284c5f0552242ff79167c7c19.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a3620aff4e31d91284c5f0552242ff79167c7c19.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a38992433434d88ce10bec1ef6676755c92fddf0.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a38992433434d88ce10bec1ef6676755c92fddf0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a54c589c800db27d2f3077c6bab0aea28008544f.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a54c589c800db27d2f3077c6bab0aea28008544f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a65201320d2d61dbc11db2d828eb5f6afbbc3c8a.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a65201320d2d61dbc11db2d828eb5f6afbbc3c8a.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a6bd6141d99540dcc19586cf5f77960c5f5a86c6.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-a6bd6141d99540dcc19586cf5f77960c5f5a86c6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-abe919912c7bf74e14d636e37f84f27270f2b489.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-abe919912c7bf74e14d636e37f84f27270f2b489.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b95517d6b22dac240405e192f34472b0892829b5.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-b95517d6b22dac240405e192f34472b0892829b5.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-bdf23a4fd7fdfc01c1ee940ddfc5b464173b9a2f.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-bdf23a4fd7fdfc01c1ee940ddfc5b464173b9a2f.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-bf707564c6879cd5d7af62a580b881b0082ef1d6.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-bf707564c6879cd5d7af62a580b881b0082ef1d6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c086511be06b62a4d24d22e88c71cbae072cc83e.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c086511be06b62a4d24d22e88c71cbae072cc83e.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c54be0fd77fd930066b1c3e1713fbc719e313fbb.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-c54be0fd77fd930066b1c3e1713fbc719e313fbb.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e1ec0cb1a0a9b7cfa65390dc736559af1a7eedc0.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e1ec0cb1a0a9b7cfa65390dc736559af1a7eedc0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e95c906ebc214382b2ae3ce6f31646180c1c3990.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-e95c906ebc214382b2ae3ce6f31646180c1c3990.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-ed4c4c8be3e22b8dfb5359ce67514f8c03115688.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-ed4c4c8be3e22b8dfb5359ce67514f8c03115688.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-f7541e2d03599ab4f0e41d8b73408de6c68421a2.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/classes-f7541e2d03599ab4f0e41d8b73408de6c68421a2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/androidTime/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/exploded-aar/Saba-igc-v1.0/androidTime/unspecified/jars/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/codepath-utils-a5ffbab1161043b3100c7e2df6b1bf4239dd9568.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/commons-io-2.4-c676f246e61608da113dfd1257c4a5f31b65bc91.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/googleplayservices_lib-9cf4fde8a6b716fff4fbd504390f579a2548f272.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" afterPath="$PROJECT_DIR$/googleplayservices_lib/build/libs/googleplayservices_lib.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-bac9f21eb8aed4200d1a7e106725bfa2b69097e4.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-bac9f21eb8aed4200d1a7e106725bfa2b69097e4.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-b17efd595b83fdfc1ad68c53fe3712d90879f6be.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-b17efd595b83fdfc1ad68c53fe3712d90879f6be.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/resources/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" afterPath="$PROJECT_DIR$/sabaigcv10/build/outputs/apk/sabaigcv10-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-56d1d121b19e17c5f5be5d898cfa8dead67fcba1.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-56d1d121b19e17c5f5be5d898cfa8dead67fcba1.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/pre-dexed/debug/universal-image-loader-1.8.4-bfda13ea0f7ca9cb0ad360db8b7b119e6bd99fee.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/CommunityAnnouncementsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/GeneralAnnouncementsFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/GeneralAnnouncementsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/activities/MainActivity1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/design/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/cardview/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/cardview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/android/support/v7/mediarouter/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/ads/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/ads/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/analytics/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/analytics/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/appinvite/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/appstate/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/appstate/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/cast/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/cast/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/drive/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/drive/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/fitness/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/fitness/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/games/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/games/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/gcm/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/identity/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/identity/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/location/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/location/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/maps/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/maps/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/nearby/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/nearby/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/panorama/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/panorama/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/plus/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/plus/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/safetynet/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/safetynet/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/wallet/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/wallet/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/google/android/gms/wearable/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" afterPath="$PROJECT_DIR$/sabaigcv10/build/generated/source/r/debug/com/saba/igc/org/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/SabaBaseFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/UpcomingProgramsFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/UpcomingProgramsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/WeeklyProgramsFragment.java" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/java/com/saba/igc/org/fragments/WeeklyProgramsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/activity_main1.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/activity_main1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build.gradle" afterPath="$PROJECT_DIR$/sabaigcv10/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_22_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mediarouter_v7_22_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/debug/merger.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeAssets/debug/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/sabaigcv10.iml" afterPath="$PROJECT_DIR$/sabaigcv10/sabaigcv10.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v11/styles.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v11/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v14/styles.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v14/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values/values.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/weekly_program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/weekly_program_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/weekly_program_item.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/weekly_program_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/nav_header.xml" afterPath="$PROJECT_DIR$/sabaigcv10/build/intermediates/res/debug/layout/nav_header.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml" afterPath="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Saba-igc-v1.0.iws" />
@@ -347,14 +101,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav_header.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav_header.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.2413793">
-              <caret line="55" column="40" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.6232687">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -383,14 +137,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main1.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_main1.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6814405">
-              <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="32" />
+            <state vertical-scroll-proportion="-16.758621">
+              <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -2937,10 +2691,10 @@
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v11/styles.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v14/styles.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/values-v19/styles.xml" />
-        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/menu/drawer_menu.xml" />
         <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/activity_main1.xml" />
+        <option value="$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml" />
       </list>
     </option>
   </component>
@@ -4050,17 +3804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2413793">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.962963">
@@ -4106,8 +3849,19 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6814405">
-          <caret line="130" column="31" selection-start-line="130" selection-start-column="31" selection-end-line="130" selection-end-column="32" />
+        <state vertical-scroll-proportion="-16.758621">
+          <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sabaigcv10/src/main/res/layout/nav_header.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6232687">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
