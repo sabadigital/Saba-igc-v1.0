@@ -88,7 +88,7 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 			}
         }
 
-		// set divider in weekly programs
+		// set divider in weekly programs -
 		if(mProgramName.compareTo("Weekly Programs")==0){
 			ColorDrawable sage = new ColorDrawable(getResources().getColor(R.color.divider));
 			mLvPrograms.setDivider(sage);

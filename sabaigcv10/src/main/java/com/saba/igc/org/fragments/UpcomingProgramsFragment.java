@@ -29,14 +29,12 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		mProgramName = PROGRAM_NAME;
 		// get programs from database. if program exists then display. otherwise make a network request.  
 		mPrograms =  SabaProgram.getSabaPrograms(PROGRAM_NAME);
 		if(mPrograms != null && mPrograms.size() == 0){
 			// make a network request to pull the data from server.
 			mSabaClient.getUpcomingPrograms(this);
-		} else {
-			mProgramName = PROGRAM_NAME;
 		}
 	}
 	
