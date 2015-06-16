@@ -220,9 +220,11 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		mDrawer.setDrawerListener(mDrawerToggle);
 
 		// Set the menu icon instead of the launcher icon.
-		final ActionBar ab = getSupportActionBar();
-		ab.setHomeAsUpIndicator(R.drawable.ic_menu_white_36dp);
-		ab.setDisplayHomeAsUpEnabled(true);
+		final ActionBar actionBar = getSupportActionBar();
+		if(actionBar != null) {
+			actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_36dp);
+			actionBar.setDisplayHomeAsUpEnabled(true);
+		}
 
 		// Find our drawer view
 		mNvDrawer = (NavigationView) findViewById(R.id.nvView);

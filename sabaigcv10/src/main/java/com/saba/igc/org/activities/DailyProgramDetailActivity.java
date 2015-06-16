@@ -26,9 +26,11 @@ public class DailyProgramDetailActivity extends AppCompatActivity {
 
 		// setting toolbar here...
 		final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-		setSupportActionBar(toolbar);
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		getSupportActionBar().setTitle("Program Details");
+		if(toolbar != null) {
+			setSupportActionBar(toolbar);
+			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+			getSupportActionBar().setTitle("Program Details");
+		}
 	}
 
 	private void setupUI() {

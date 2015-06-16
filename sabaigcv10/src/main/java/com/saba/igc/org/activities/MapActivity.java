@@ -32,8 +32,11 @@ public class MapActivity extends AppCompatActivity implements OnInfoWindowClickL
 
         // setting toolbar here...
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if(toolbar != null) {
+            setSupportActionBar(toolbar);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle("Map View");
+        }
     }
 
     @Override
