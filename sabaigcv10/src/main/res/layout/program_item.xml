@@ -9,9 +9,9 @@
         android:id="@+id/ivProgram"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginTop="14dp"
         android:src="@drawable/ic_launcher" />
 
@@ -24,28 +24,31 @@
         android:layout_height="fill_parent"
         android:text="@string/program_description"
         android:layout_marginBottom="10dp"
-        android:paddingEnd="10dp"
+        android:paddingRight="14dp"
         android:linksClickable="true"
         android:layout_below="@+id/ivProgram"
-        android:layout_alignStart="@+id/ivProgram"
-        android:layout_alignEnd="@+id/tvProgramTitle"
+        android:layout_alignLeft="@+id/ivProgram"
         android:layout_marginTop="5dp"
-        android:textIsSelectable="true"/>
+        android:paddingBottom="14dp"
+        android:textIsSelectable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/detail_text_color" />
 
     <TextView
         android:id="@+id/tvProgramTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/ivProgram"
-        android:layout_toEndOf="@+id/ivProgram"
         android:text="@string/program_title"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
         android:paddingLeft="10dp"
-        android:paddingEnd="0dp"
         android:textStyle="bold"
-        android:layout_alignBottom="@+id/ivProgram" />
+        android:layout_alignBottom="@+id/ivProgram"
+        android:layout_alignTop="@+id/ivProgram"
+        android:layout_alignRight="@+id/tvProgramDescription"
+        android:layout_alignEnd="@+id/tvProgramDescription"
+        android:layout_toRightOf="@+id/ivProgram"
+        android:layout_toEndOf="@+id/ivProgram"
+        android:textColor="@color/heading_text_color" />
 
 </RelativeLayout>
 

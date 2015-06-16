@@ -3,7 +3,8 @@ package com.saba.igc.org.activities;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -18,7 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.CustomInfoWindowAdapter;
 
-public class MapActivity extends FragmentActivity  implements OnInfoWindowClickListener{
+public class MapActivity extends AppCompatActivity implements OnInfoWindowClickListener{
     private static final LatLng SABA_LOCATION = new LatLng(37.421177, -121.958697);
     private final float DEFAULT_ZOOM = 13.0f;
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
@@ -28,7 +29,11 @@ public class MapActivity extends FragmentActivity  implements OnInfoWindowClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
         setUpMapIfNeeded();
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // setting toolbar here...
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

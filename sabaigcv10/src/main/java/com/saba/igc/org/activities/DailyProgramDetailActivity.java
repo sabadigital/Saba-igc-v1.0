@@ -1,30 +1,34 @@
 package com.saba.igc.org.activities;
 
-import java.util.List;
-
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.DailyProgramsArrayAdapter;
 import com.saba.igc.org.models.DailyProgram;
 
-public class DailyProgramDetailActivity extends Activity {
+import java.util.List;
+
+public class DailyProgramDetailActivity extends AppCompatActivity {
 	protected ListView mLvDailyPrograms;
 	protected DailyProgramsArrayAdapter mAdapter;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_daily_programs_detail);
 		mLvDailyPrograms = (ListView)findViewById(R.id.lvDailyPrograms);
-		
+
 		setupUI();
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+		// setting toolbar here...
+		final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setTitle("Program Details");
 	}
 
 	private void setupUI() {
@@ -37,10 +41,10 @@ public class DailyProgramDetailActivity extends Activity {
 		if(dailyPrograms != null && dailyPrograms.size()>0)
 			dailyPrograms.remove(0);
 		
-		String header = getIntent().getStringExtra("header");
-		TextView tvHeader = (TextView)findViewById(R.id.tvHeader);
-		if(tvHeader != null)
-			tvHeader.setText(header);
+//		String header = getIntent().getStringExtra("header");
+//		TextView tvHeader = (TextView)findViewById(R.id.tvHeader);
+//		if(tvHeader != null)
+//			tvHeader.setText(header);
 		
 		mAdapter = new DailyProgramsArrayAdapter(this, dailyPrograms);
 		mLvDailyPrograms.setAdapter(mAdapter);

@@ -11,7 +11,8 @@
         android:gravity="center"
         android:text="@string/city_name"
         android:layout_marginTop = "15dp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/heading_text_color"/>
 
     <TextView
         android:id="@+id/tvEnglishDate"
@@ -21,7 +22,8 @@
         android:layout_below="@+id/tvCityName" 
         android:text="@string/english_date" 
         android:layout_marginTop = "5dp"
-        android:layout_marginBottom = "5dp"/>
+        android:layout_marginBottom = "5dp"
+        android:textColor="@color/heading_text_color"/>
 
     <!-- Change ListView height 'from wrap_content' to 'fill_parent'or
      'match_parent'......it might work as it worked for me. –  ASP Dec 6 '13 at 7:38 -->
@@ -52,6 +54,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/tvEnglishDate"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom = "10dp"/>
+        android:layout_marginBottom = "10dp"
+        android:textColor="@color/heading_text_color"/>
 
 </RelativeLayout><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/fragment_pray_times.xml -->

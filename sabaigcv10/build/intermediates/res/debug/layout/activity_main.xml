@@ -26,10 +26,10 @@
 	    android:id="@+id/tvLastRefreshed"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	    android:layout_alignStart="@+id/lvUpcomingPrograms"
+	    android:layout_alignLeft="@+id/lvUpcomingPrograms"
 	    android:layout_alignParentTop="true"
 	    android:text="@string/last_refreshed_label" 
-	    android:layout_marginStart="8dp"
+	    android:layout_marginLeft="8dp"
 	    android:paddingLeft="10dp"
 	    android:paddingEnd="0dp"/>
 
@@ -38,10 +38,10 @@
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentTop="true"
-	    android:layout_alignEnd="@+id/lvUpcomingPrograms"
+	    android:layout_alignRight="@+id/lvUpcomingPrograms"
 	    android:text="@string/last_refrshed_value" 
-	    android:layout_marginEnd="8dp"
-	    android:paddingEnd="10dp"
+	    android:layout_marginRight="8dp"
+	    android:paddingRight="10dp"
 	    android:paddingLeft="0dp"/>
 
 </RelativeLayout>

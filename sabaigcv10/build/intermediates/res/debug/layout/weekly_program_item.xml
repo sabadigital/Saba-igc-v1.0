@@ -32,7 +32,8 @@
         android:layout_below="@+id/ivProgram"
         android:layout_alignRight="@+id/tvProgramTitle"
         android:layout_marginTop="2dp"
-        android:maxLines="3"/>
+        android:maxLines="3"
+        android:textColor="@color/detail_text_color" />
 
     <TextView
         android:id="@+id/tvProgramTitle"
@@ -41,14 +42,16 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:text="@string/program_title"
-        android:layout_marginBottom="10dp"
         android:paddingLeft="10dp"
         android:paddingTop="14dp"
         android:paddingRight="0dp"
         android:paddingEnd="0dp"
         android:textStyle="bold"
         android:layout_toRightOf="@+id/ivProgram"
-        android:layout_toEndOf="@+id/ivProgram"/>
+        android:layout_toEndOf="@+id/ivProgram"
+        android:layout_above="@+id/tvProgramDescription"
+        android:layout_alignTop="@+id/ivProgram"
+        android:textColor="@color/detail_text_color" />
 
 </RelativeLayout>
 

@@ -60,6 +60,9 @@
     <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
     <color name="common_signin_btn_light_text_focused">#FF737373</color>
     <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="detail_text_color">#323232</color>
     <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
@@ -76,6 +79,9 @@
     <color name="fab_stroke_end_outer_color">#0F000000</color>
     <color name="fab_stroke_top_inner_color">#1AFFFFFF</color>
     <color name="fab_stroke_top_outer_color">#2EFFFFFF</color>
+    <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="heading_text_color">#191916</color>
     <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
