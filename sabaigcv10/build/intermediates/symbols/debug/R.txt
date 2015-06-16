@@ -1005,7 +1005,7 @@ int layout support_simple_spinner_dropdown_item 0x7f030040
 int layout toolbar 0x7f030041
 int layout weekly_program_item 0x7f030042
 int menu drawer_menu 0x7f0e0000
-int menu prayer_times_fragment_menu 0x7f0e0001
+int menu refresh_menu 0x7f0e0001
 int plurals in_x_days 0x7f070000
 int plurals in_x_hours 0x7f070001
 int plurals in_x_minutes 0x7f070002

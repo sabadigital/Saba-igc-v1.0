@@ -2993,7 +2993,7 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int drawer_menu=0x7f0e0000;
-        public static final int prayer_times_fragment_menu=0x7f0e0001;
+        public static final int refresh_menu=0x7f0e0001;
     }
     public static final class plurals {
         public static final int in_x_days=0x7f070000;

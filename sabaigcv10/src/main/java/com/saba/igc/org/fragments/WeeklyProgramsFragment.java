@@ -5,9 +5,13 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.saba.igc.org.R;
 import com.saba.igc.org.activities.DailyProgramDetailActivity;
 import com.saba.igc.org.models.DailyProgram;
 import com.saba.igc.org.models.SabaProgram;
@@ -45,11 +49,14 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 			// make a network request to pull the data from server.
 			mSabaClient.getWeeklyPrograms(this);
 		}
+
+		// helps to display menu in fragments.
+		setHasOptionsMenu(true);
 	}
 	
 	@Override
 	protected void populatePrograms() {
-		// TODO Auto-generated method stub
+		mProgramsProgressBar.setVisibility(View.VISIBLE);
 		mAdapter.clear();
 		mSabaClient.getWeeklyPrograms(this);
 	}
@@ -71,7 +78,27 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 		addAllWeeklyPrograms(mWeeklyPrograms);
 		addAll(mPrograms);
 	}
-	
+
+	//------ refresh menu item.
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+		menu.clear();
+		inflater.inflate(R.menu.refresh_menu, menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// The action bar home/up action should open or close the drawer.
+		switch (item.getItemId()) {
+			case R.id.refreshFragment:
+				populatePrograms();
+				return true;
+		}
+
+		return super.onOptionsItemSelected(item);
+	}
+
 	@Override
 	protected void processOnItemClick(int position){
 		Intent intent = new Intent(getActivity(), DailyProgramDetailActivity.class);

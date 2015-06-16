@@ -8,6 +8,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
@@ -57,6 +60,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		super.onCreate(savedInstanceState);
 		mPrayerLocationService = new PrayerLocation(getActivity());
 		refresh();
+
+		// helps to display menu in fragments.
+		setHasOptionsMenu(true);
 	}
 
 	@Override
@@ -98,14 +104,6 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		if(tvTodayDate != null){
 			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
 			tvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));
-		}
-
-		String hijriDate = SabaClient.getInstance(getActivity()).getHijriDate();
-		if(mTvHijriDate != null){
-			mTvHijriDate.setText(hijriDate);
-		}
-		if(hijriDate==null || hijriDate.isEmpty()){
-			SabaClient.getInstance(getActivity()).getHijriDate("hijriDate", this);
 		}
 	}
 
@@ -181,6 +179,17 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	}
 
 	private void refresh(){
+		// get Hijri date.
+		String hijriDate = SabaClient.getInstance(getActivity()).getHijriDate();
+		if(mTvHijriDate != null){
+			mTvHijriDate.setText(hijriDate);
+		}
+
+		// try sending a network call to get the hijridate from SABA server.
+		if(hijriDate==null || hijriDate.isEmpty()){
+			SabaClient.getInstance(getActivity()).getHijriDate("hijriDate", this);
+		}
+
 		// check if GPS enabled
 		if(mPrayerLocationService.canGetLocation()){
 			Log.d(TAG, "refresh - Will try to get PrayerTimes for - Latitude: " +
@@ -286,5 +295,29 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		sb.append(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
 
 		return PrayerTimes.getTodayPrayerTimes(city, sb.toString());
+	}
+
+	//------ refresh menu item.
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+		menu.clear();
+		inflater.inflate(R.menu.refresh_menu, menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+			case R.id.refreshFragment:
+				mPrayTimesProgressBar.setVisibility(View.VISIBLE);
+				if(mAdapter!=null)
+					mAdapter.clear();
+				mTvHijriDate.setText("");
+				mTvCityName.setText("");
+				refresh();
+				return true;
+		}
+
+		return super.onOptionsItemSelected(item);
 	}
 }

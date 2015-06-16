@@ -11,8 +11,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.saba.igc.org.R;
@@ -248,13 +246,13 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		return new ActionBarDrawerToggle(this, mDrawer, toolbar, R.string.drawer_open,  R.string.drawer_close);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		// Uncomment to inflate menu items to Action Bar
-		// inflater.inflate(R.menu.main, menu);
-		return super.onCreateOptionsMenu(menu);
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		MenuInflater inflater = getMenuInflater();
+//		// Uncomment to inflate menu items to Action Bar
+//		inflater.inflate(R.menu.refresh_menu, menu);
+//		return super.onCreateOptionsMenu(menu);
+//	}
 
 //	@Override
 //	public boolean onOptionsItemSelected(MenuItem item) {
@@ -275,8 +273,6 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-
 
 	@Override
 	protected void onPostCreate(Bundle savedInstanceState) {
