@@ -547,8 +547,9 @@
     <string name="sunset_label">Sunset</string>
     <string name="sunset_value">5:45 PM</string>
     <string name="title_activity_main_activity2">MainActivity2</string>
-    <string name="title_activity_map">"Saba "</string>
+    <string name="title_activity_map">"Map View"</string>
     <string name="today_date">"Wed, Dec 2, 2014 "</string>
+    <string name="toolbar_title">"Toolbar title"</string>
     <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
@@ -568,7 +569,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
     <item name="colorPrimary">#446600</item>
     <item name="colorPrimaryDark">#334d00</item>
-    <item name="colorAccent">#dddddd</item>
+    <item name="colorAccent">#d4d4d4</item>
 </style>
     <!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>

@@ -35,7 +35,8 @@ public class MapActivity extends AppCompatActivity implements OnInfoWindowClickL
         if(toolbar != null) {
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle("Map View");
+            getSupportActionBar().setTitle("SABA's Map View");
+            getSupportActionBar().setSubtitle("Really it is showing");
         }
     }
 

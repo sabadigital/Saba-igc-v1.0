@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.application.SabaClient;
@@ -196,6 +198,7 @@ import org.json.JSONObject;
 public class MainActivity1 extends AppCompatActivity implements SabaServerResponseListener {
 	private DrawerLayout mDrawer;
 	private Toolbar toolbar;
+	private TextView mTvToolbarTitle;
 	private NavigationView mNvDrawer;
 	private ActionBarDrawerToggle mDrawerToggle;
 	private final String TAG = "MainActivity1";
@@ -222,6 +225,11 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		if(actionBar != null) {
 			actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_36dp);
 			actionBar.setDisplayHomeAsUpEnabled(true);
+
+			// sets toolbar title in center.
+			View view = getLayoutInflater().inflate(R.layout.custom_toolbar_view, null);
+			mTvToolbarTitle = (TextView)view.findViewById(R.id.tvToolbarTitle);
+			toolbar.addView(view);
 		}
 
 		// Find our drawer view
@@ -229,10 +237,11 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		// Setup drawer view
 		setupDrawerContent(mNvDrawer);
 
-		// setting WeeklyPrograms displayed.
+		// setting WeeklyPrograms displayed on startup. It we want to display something else on startup, change here.
 		Fragment fragment = null;
 		try {
 			fragment = (Fragment) WeeklyProgramsFragment.class.newInstance();
+			mTvToolbarTitle.setText("Weekly Schedule");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -308,18 +317,23 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		switch(menuItem.getItemId()) {
 			case R.id.nav_weekly_schedule_fragment:
 				fragmentClass = WeeklyProgramsFragment.class;
+				mTvToolbarTitle.setText("Weekly Schedule");
 				break;
 			case R.id.nav_upcoming_programs_fragment:
 				fragmentClass = UpcomingProgramsFragment.class;
+				mTvToolbarTitle.setText("Upcoming Programs");
 				break;
 			case R.id.nav_community_announcements:
 				fragmentClass = CommunityAnnouncementsFragment.class;
+				mTvToolbarTitle.setText("Community Announcements");
 				break;
 			case R.id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
+				mTvToolbarTitle.setText("Contact and Directions");
 				break;
 			case R.id.nav_prayer_times_fragment:
 				fragmentClass = PrayerTimesFragment.class;
+				mTvToolbarTitle.setText("Prayer Times");
 				break;
 			default:
 				fragmentClass = WeeklyProgramsFragment.class;

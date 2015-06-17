@@ -8,13 +8,11 @@
         android:id="@+id/lvUpcomingPrograms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/tvLastRefreshed"
-        android:divider="@null"
-		android:dividerHeight="0dp">
-
+        android:layout_alignParentLeft="true"
+        android:divider="@color/divider"
+		android:dividerHeight="0.1dp">
     </eu.erikw.PullToRefreshListView>
+
 	<ProgressBar
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -22,26 +20,27 @@
           style="@android:style/Widget.ProgressBar.Large"
           android:layout_centerInParent="true"/>
 
-	<TextView
-	    android:id="@+id/tvLastRefreshed"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignLeft="@+id/lvUpcomingPrograms"
-	    android:layout_alignParentTop="true"
-	    android:text="@string/last_refreshed_label" 
-	    android:layout_marginLeft="8dp"
-	    android:paddingLeft="10dp"
-	    android:paddingEnd="0dp"/>
+	<!--android:layout_below="@+id/tvLastRefreshed"-->
+	<!--<TextView-->
+	    <!--android:id="@+id/tvLastRefreshed"-->
+	    <!--android:layout_width="wrap_content"-->
+	    <!--android:layout_height="wrap_content"-->
+	    <!--android:layout_alignLeft="@+id/lvUpcomingPrograms"-->
+	    <!--android:layout_alignParentTop="true"-->
+	    <!--android:text="@string/last_refreshed_label" -->
+	    <!--android:layout_marginLeft="8dp"-->
+	    <!--android:paddingLeft="10dp"-->
+	    <!--android:paddingEnd="0dp"/>-->
 
-	<TextView
-	    android:id="@+id/tvLastRrefreshedValue"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentTop="true"
-	    android:layout_alignRight="@+id/lvUpcomingPrograms"
-	    android:text="@string/last_refrshed_value" 
-	    android:layout_marginRight="8dp"
-	    android:paddingRight="10dp"
-	    android:paddingLeft="0dp"/>
+	<!--<TextView-->
+	    <!--android:id="@+id/tvLastRrefreshedValue"-->
+	    <!--android:layout_width="wrap_content"-->
+	    <!--android:layout_height="wrap_content"-->
+	    <!--android:layout_alignParentTop="true"-->
+	    <!--android:layout_alignRight="@+id/lvUpcomingPrograms"-->
+	    <!--android:text="@string/last_refrshed_value" -->
+	    <!--android:layout_marginRight="8dp"-->
+	    <!--android:paddingRight="10dp"-->
+	    <!--android:paddingLeft="0dp"/>-->
 
 </RelativeLayout>

@@ -35,7 +35,6 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 
 	public View onCreateView(LayoutInflater inflater,
 							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-		getActivity().setTitle("Weekly Schedule");
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 

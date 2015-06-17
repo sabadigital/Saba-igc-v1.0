@@ -1,6 +1,5 @@
 package com.saba.igc.org.fragments;
 
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.ProgramsArrayAdapter;
@@ -25,7 +23,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +30,6 @@ import java.util.Locale;
 
 import eu.erikw.PullToRefreshListView;
 import eu.erikw.PullToRefreshListView.OnRefreshListener;
-import im.delight.android.time.RelativeTime;
 
 /**
  * @author Syed Aftab Naqvi
@@ -48,7 +44,7 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	protected PullToRefreshListView mLvPrograms;
 	protected ProgressBar mProgramsProgressBar;	
 	protected String mProgramName;
-	protected TextView mTvLastRrefreshedValue;
+	//protected TextView mTvLastRrefreshedValue;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -65,7 +61,7 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		
 		mProgramsProgressBar = (ProgressBar) view.findViewById(R.id.programsProgressBar);
         mLvPrograms = (PullToRefreshListView) view.findViewById(R.id.lvUpcomingPrograms);
-        mTvLastRrefreshedValue = (TextView) view.findViewById(R.id.tvLastRrefreshedValue);
+        //mTvLastRrefreshedValue = (TextView) view.findViewById(R.id.tvLastRrefreshedValue);
         
         if(mPrograms != null && mPrograms.size() == 0){
         	mPrograms = new ArrayList<SabaProgram>();
@@ -76,24 +72,17 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 			SimpleDateFormat sf = new SimpleDateFormat(format, Locale.ENGLISH);
 			sf.setLenient(true);
 		 
-			try {
-				long milliSeconds = sf.parse(mPrograms.get(0).getLastUpdated()).getTime();
-				// e.g. formattedTime could now be <45 minutes ago>
-				String formattedTime = RelativeTime.fromTimestamp(getResources(), milliSeconds);
-				mTvLastRrefreshedValue.setText(formattedTime);
-				
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+	//			try {
+	//				long milliSeconds = sf.parse(mPrograms.get(0).getLastUpdated()).getTime();
+	//				// e.g. formattedTime could now be <45 minutes ago>
+	//				String formattedTime = RelativeTime.fromTimestamp(getResources(), milliSeconds);
+	//				mTvLastRrefreshedValue.setText(formattedTime);
+	//
+	//			} catch (ParseException e) {
+	//				// TODO Auto-generated catch block
+	//				e.printStackTrace();
+	//			}
         }
-
-		// set divider in weekly programs -
-		if(mProgramName.compareTo("Weekly Programs")==0){
-			ColorDrawable sage = new ColorDrawable(getResources().getColor(R.color.divider));
-			mLvPrograms.setDivider(sage);
-			mLvPrograms.setDividerHeight(1);
-		}
 
 		mAdapter = new ProgramsArrayAdapter(getActivity(), mPrograms);
 		mLvPrograms.setAdapter(mAdapter);
@@ -144,7 +133,6 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 			} else {
 				programs = SabaProgram.fromJSONArray(mProgramName, ProgramsJson);
 			}
-			Log.d("TotalItems received: ", programs.size()+"");
 			addAll(programs);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
@@ -155,16 +143,16 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	public void processJsonObject(String programName, JSONArray response){
 		mProgramsProgressBar.setVisibility(View.GONE);
 		mLvPrograms.onRefreshComplete();
-		if(mTvLastRrefreshedValue != null){
-			String formattedTime;
-			formattedTime = RelativeTime.fromTimestamp(getResources(), System.currentTimeMillis());
-			// formattedTime could now be <45 minutes ago>
-			mTvLastRrefreshedValue.setText(formattedTime);
-		}
-		if(response == null){
-			// display error.
-			return;
-		}
+//		if(mTvLastRrefreshedValue != null){
+//			String formattedTime;
+//			formattedTime = RelativeTime.fromTimestamp(getResources(), System.currentTimeMillis());
+//			// formattedTime could now be <45 minutes ago>
+//			mTvLastRrefreshedValue.setText(formattedTime);
+//		}
+//		if(response == null){
+//			// display error.
+//			return;
+//		}
 
 		mProgramName = programName;
 		List<SabaProgram> programs = null;

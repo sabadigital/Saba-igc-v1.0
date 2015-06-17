@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.DailyProgramsArrayAdapter;
@@ -29,7 +31,13 @@ public class DailyProgramDetailActivity extends AppCompatActivity {
 		if(toolbar != null) {
 			setSupportActionBar(toolbar);
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-			getSupportActionBar().setTitle("Program Details");
+
+			// sets toolbar title in center.
+			View view = getLayoutInflater().inflate(R.layout.custom_toolbar_view, null);
+			TextView tvTitle = (TextView)view.findViewById(R.id.tvToolbarTitle);
+			String header = getIntent().getStringExtra("header");
+			tvTitle.setText(header);
+			toolbar.addView(view);
 		}
 	}
 

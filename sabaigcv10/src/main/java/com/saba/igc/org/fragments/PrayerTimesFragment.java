@@ -59,7 +59,6 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mPrayerLocationService = new PrayerLocation(getActivity());
-		refresh();
 
 		// helps to display menu in fragments.
 		setHasOptionsMenu(true);
@@ -72,7 +71,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		getActivity().setTitle("Prayer Times");
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 		setupUI(view);
-
+		refresh();
 		return view;
 	}
 
