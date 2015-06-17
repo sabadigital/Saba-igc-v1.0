@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:divider="@color/divider"
-		android:dividerHeight="0.1dp">
+		android:dividerHeight="0.1dp"
+		android:listSelector="#00000000">
     </eu.erikw.PullToRefreshListView>
 
 	<ProgressBar
