@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_activated="true"
-        android:color="#cccccc"/> <!-- selected -->
-
-    <item android:color="#000000"/> <!-- default -->
-</selector>
-<!-- <item android:drawable="@drawable/list_item_bg_pressed" android:state_pressed="true"/> --><!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/drawable/selector_gray_black.xml -->
