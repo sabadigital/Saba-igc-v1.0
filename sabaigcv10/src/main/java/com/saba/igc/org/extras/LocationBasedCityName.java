@@ -50,7 +50,6 @@ public class LocationBasedCityName {
                     }
                 } catch (IOException e) {
                     Log.e(TAG, "Unable connect to Geocoder", e);
-                    start();
                 } finally {
                     Message message = Message.obtain();
                     message.setTarget(handler);
