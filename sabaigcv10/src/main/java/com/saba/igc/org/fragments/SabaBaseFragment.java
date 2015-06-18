@@ -23,10 +23,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import eu.erikw.PullToRefreshListView;
 import eu.erikw.PullToRefreshListView.OnRefreshListener;
@@ -44,7 +42,6 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	protected PullToRefreshListView mLvPrograms;
 	protected ProgressBar mProgramsProgressBar;	
 	protected String mProgramName;
-	//protected TextView mTvLastRrefreshedValue;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -67,21 +64,6 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
         	mPrograms = new ArrayList<SabaProgram>();
         } else {
         	mProgramsProgressBar.setVisibility(View.GONE);
-        	
-        	String format = "EEE MMM dd HH:mm:ss ZZZZZ yyyy";
-			SimpleDateFormat sf = new SimpleDateFormat(format, Locale.ENGLISH);
-			sf.setLenient(true);
-		 
-	//			try {
-	//				long milliSeconds = sf.parse(mPrograms.get(0).getLastUpdated()).getTime();
-	//				// e.g. formattedTime could now be <45 minutes ago>
-	//				String formattedTime = RelativeTime.fromTimestamp(getResources(), milliSeconds);
-	//				mTvLastRrefreshedValue.setText(formattedTime);
-	//
-	//			} catch (ParseException e) {
-	//				// TODO Auto-generated catch block
-	//				e.printStackTrace();
-	//			}
         }
 
 		mAdapter = new ProgramsArrayAdapter(getActivity(), mPrograms);
@@ -143,16 +125,6 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	public void processJsonObject(String programName, JSONArray response){
 		mProgramsProgressBar.setVisibility(View.GONE);
 		mLvPrograms.onRefreshComplete();
-//		if(mTvLastRrefreshedValue != null){
-//			String formattedTime;
-//			formattedTime = RelativeTime.fromTimestamp(getResources(), System.currentTimeMillis());
-//			// formattedTime could now be <45 minutes ago>
-//			mTvLastRrefreshedValue.setText(formattedTime);
-//		}
-//		if(response == null){
-//			// display error.
-//			return;
-//		}
 
 		mProgramName = programName;
 		List<SabaProgram> programs = null;
