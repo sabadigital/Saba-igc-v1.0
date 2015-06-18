@@ -1,22 +1,21 @@
 package com.saba.igc.org.models;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.util.Log;
 
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 import com.activeandroid.query.Delete;
 import com.activeandroid.query.Select;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 // first version - coming data
 //{
@@ -200,7 +199,7 @@ public class SabaProgram extends Model implements Parcelable{
 					//Log.d("SabaProgram: ", );
 					sb.append(dailyPrograms.get(0).getDay());
 				
-					sb.append("/");
+					sb.append(", ");
 					sb.append(dailyPrograms.get(0).getEnglishDate());
 					sb.append("/");
 					sb.append(dailyPrograms.get(0).getHijriDate());
@@ -232,7 +231,6 @@ public class SabaProgram extends Model implements Parcelable{
 
 				sabaProgram.mDescription = description.toString();
 				sabaProgram.setLastUpdated(new Date().toString());
-				Log.d("Weekly - Program: ", sabaProgram.mDescription);
 				programs.add(sabaProgram);
 			}
 		}

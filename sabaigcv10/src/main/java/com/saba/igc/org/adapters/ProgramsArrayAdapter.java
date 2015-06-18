@@ -109,7 +109,7 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 
 		// if we are in weekly programs then we want to display the week day images.
 		if(program.getImageUrl()==null && (program.getProgramName().equalsIgnoreCase("Weekly Programs")==true) ){
-			int index = program.getTitle().indexOf('/');
+			int index = program.getTitle().indexOf(',');
 			if(index != -1){
 				String day = program.getTitle().substring(0, index);
 				if("saturday".compareToIgnoreCase(day)==0){
