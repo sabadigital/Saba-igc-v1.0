@@ -3,6 +3,7 @@ package com.saba.igc.org.adapters;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.text.method.LinkMovementMethod;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.FailReason;
@@ -71,6 +71,8 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 			viewHolder = new ViewHolder();
 			if(program.getProgramName().equalsIgnoreCase("Weekly Programs")==true){
 				convertView = LayoutInflater.from(getContext()).inflate(R.layout.weekly_program_item, parent, false);
+			} else if(program.getProgramName().equalsIgnoreCase("Community Announcements")==true){
+				convertView = LayoutInflater.from(getContext()).inflate(R.layout.community_announcements_item, parent, false);
 			} else {
 				convertView = LayoutInflater.from(getContext()).inflate(R.layout.program_item, parent, false);
 			}
@@ -131,7 +133,7 @@ public class ProgramsArrayAdapter extends ArrayAdapter<SabaProgram>{
 		if(viewHolder.tvProgramTitle != null){
 			viewHolder.tvProgramTitle.setText(Html.fromHtml(program.getTitle()));
 		}
-		
+
 		if(viewHolder.tvProgramDescription != null){
 			viewHolder.tvProgramDescription.setText(Html.fromHtml(program.getDescription()));
 
