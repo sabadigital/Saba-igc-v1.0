@@ -19,6 +19,7 @@ import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.PrayTimeAdapter;
+import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.application.SabaClient;
 import com.saba.igc.org.extras.LocationBasedCityName;
 import com.saba.igc.org.extras.PrayerLocation;
@@ -47,6 +48,7 @@ import java.util.TimeZone;
 public class PrayerTimesFragment extends Fragment implements SabaServerResponseListener, LocationListenerForPrayers{
 	
 	private final String TAG = "PrayerTimesFragment";
+	private SabaClient			mSabaClient;
 	private TextView 			mTvCityName;
 	private TextView 			mTvHijriDate;
 	private List<PrayTime> 		mPrayTimes;
@@ -59,6 +61,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mPrayerLocationService = new PrayerLocation(getActivity());
+		mSabaClient = SabaApplication.getSabaClient();
 
 		// helps to display menu in fragments.
 		setHasOptionsMenu(true);
@@ -112,8 +115,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	{
 		Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
 		// getting prayer times from http://praytime.info/
-		SabaClient client = SabaClient.getInstance(getActivity());
-		client.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), newLocation.getLatitude(), newLocation.getLongitude(), this);
+		mSabaClient.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), newLocation.getLatitude(), newLocation.getLongitude(), this);
 
 		// initiate the request to get the city name based of current latitude and longitude.
 		LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
@@ -137,7 +139,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 					if(mTvHijriDate != null){
 						mTvHijriDate.setText(hijriDate);
 					}
-					SabaClient.getInstance(getActivity()).saveHijriDate(hijriDate);
+					mSabaClient.saveHijriDate(hijriDate);
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
@@ -179,14 +181,14 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	private void refresh(){
 		// get Hijri date.
-		String hijriDate = SabaClient.getInstance(getActivity()).getHijriDate();
+		String hijriDate = mSabaClient.getHijriDate();
 		if(mTvHijriDate != null){
 			mTvHijriDate.setText(hijriDate);
 		}
 
 		// try sending a network call to get the hijridate from SABA server.
 		if(hijriDate==null || hijriDate.isEmpty()){
-			SabaClient.getInstance(getActivity()).getHijriDate("hijriDate", this);
+			mSabaClient.getHijriDate("hijriDate", this);
 		}
 
 		// check if GPS enabled
@@ -274,8 +276,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 				mPrayerTimesFromWebInProgress = true;
 				// getting prayer times from http://praytime.info/
-				SabaClient client = SabaClient.getInstance(getActivity());
-				client.getPrayTimes(getCurrentTimezoneOffsetInMinutes(),
+				mSabaClient.getPrayTimes(getCurrentTimezoneOffsetInMinutes(),
 										mPrayerLocationService.getLatitude(),
 										mPrayerLocationService.getLongitude(),
 										this);
