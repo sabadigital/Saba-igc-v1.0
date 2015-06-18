@@ -261,8 +261,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			mPrayTimes.add(new PrayTime("Maghrib", prayerTime.getMaghrib()));
 			mPrayTimes.add(new PrayTime("Midnight", prayerTime.getMidnight()));
 
-			mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes);
-			mLvPrayTimes.setAdapter(mAdapter);
+			if(getActivity()!=null) {
+				mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes);
+				mLvPrayTimes.setAdapter(mAdapter);
+			}
 		} else {
 			// get the prayer times from web.
 			// check if GPS enabled
