@@ -16,7 +16,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.saba.igc.org.R;
-import com.saba.igc.org.application.SabaClient;
+import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.fragments.CommunityAnnouncementsFragment;
 import com.saba.igc.org.fragments.ContactAndDirectionsFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
@@ -27,6 +27,14 @@ import com.saba.igc.org.listeners.SabaServerResponseListener;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+import static com.saba.igc.org.R.drawable;
+import static com.saba.igc.org.R.id;
+import static com.saba.igc.org.R.layout;
 
 /**
  * @author Syed Aftab Naqvi
@@ -197,7 +205,7 @@ import org.json.JSONObject;
 
 public class MainActivity1 extends AppCompatActivity implements SabaServerResponseListener {
 	private DrawerLayout mDrawer;
-	private Toolbar toolbar;
+	private Toolbar mToolbar;
 	private TextView mTvToolbarTitle;
 	private NavigationView mNvDrawer;
 	private ActionBarDrawerToggle mDrawerToggle;
@@ -206,14 +214,17 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main1);
+		setContentView(layout.activity_main1);
+
+
+
 
 		// Set a Toolbar to replace the ActionBar.
-		toolbar = (Toolbar) findViewById(R.id.toolbar);
-		setSupportActionBar(toolbar);
+		mToolbar = (Toolbar) findViewById(id.toolbar);
+		setSupportActionBar(mToolbar);
 
 		// Find our drawer view
-		mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+		mDrawer = (DrawerLayout) findViewById(id.drawer_layout);
 
 		mDrawerToggle = setupDrawerToggle();
 
@@ -223,19 +234,22 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		// Set the menu icon instead of the launcher icon.
 		final ActionBar actionBar = getSupportActionBar();
 		if(actionBar != null) {
-			actionBar.setHomeAsUpIndicator(R.drawable.ic_menu_white_36dp);
+			actionBar.setHomeAsUpIndicator(drawable.ic_menu_white_36dp);
 			actionBar.setDisplayHomeAsUpEnabled(true);
 
 			// sets toolbar title in center.
-			View view = getLayoutInflater().inflate(R.layout.custom_toolbar_view, null);
-			mTvToolbarTitle = (TextView)view.findViewById(R.id.tvToolbarTitle);
-			toolbar.addView(view);
+			View view = getLayoutInflater().inflate(layout.custom_toolbar_view, null);
+			mTvToolbarTitle = (TextView)view.findViewById(id.tvToolbarTitle);
+			mToolbar.addView(view);
 		}
 
 		// Find our drawer view
-		mNvDrawer = (NavigationView) findViewById(R.id.nvView);
+		mNvDrawer = (NavigationView) findViewById(id.nvView);
+
 		// Setup drawer view
 		setupDrawerContent(mNvDrawer);
+
+		setDates();
 
 		// setting WeeklyPrograms displayed on startup. It we want to display something else on startup, change here.
 		Fragment fragment = null;
@@ -248,11 +262,22 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		// Insert the fragment by replacing any existing fragment
 		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+		fragmentManager.beginTransaction().replace(id.flContent, fragment).commit();
 	}
 
 	private ActionBarDrawerToggle setupDrawerToggle() {
-		return new ActionBarDrawerToggle(this, mDrawer, toolbar, R.string.drawer_open,  R.string.drawer_close);
+		return new ActionBarDrawerToggle(this, mDrawer, mToolbar, R.string.drawer_open, R.string.drawer_close) {
+			public void onDrawerClosed(View view) {
+
+				super.onDrawerClosed(view);
+			}
+
+			public void onDrawerOpened(View drawerView) {
+				setDates();
+				super.onDrawerOpened(drawerView);
+
+			}
+		};
 	}
 
 //	@Override
@@ -288,6 +313,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		super.onPostCreate(savedInstanceState);
 		// Sync the toggle state after onRestoreInstanceState has occurred.
 		mDrawerToggle.syncState();
+
 	}
 
 	@Override
@@ -315,23 +341,23 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		Class fragmentClass;
 		switch(menuItem.getItemId()) {
-			case R.id.nav_weekly_schedule_fragment:
+			case id.nav_weekly_schedule_fragment:
 				fragmentClass = WeeklyProgramsFragment.class;
 				mTvToolbarTitle.setText("Weekly Schedule");
 				break;
-			case R.id.nav_upcoming_programs_fragment:
+			case id.nav_upcoming_programs_fragment:
 				fragmentClass = UpcomingProgramsFragment.class;
 				mTvToolbarTitle.setText("Upcoming Programs");
 				break;
-			case R.id.nav_community_announcements:
+			case id.nav_community_announcements:
 				fragmentClass = CommunityAnnouncementsFragment.class;
 				mTvToolbarTitle.setText("Community Announcements");
 				break;
-			case R.id.nav_contact_directions_fragment:
+			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
 				mTvToolbarTitle.setText("Contact and Directions");
 				break;
-			case R.id.nav_prayer_times_fragment:
+			case id.nav_prayer_times_fragment:
 				fragmentClass = PrayerTimesFragment.class;
 				mTvToolbarTitle.setText("Prayer Times");
 				break;
@@ -347,7 +373,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		// Insert the fragment by replacing any existing fragment
 		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+		fragmentManager.beginTransaction().replace(id.flContent, fragment).commit();
 
 		// Highlight the selected item, update the title, and close the drawer
 		menuItem.setChecked(true);
@@ -355,7 +381,28 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		mDrawer.closeDrawers();
 	}
 
+	private void setDates(){
+		TextView tvHijriDate = (TextView)mNvDrawer.findViewById(id.tvHijriOnHeader);
 
+		// get Hijri date.
+		String hijriDate = SabaApplication.getSabaClient().getHijriDate();
+		if(tvHijriDate != null){
+			tvHijriDate.setText(hijriDate);
+		}
+
+		// try sending a network call to get the hijridate from SABA server.
+		if(hijriDate==null || hijriDate.isEmpty()){
+			SabaApplication.getSabaClient().getHijriDate("hijriDate", MainActivity1.this);
+		}
+
+		TextView tvTodayDate = (TextView)mNvDrawer.findViewById(id.tvEnglishDateOnHeader);
+		if(tvTodayDate != null){
+			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
+			tvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));
+		}
+	}
+
+	// SabaServerResponseListener methods
 	@Override
 	public void processJsonObject(String programName, JSONObject response) {
 		Log.d(TAG, "HijriDate: JSON response." + response);
@@ -366,7 +413,8 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			String hijriDate = response.getString("hijridate");
 			if(hijriDate != null){
 				Log.d(TAG, "HijriDate: " + hijriDate);
-				SabaClient.getInstance(this).saveHijriDate(hijriDate);
+				SabaApplication.getSabaClient().saveHijriDate(hijriDate);
+				setDates();
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();

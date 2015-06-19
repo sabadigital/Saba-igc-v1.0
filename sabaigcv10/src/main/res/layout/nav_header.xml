@@ -8,56 +8,66 @@
     android:gravity="bottom">
 
     <RelativeLayout
-    android:id="@+id/profileBox"
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:background="?attr/colorPrimary"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:clickable="true">
+        android:id="@+id/profileBox"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?attr/colorPrimary"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:clickable="true">
 
-    <!-- https://github.com/Pkmmte/CircularImageView -->
-    <com.pkmmte.view.CircularImageView
-    android:id="@+id/imageViewSaba"
-    android:layout_width="50dp"
-    android:layout_height="50dp"
-    android:src="@drawable/ic_launcher"
-    android:layout_marginTop="15dp"
-    app:border="true"
-    app:border_color="#EE0000"
-    app:shadow="true"/>
+        <!-- https://github.com/Pkmmte/CircularImageView -->
+        <com.pkmmte.view.CircularImageView
+        android:id="@+id/imageViewSaba"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <LinearLayout
-    android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="wrap_content"
 
-    android:layout_height="70dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="15dp"
-    android:layout_centerVertical="true"
-    android:layout_marginLeft="15dp"
-    android:layout_toRightOf="@+id/imageViewSaba"
-    android:orientation="vertical" >
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/imageViewSaba"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
 
-    <TextView
-    android:id="@+id/sabaName"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="SABA Islamic Center"
-    android:textColor="#cccccc"
-    android:textSize="16sp"
-    android:textStyle="bold"/>
+            <TextView
+            android:id="@+id/tvSabaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SABA Islamic Center"
+            android:textColor="#d4d4d4"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
 
-    <TextView
-    android:id="@+id/sabaAddress"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="bottom"
-    android:layout_marginTop="4dp"
-    android:text="@string/saba_address"
-    android:textColor="?attr/colorAccent"
-    android:maxLines="3"
-    android:textSize="12sp"/>
-    </LinearLayout>
+            <TextView
+            android:id="@+id/tvEnglishDateOnHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/english_date"
+            android:textColor="?attr/colorAccent"
+            android:textStyle="bold"
+            android:textSize="12sp"/>
+
+            <TextView
+            android:id="@+id/tvHijriOnHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:text="@string/hijri_date"
+            android:textColor="?attr/colorAccent"
+            android:textSize="12sp"/>
+
+        </LinearLayout>
     </RelativeLayout>
 
 </LinearLayout>

@@ -46,9 +46,9 @@
     <string name="prayer_name">Prayer Name</string>
     <string name="prayer_time">Prayer Time</string>
     <string name="english_date">English Date</string>
+    <string name="hijri_date">Hijri Date</string>
     <string name="saba_address">4415 Fortran Ct.
-                              San Jose, CA 95134
-                              (408) 946-5700</string>
+                              San Jose, CA 95134</string>
     <string name="refreshFragment">Refresh</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
