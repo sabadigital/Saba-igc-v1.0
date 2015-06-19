@@ -131,7 +131,6 @@ public class SabaProgram extends Model implements Parcelable{
 		SabaProgram upcomingProgram = new SabaProgram();
 		
 		try {
-			System.out.println("JSON: " + json.toString());
 			upcomingProgram.mLastUpdated = new Date().toString();
 			upcomingProgram.mTitle = json.getString("title");
 			upcomingProgram.mDescription = json.getString("description");
