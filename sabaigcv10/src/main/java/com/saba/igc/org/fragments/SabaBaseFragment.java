@@ -36,12 +36,12 @@ import eu.erikw.PullToRefreshListView.OnRefreshListener;
  */
 public abstract class SabaBaseFragment extends Fragment implements SabaServerResponseListener {
 
-	protected SabaClient mSabaClient;
-	protected ProgramsArrayAdapter mAdapter;
-	protected List<SabaProgram> mPrograms;
+	protected SabaClient 			mSabaClient;
+	protected ProgramsArrayAdapter 	mAdapter;
+	protected List<SabaProgram> 	mPrograms;
 	protected PullToRefreshListView mLvPrograms;
-	protected ProgressBar mProgramsProgressBar;	
-	protected String mProgramName;
+	protected ProgressBar 			mProgramsProgressBar;
+	protected String 				mProgramName;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
