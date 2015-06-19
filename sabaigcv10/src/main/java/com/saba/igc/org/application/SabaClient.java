@@ -14,8 +14,8 @@ import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.Calendar;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 /**
  * @author Syed Aftab Naqvi
@@ -32,22 +32,7 @@ public class SabaClient {
 	private static String HIJRI_DATE_URL = "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php";
 
 	private static final int TIME_OUT = 30000;
-	
-//	private class ReadFromDatabase extends AsyncTask<String, Void, List<SabaProgram> > {
-//		@Override
-//		protected List<SabaProgram> doInBackground(String... programName) {
-//	        return SabaProgram.getSabaPrograms(programName[0]);
-//	    }
-//
-//		@Override
-//	    protected void onPostExecute(List<SabaProgram> result) {
-//			if(result != null){
-//				System.out.println(result.get(0).getTitle());
-//				mTarget.getPrograms(null, result);
-//			}
-//	    }
-//	}
-//	
+
 	/**
 	 * @param context
 	 * @return
