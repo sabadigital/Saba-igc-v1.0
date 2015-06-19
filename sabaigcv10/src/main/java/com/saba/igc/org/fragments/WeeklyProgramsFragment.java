@@ -18,7 +18,6 @@ import com.saba.igc.org.models.SabaProgram;
 
 import org.json.JSONArray;
 
-import java.io.File;
 import java.util.List;
 /**
  * @author Syed Aftab Naqvi
@@ -106,7 +105,7 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 			day = mWeeklyPrograms.get(position).get(0).getDay();
 		} else {
 			String data = mPrograms.get(position).getTitle(); 
-			int index = data.indexOf(File.separator); // finding the index of '/'
+			int index = data.indexOf(','); // finding the index of ','
 			day = data.substring(0, index); // extract the day. e.g. Thursday
 		}
 		intent.putExtra("day", day);

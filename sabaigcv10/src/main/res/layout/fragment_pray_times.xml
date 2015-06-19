@@ -13,7 +13,7 @@
         android:text="@string/city_name"
         android:layout_marginTop = "15dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/heading_text_color"
+        android:textColor="@color/detail_text_color"
         android:textStyle="bold" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:text="@string/english_date"
         android:layout_marginTop = "5dp"
         android:layout_marginBottom = "5dp"
-        android:textColor="@color/heading_text_color"
+        android:textColor="@color/detail_text_color"
         android:textStyle="bold" />
 
     <!-- Change ListView height 'from wrap_content' to 'fill_parent'or
@@ -60,7 +60,7 @@
         android:layout_below="@+id/tvEnglishDate"
         android:layout_alignParentStart="true"
         android:layout_marginBottom = "10dp"
-        android:textColor="@color/heading_text_color"
+        android:textColor="@color/detail_text_color"
         android:textStyle="bold" />
 
 </RelativeLayout>
