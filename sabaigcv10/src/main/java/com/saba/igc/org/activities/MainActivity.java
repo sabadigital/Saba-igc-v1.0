@@ -1,15 +1,7 @@
 package com.saba.igc.org.activities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -21,6 +13,13 @@ import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.application.SabaClient;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.SabaProgram;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import eu.erikw.PullToRefreshListView;
 
@@ -72,7 +71,6 @@ public class MainActivity extends Activity implements SabaServerResponseListener
 		try{
 			JSONArray upcomingProgramsJson = response.getJSONArray("entry");
 			ArrayList<SabaProgram> programs = SabaProgram.fromJSONArray(programName, upcomingProgramsJson);
-			Log.d("TotalItems received: ", programs.size()+"");
 			addAll(programs);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block

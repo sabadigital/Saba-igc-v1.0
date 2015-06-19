@@ -15,7 +15,7 @@ import com.saba.igc.org.models.DailyProgram;
 import java.util.List;
 
 public class DailyProgramDetailActivity extends AppCompatActivity {
-	protected ListView mLvDailyPrograms;
+	protected ListView 					mLvDailyPrograms;
 	protected DailyProgramsArrayAdapter mAdapter;
 	
 	@Override
@@ -50,11 +50,6 @@ public class DailyProgramDetailActivity extends AppCompatActivity {
 		// removing program at 0 index which has the date info. Don't want to display here...
 		if(dailyPrograms != null && dailyPrograms.size()>0)
 			dailyPrograms.remove(0);
-		
-//		String header = getIntent().getStringExtra("header");
-//		TextView tvHeader = (TextView)findViewById(R.id.tvHeader);
-//		if(tvHeader != null)
-//			tvHeader.setText(header);
 		
 		mAdapter = new DailyProgramsArrayAdapter(this, dailyPrograms);
 		mLvDailyPrograms.setAdapter(mAdapter);
