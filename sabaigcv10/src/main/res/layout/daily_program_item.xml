@@ -17,7 +17,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:paddingBottom="10dp"
-        android:layout_alignBottom="@+id/tvProgramDetail" />
+        android:layout_alignBottom="@+id/tvProgramDetail"
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/tvProgramDetail"
@@ -33,6 +34,6 @@
         android:layout_marginTop="10dp"
         android:paddingBottom="10dp"
         android:textColor="@color/detail_text_color"
-        />
+        android:textSize="16sp"/>
     <!--android:textIsSelectable="true"-->
 </RelativeLayout>
