@@ -26,7 +26,6 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 
 	public View onCreateView(LayoutInflater inflater,
 							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-		getActivity().setTitle("Announcements");
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 

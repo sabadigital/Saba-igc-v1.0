@@ -41,7 +41,6 @@ public class CommunityAnnouncementsFragment extends SabaBaseFragment {
 
 	public View onCreateView(LayoutInflater inflater,
 							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-		getActivity().setTitle("Community");
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 

@@ -8,8 +8,6 @@
             android:title="Weekly Schedule"
             android:panelFullBackground="#FFF000"
             android:checked="true"/>
-            app:itemBackground="@drawable/list_selector
-            app:itemTextColor="#009688"
         <item
             android:id="@+id/nav_upcoming_programs_fragment"
             android:icon="@drawable/ic_events_annucements"

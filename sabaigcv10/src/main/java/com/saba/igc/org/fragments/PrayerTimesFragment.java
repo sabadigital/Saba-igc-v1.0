@@ -71,7 +71,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public View onCreateView(LayoutInflater inflater,
 			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
-		getActivity().setTitle("Prayer Times");
+		getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 		setupUI(view);
 		refresh();
@@ -102,7 +102,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		//mLvPrayTimes 			= (eu.erikw.PullToRefreshListView) view.findViewById(R.id.lvPrayTimes);
 		mLvPrayTimes 			= (ListView) view.findViewById(R.id.lvPrayTimes);
 		mPrayTimesProgressBar 	= (ProgressBar) view.findViewById(R.id.prayTimesProgressBar);
-		
+
+		if(mPrayTimesProgressBar!=null)
+			mPrayTimesProgressBar.getIndeterminateDrawable().setColorFilter(0xFF446600, android.graphics.PorterDuff.Mode.MULTIPLY);
+
 		if(tvTodayDate != null){
 			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
 			tvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));

@@ -15,11 +15,13 @@
     </eu.erikw.PullToRefreshListView>
 
 	<ProgressBar
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:id="@+id/programsProgressBar"
-          style="@android:style/Widget.ProgressBar.Large"
-          android:layout_centerInParent="true"/>
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/programsProgressBar"
+		style="@android:style/Widget.Material.ProgressBar.Small"
+		android:layout_centerInParent="true"
+		android:progressDrawable="@drawable/green_progress"
+		tools:ignore="NewApi" />
 
 	<!--android:layout_below="@+id/tvLastRefreshed"-->
 	<!--<TextView-->

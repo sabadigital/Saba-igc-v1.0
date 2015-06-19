@@ -3,7 +3,6 @@ package com.saba.igc.org.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,9 +53,13 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	public View onCreateView(LayoutInflater inflater,
 			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
+		getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 		View view = inflater.inflate(R.layout.activity_main, container, false);
 		
 		mProgramsProgressBar = (ProgressBar) view.findViewById(R.id.programsProgressBar);
+		if(mProgramsProgressBar!=null)
+			mProgramsProgressBar.getIndeterminateDrawable().setColorFilter(0xFF446600, android.graphics.PorterDuff.Mode.MULTIPLY);
+
         mLvPrograms = (PullToRefreshListView) view.findViewById(R.id.lvUpcomingPrograms);
         //mTvLastRrefreshedValue = (TextView) view.findViewById(R.id.tvLastRrefreshedValue);
         
@@ -135,7 +138,6 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		} else {
 			programs = SabaProgram.fromJSONArray(mProgramName, response);
 		}
-		Log.d("TotalItems received: ", programs.size()+"");
 		addAll(programs);
 	}
 	

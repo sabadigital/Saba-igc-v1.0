@@ -31,7 +31,7 @@ public class ContactAndDirectionsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         super.onCreateView(inflater, container, savedInstanceState);
-        getActivity().setTitle("Contact and Directions");
+        getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_contact_and_directions, container, false);
