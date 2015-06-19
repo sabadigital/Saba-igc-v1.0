@@ -1,18 +1,18 @@
 package com.saba.igc.org.models;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 import com.activeandroid.query.Delete;
 import com.activeandroid.query.Select;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 //{
 //    "day": "Tuesday",
@@ -101,7 +101,6 @@ public class DailyProgram extends Model {
 		DailyProgram dailyProgram = new DailyProgram();
 		
 		try {
-			System.out.println("JSON: " + json.toString());
 			dailyProgram.mDay = json.getString("day");
 			dailyProgram.mEnglishDate = json.getString("englishdate").replace("'","");
 			dailyProgram.mHijriDate = json.getString("hijridate");
