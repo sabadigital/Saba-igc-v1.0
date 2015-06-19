@@ -26,6 +26,7 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 
 	public View onCreateView(LayoutInflater inflater,
 							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
+		getActivity().setTitle(""); // Need this to make it little compatible with API 16. might work for API 14 as well.
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 
@@ -33,7 +34,7 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mProgramName = PROGRAM_NAME;
-		// get programs from database. if program exists then display. otherwise make a network request.  
+		// get programs from database. if program exists then display. otherwise make a network request.
 		mPrograms =  SabaProgram.getSabaPrograms(PROGRAM_NAME);
 		if(mPrograms != null && mPrograms.size() == 0){
 			// make a network request to pull the data from server.
