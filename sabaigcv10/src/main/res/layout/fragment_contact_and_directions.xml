@@ -3,15 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginLeft = "12dp"
+    android:layout_marginBottom = "12dp"
+    android:layout_marginRight = "4dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin = "15dp">
-
-
+        android:layout_marginTop = "12dp"
+        android:layout_marginRight = "8dp"
+        android:weightSum="1">
+        
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -148,23 +152,12 @@
             android:clickable="true"
             android:textColor="@color/detail_text_color" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Map View"
-            android:id="@+id/tvMapView"
-            android:layout_alignStart="@+id/tvGeneralInquiries"
-            android:layout_below="@+id/addressValue"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_marginTop = "15dp"
-            android:layout_marginBottom = "35dp"
-            android:clickable="true"
-            android:enabled="true"
-            android:focusable="true"
-            android:focusableInTouchMode="false"
-            android:linksClickable="false"
-            android:textColor="@android:color/holo_green_dark"
-            android:textColorLink="@android:color/holo_green_dark"
-            android:textIsSelectable="true" />
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/map"
+            android:layout_marginTop="15dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_below="@+id/addressValue" />
     </LinearLayout>
 </ScrollView>
