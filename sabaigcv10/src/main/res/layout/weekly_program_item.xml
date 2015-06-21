@@ -24,35 +24,31 @@
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:text="@string/program_description"
-        android:layout_marginBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
+        android:layout_margin="10dp"
         android:ellipsize="end"
-        android:layout_alignLeft="@+id/ivProgram"
-        android:layout_below="@+id/ivProgram"
         android:layout_alignRight="@+id/tvProgramTitle"
-        android:layout_marginTop="2dp"
         android:maxLines="4"
         android:textColor="@color/text_color_selector"
         android:textColorLink="@android:color/holo_blue_light"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_below="@+id/tvProgramTitle"
+        android:layout_alignLeft="@+id/tvProgramTitle"
+        android:layout_alignStart="@+id/tvProgramTitle" />
     <!--android:textColor="@drawable/list_selector"-->
     <TextView
         android:id="@+id/tvProgramTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:text="@string/program_title"
         android:paddingLeft="10dp"
+        android:maxLines="2"
         android:textStyle="bold"
         android:layout_toRightOf="@+id/ivProgram"
-        android:layout_toEndOf="@+id/ivProgram"
-        android:layout_above="@+id/tvProgramDescription"
-        android:layout_alignTop="@+id/ivProgram"
         android:textColor="@color/text_color_selector"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/ivProgram"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
 

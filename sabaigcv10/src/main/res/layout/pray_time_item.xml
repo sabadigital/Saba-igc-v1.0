@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:gravity="left"
         android:text="@string/prayer_name"
-        android:textColor="@color/heading_text_color"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="?attr/colorPrimaryDark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="45dp"/>
