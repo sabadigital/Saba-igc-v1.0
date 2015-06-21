@@ -17,7 +17,7 @@ import android.os.IBinder;
 import android.provider.Settings;
 import android.util.Log;
 
-import com.saba.igc.org.listeners.LocationListenerForPrayers;
+import com.saba.igc.org.listeners.LocationChangeListener;
 
 public class PrayerLocation extends Service implements LocationListener {
     // The minimum distance to change Updates in meters
@@ -25,21 +25,20 @@ public class PrayerLocation extends Service implements LocationListener {
     // The minimum time between updates in milliseconds
     private static final long MIN_TIME_BW_UPDATES = 1000 * 30; // 30 seconds
 
-    private final Context mContext;
-    boolean mIsGPSEnabled = false;
-    boolean mIsNetworkEnabled = false;
-    boolean mCanGetLocation = false;
-    private LocationListenerForPrayers mLocationListenerForPrayers;
+    private final Context       mContext;
+    private boolean mIsGPSEnabled       = false;
+    private boolean mIsNetworkEnabled   = false;
+    private boolean mCanGetLocation     = false;
+    private LocationChangeListener mLocationChangeListener;
 
-    Location mLocation; // location
-    double mLatitude; // latitude
-    double mLongitude; // longitude
+    private Location mLocation; // location
+    private double mLatitude; // latitude
+    private double mLongitude; // longitude
 
-    protected LocationManager mLocationManager;
+    private LocationManager mLocationManager;
 
-    public PrayerLocation(Context context, LocationListenerForPrayers locationListenerForPrayers) {
+    public PrayerLocation(Context context) {
         this.mContext = context;
-        mLocationListenerForPrayers = locationListenerForPrayers;
         getLocation();
     }
 
@@ -106,18 +105,17 @@ public class PrayerLocation extends Service implements LocationListener {
      * Calling this function will stop using GPS in your app
      * */
     public void stopLocationService(){
-        mLocationListenerForPrayers = null;
+        mLocationChangeListener = null;
 
         if(mLocationManager != null){
             mLocationManager.removeUpdates(this);
         }
     }
 
-    public void setListener(LocationListenerForPrayers locationListenerForPrayers){
-        mLocationListenerForPrayers = locationListenerForPrayers;
+    public void setListener(LocationChangeListener locationChangeListener){
+        mLocationChangeListener = locationChangeListener;
         getLocation();
     }
-
 
     public double getLatitude(){
         if(mLocation != null){
@@ -179,8 +177,8 @@ public class PrayerLocation extends Service implements LocationListener {
     @Override
     public void onLocationChanged(Location location) {
         mLocation = location;
-        if(mLocationListenerForPrayers!=null)
-            mLocationListenerForPrayers.onLocationUpdated(location);
+        if(mLocationChangeListener!=null)
+            mLocationChangeListener.onLocationChanged(location);
     }
 
     @Override

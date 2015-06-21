@@ -12,7 +12,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.saba.igc.org.listeners.LocationListenerForPrayers;
+import com.saba.igc.org.listeners.LocationChangeListener;
 
 
 /**
@@ -28,12 +28,11 @@ public class LocationService extends Service implements LocationListener {
     private final long MIN_DISTANCE_FOR_UPDATE = 10;
     private final long MIN_TIME_FOR_UPDATE = 1000 * 60;
 
-    private LocationListenerForPrayers mLocationListenerForPrayers;
+    private LocationChangeListener mLocationChangeListener;
     private LocationManager mLocationManager;
 
-    public LocationService(Context context, LocationListenerForPrayers listener) {
+    public LocationService(Context context) {
     	mContext = context;
-        mLocationListenerForPrayers = listener;
         startLocationManager();
     }
 
@@ -75,7 +74,8 @@ public class LocationService extends Service implements LocationListener {
     @Override
     public void onLocationChanged(Location location) {
         Log.d(TAG, "onLocationChanged - Latitude: " + location.getLatitude() + " - Longitude: " + location.getLongitude());
-        mLocationListenerForPrayers.onLocationUpdated(location);
+        if(mLocationChangeListener != null)
+            mLocationChangeListener.onLocationChanged(location);
         mLocationManager.removeUpdates(this);
     }
 

@@ -1,6 +1,5 @@
 package com.saba.igc.org.fragments;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.location.Location;
@@ -26,7 +25,7 @@ import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.application.SabaClient;
 import com.saba.igc.org.extras.LocationBasedCityName;
 import com.saba.igc.org.extras.PrayerLocation;
-import com.saba.igc.org.listeners.LocationListenerForPrayers;
+import com.saba.igc.org.listeners.LocationChangeListener;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.PrayTime;
 import com.saba.igc.org.models.PrayerTimes;
@@ -49,11 +48,12 @@ import java.util.TimeZone;
  * @version 1.0
  */
 public class PrayerTimesFragment extends Fragment implements SabaServerResponseListener,
-																LocationListenerForPrayers{
+		LocationChangeListener {
 	
 	private final String TAG = "PrayerTimesFragment";
 	private SabaClient			mSabaClient;
 	private TextView 			mTvCityName;
+	private TextView 			mTvTodayDate;
 	private TextView 			mTvHijriDate;
 	private List<PrayTime> 		mPrayTimes;
 	private ListView	 		mLvPrayTimes;
@@ -65,7 +65,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mPrayerLocationService = new PrayerLocation(getActivity(), this);
+		mPrayerLocationService = new PrayerLocation(getActivity());
+		if(mPrayerLocationService != null)
+			mPrayerLocationService.setListener(this);
+
 		mSabaClient = SabaApplication.getSabaClient();
 
 		// helps to display menu in fragments.
@@ -79,7 +82,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 		setupUI(view);
-		refresh();
+		setDates();
 
 		return view;
 	}
@@ -104,7 +107,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private void setupUI(View view) {
 		mTvCityName 			= (TextView) view.findViewById(R.id.tvCityName);
 		mTvHijriDate			= (TextView) view.findViewById(R.id.tvHijriDate);
-		TextView tvTodayDate 	= (TextView) view.findViewById(R.id.tvEnglishDate);
+		mTvTodayDate		 	= (TextView) view.findViewById(R.id.tvEnglishDate);
 		//mLvPrayTimes 			= (eu.erikw.PullToRefreshListView) view.findViewById(R.id.lvPrayTimes);
 		mLvPrayTimes 			= (ListView) view.findViewById(R.id.lvPrayTimes);
 		mPrayTimesProgressBar 	= (ProgressBar) view.findViewById(R.id.prayTimesProgressBar);
@@ -112,10 +115,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		if(mPrayTimesProgressBar!=null)
 			mPrayTimesProgressBar.getIndeterminateDrawable().setColorFilter(0xFF446600, android.graphics.PorterDuff.Mode.MULTIPLY);
 
-		if(tvTodayDate != null){
-			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
-			tvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));
-		}
+
 	}
 
 	// mark for delete.
@@ -188,7 +188,13 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		return offset;
 	}
 
-	private void refresh(){
+	private void setDates(){
+		// Setting english date.
+		if(mTvTodayDate != null){
+			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
+			mTvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));
+		}
+
 		// get Hijri date.
 		String hijriDate = mSabaClient.getHijriDate();
 		if(mTvHijriDate != null){
@@ -199,21 +205,17 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		if(hijriDate==null || hijriDate.isEmpty()){
 			mSabaClient.getHijriDate("hijriDate", this);
 		}
+	}
 
+	private void getCurrentLocation(){
 		// check if GPS enabled
 		if(mPrayerLocationService.canGetLocation()){
 			Log.d(TAG, "refresh - Will try to get PrayerTimes for - Latitude: " +
 					mPrayerLocationService.getLatitude() + " - Longitude: " + mPrayerLocationService.getLongitude());
 
 			mPrayerLocationService.setListener(this);
-//			// initiate the request to get the city name based of current latitude and longitude.
-//			LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
-//			locationBasedCityName.getAddressFromLocation(mPrayerLocationService.getLatitude(), mPrayerLocationService.getLongitude(),
-//					getActivity(), new GeocoderHandler());
-
 		}
 	}
-
 	public void showAlert(){
 		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
@@ -299,19 +301,13 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				mLvPrayTimes.setAdapter(mAdapter);
 			}
 		} else {
-			// get the prayer times from web.
-			// check if GPS enabled
-			if(mPrayerLocationService.canGetLocation()){
-				Log.d(TAG, "getPrayerTimes - getting PrayerTimes for - Latitude: " +
-						mPrayerLocationService.getLatitude() + " - Longitude: " + mPrayerLocationService.getLongitude());
-
-				mPrayerTimesFromWebInProgress = true;
-				// getting prayer times from http://praytime.info/
-				mSabaClient.getPrayTimes(getCurrentTimezoneOffsetInMinutes(),
-										mPrayerLocationService.getLatitude(),
-										mPrayerLocationService.getLongitude(),
-										this);
-			}
+			// Now, its time to get the prayer times from web.
+			// It has two steps.
+			// 1- Get the current loction,lat-lon then get the current city (we want to display the city on UI)
+			// 2- Start network request to get the prayer times.
+			// Once, we will get the date, pasrse it and display on UI.
+			// getCurrentLocation(), takes care of if GPS is enabled.
+			getCurrentLocation();
 		}
 	}
 
@@ -330,8 +326,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		return PrayerTimes.getTodayPrayerTimes(city, sb.toString());
 	}
 
-	public void onLocationUpdated(Location newLocation){
-		Log.d(TAG, "LocationListenerForPrayers::onPositionChanged - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
+	public void onLocationChanged(Location newLocation){
+		Log.d(TAG, "LocationListenerForPrayers::onLocationChanged - Will try to get cityName and State from GeoCoder - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
 		if(mPrayerLocationService!=null)
 			mPrayerLocationService.stopLocationService();
 
@@ -341,46 +337,22 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				getActivity(), new GeocoderHandler());
 	}
 
-	@Override
-	public void onAttach(Activity activity) {
-		super.onAttach(activity);
 
-//		// construct a new instance of SimpleLocation
-//		mLocation = new SimpleLocation(activity, /*requireFine*/false, /*passive*/true, /*interval*/0, false);
-//		mLocation.setListener(this);
-//
-//		// if we can't access the location yet
-//		if (!mLocation.hasLocationEnabled()) {
-//			// ask the user to enable location access
-//			SimpleLocation.openSettings(activity);
-//		}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+
+		// make the device update its location
+		mPrayerLocationService.setListener(this);
 	}
 
-//	@Override
-//	public void onResume() {
-//		super.onResume();
-//
-//		// make the device update its location
-//		mLocation.beginUpdates();
-//
-//		// ...
-//	}
-//
-//	@Override
-//	public void onPause() {
-//		// stop location updates (saves battery)
-//		mLocation.endUpdates();
-//		super.onPause();
-//	}
-
-//	@Override
-//	public void onClick(View v) {
-//		final double latitude = mLocation.getLatitude();
-//		final double longitude = mLocation.getLatitude();
-//
-//		// TODO
-//	}
-
+	@Override
+	public void onPause() {
+		// stop location updates (saves battery)
+		mPrayerLocationService.stopLocationService();
+		super.onPause();
+	}
 
 	//------ refresh menu item.
 	@Override
@@ -399,7 +371,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 					mAdapter.clear();
 				mTvHijriDate.setText("");
 				mTvCityName.setText("");
-				refresh();
+				setDates();
+
+				// Kicking off the procedure to get the location and then prayer times.
+				getCurrentLocation();
 				return true;
 		}
 
