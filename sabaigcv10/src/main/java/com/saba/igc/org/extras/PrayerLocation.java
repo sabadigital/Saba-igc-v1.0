@@ -21,9 +21,9 @@ import com.saba.igc.org.listeners.LocationChangeListener;
 
 public class PrayerLocation extends Service implements LocationListener {
     // The minimum distance to change Updates in meters
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 5; // 10 meters
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 0; // 10 meters
     // The minimum time between updates in milliseconds
-    private static final long MIN_TIME_BW_UPDATES = 1000 * 30; // 30 seconds
+    private static final long MIN_TIME_BW_UPDATES = 1000 * 1; // 30 seconds
 
     private final Context       mContext;
     private boolean mIsGPSEnabled       = false;
@@ -35,6 +35,7 @@ public class PrayerLocation extends Service implements LocationListener {
     private double mLatitude; // latitude
     private double mLongitude; // longitude
 
+    private int updatesCount = 0;
     private LocationManager mLocationManager;
 
     public PrayerLocation(Context context) {
@@ -105,6 +106,7 @@ public class PrayerLocation extends Service implements LocationListener {
      * Calling this function will stop using GPS in your app
      * */
     public void stopLocationService(){
+        updatesCount = 0;
         mLocationChangeListener = null;
 
         if(mLocationManager != null){
@@ -113,6 +115,7 @@ public class PrayerLocation extends Service implements LocationListener {
     }
 
     public void setListener(LocationChangeListener locationChangeListener){
+        updatesCount = 0;
         mLocationChangeListener = locationChangeListener;
         getLocation();
     }
@@ -176,9 +179,12 @@ public class PrayerLocation extends Service implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-        mLocation = location;
-        if(mLocationChangeListener!=null)
-            mLocationChangeListener.onLocationChanged(location);
+        updatesCount++;
+        if(updatesCount == 2) {
+            mLocation = location;
+            if (mLocationChangeListener != null)
+                mLocationChangeListener.onLocationChanged(location);
+        }
     }
 
     @Override

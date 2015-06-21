@@ -307,7 +307,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			// 2- Start network request to get the prayer times.
 			// Once, we will get the date, pasrse it and display on UI.
 			// getCurrentLocation(), takes care of if GPS is enabled.
-			getCurrentLocation();
+
+			// we need to fix this, actually, we have the city but we want now to to get the prayer times only.
+			// Rather going through location, we should request the prayer times:
+			mSabaClient.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), mPrayerLocationService.getLatitude(), mPrayerLocationService.getLongitude(), this);
+			//getCurrentLocation();
 		}
 	}
 
