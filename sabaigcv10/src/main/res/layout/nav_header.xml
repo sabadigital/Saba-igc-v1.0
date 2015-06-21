@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SABA Islamic Center"
-            android:textColor="#d4d4d4"
+            android:textColor="?attr/colorAccent"
             android:textSize="16sp"
             android:textStyle="bold"/>
 

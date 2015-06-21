@@ -57,5 +57,6 @@
     <string name="saba_address_1"><u>4415 Fortran Ct.</u></string>
     <string name="saba_address_2"><u>San Jose, CA 95134</u></string>
 
+    <string name="saba_address_with_phone"><![CDATA[4415 Fortran Ct. San Jose, CA 95134. <br />(408-946-5700)]]></string>
 </resources>
 

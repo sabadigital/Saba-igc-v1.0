@@ -38,6 +38,7 @@ public class DailyProgramDetailActivity extends AppCompatActivity {
 			String header = getIntent().getStringExtra("header");
 			tvTitle.setText(header);
 			toolbar.addView(view);
+			setTitle(""); // to make API 16 compatible.
 		}
 	}
 

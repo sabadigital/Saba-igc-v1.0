@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" 
-    android:descendantFocusability="blocksDescendants">
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/item_color_selector">
     <!--android:background="@drawable/list_row_background"> -->
 
     <ImageView
@@ -32,11 +33,11 @@
         android:layout_below="@+id/ivProgram"
         android:layout_alignRight="@+id/tvProgramTitle"
         android:layout_marginTop="2dp"
-        android:maxLines="3"
-        android:textColor="@color/detail_text_color"
+        android:maxLines="4"
+        android:textColor="@color/text_color_selector"
         android:textColorLink="@android:color/holo_blue_light"
         android:textSize="16sp"/>
-
+    <!--android:textColor="@drawable/list_selector"-->
     <TextView
         android:id="@+id/tvProgramTitle"
         android:layout_width="wrap_content"
@@ -50,7 +51,7 @@
         android:layout_toEndOf="@+id/ivProgram"
         android:layout_above="@+id/tvProgramDescription"
         android:layout_alignTop="@+id/ivProgram"
-        android:textColor="@color/detail_text_color"
+        android:textColor="@color/text_color_selector"
         android:textSize="16sp"/>
 
 </RelativeLayout>

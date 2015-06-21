@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
-
+	<!--android:background="#c0c0c0"-->
     <eu.erikw.PullToRefreshListView
         android:id="@+id/lvUpcomingPrograms"
         android:layout_width="wrap_content"
@@ -13,7 +13,8 @@
 		android:dividerHeight="0.1dp"
 		android:listSelector="#00000000">
     </eu.erikw.PullToRefreshListView>
-
+	<!--android:background="#c0c0c0"-->
+	<!--android:listSelector="#00000000"-->
 	<ProgressBar
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"

@@ -64,3 +64,46 @@ public class LocationBasedCityName {
         thread.start();
     }
 }
+
+
+//public void getCityName(){
+//    if (sb.length() == 0)
+//    {
+//        HttpGet httpGet = new HttpGet(
+//
+//                "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitude+ "," +longitude);
+//        HttpClient client = new DefaultHttpClient();
+//        HttpResponse response;
+//        StringBuilder stringBuilder = new StringBuilder();
+//
+//        try {
+//            response = client.execute(httpGet);
+//            HttpEntity entity = response.getEntity();
+//            InputStream stream = entity.getContent();
+//            int b;
+//            while ((b = stream.read()) != -1) {
+//                stringBuilder.append((char) b);
+//            }
+//        } catch (ClientProtocolException e) {
+//        } catch (IOException e) {
+//        }
+//
+//        JSONObject jsonObject = new JSONObject();
+//        try {
+//            jsonObject = new JSONObject(stringBuilder.toString());
+//            if (jsonObject.getString("status").equals("OK")) {
+//                jsonObject = jsonObject.getJSONArray("results")
+//                        .getJSONObject(0);
+//
+//                jsonObject = jsonObject.getJSONObject("address_components");
+////                            jsonObject = jsonObject.getJSONObject("location");
+//
+//                Log.d("MAPSAPI", jsonObject.toString());
+//            }
+//
+//        } catch (Exception e) {
+//            Log.e(TAG, e.getMessage(), e);
+//        }
+//
+//    }
+//}

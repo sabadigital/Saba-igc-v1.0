@@ -15,8 +15,8 @@
         android:textColor="@color/heading_text_color"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp" 
-        android:layout_marginStart="45dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="45dp"/>
 
     <TextView
         android:id="@+id/tvPrayerTime"
@@ -24,12 +24,12 @@
         android:layout_height="wrap_content"
         android:textColor="@color/detail_text_color"
         android:gravity="right"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:text="@string/prayer_time"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginEnd="45dp"/>
+        android:layout_marginRight="45dp"/>
 
 </RelativeLayout>

@@ -15,7 +15,7 @@
         android:layout_marginTop = "12dp"
         android:layout_marginRight = "8dp"
         android:weightSum="1">
-        
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4415 Fortran Ct. San Jose, CA 95134 (408-946-5700)"
+            android:text="@string/saba_address_with_phone"
             android:textColorLink="@android:color/holo_green_dark"
             android:id="@+id/addressValue"
             android:layout_alignStart="@+id/tvGeneralInquiries"
@@ -154,7 +154,7 @@
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="500dp"
             android:id="@+id/map"
             android:layout_marginTop="15dp"
             android:name="com.google.android.gms.maps.SupportMapFragment"

@@ -1,5 +1,7 @@
 package com.saba.igc.org.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
@@ -207,6 +209,26 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		}
 	}
 
+	public void showAlert(){
+		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+
+		// Setting Dialog Title
+		alertDialog.setTitle("Couldn't find your city.");
+
+		// Setting Dialog Message
+		alertDialog.setMessage("Make sure, you are connected to internet and GPS is working. Please try again in few minutes.");
+
+		// on pressing OK button
+		alertDialog.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.cancel();
+			}
+		});
+
+		// Showing Alert Message
+		alertDialog.show();
+	}
+
 	private class GeocoderHandler extends Handler {
         @Override
         public void handleMessage(Message message) {
@@ -225,6 +247,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 			if(cityName == null || cityName.isEmpty()) {
 				mPrayTimesProgressBar.setVisibility(View.GONE);
+				showAlert();
 				return;
 			}
 

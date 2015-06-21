@@ -4,7 +4,7 @@
     <color name="selected_color">#666666</color>
     <color name="heading_text_color">#191916</color>
     <color name="detail_text_color">#323232</color>
-
-
+    <color name="gray_color">#c6c6c6</color>
+    <color name="background_color">#FFFFFF</color>
 </resources>
 

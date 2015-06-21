@@ -46,7 +46,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	private DrawerLayout 			mDrawer;
 	private Toolbar 				mToolbar;
 	private TextView 				mTvToolbarTitle;
-	private NavigationView 			mNvDrawer;
+	private NavigationView 			mNavigationView;
 	private ActionBarDrawerToggle 	mDrawerToggle;
 	private final String TAG = 		"MainActivity1";
 
@@ -80,13 +80,14 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		}
 
 		// Find our drawer view
-		mNvDrawer = (NavigationView) findViewById(id.nvView);
+		mNavigationView = (NavigationView) findViewById(id.nvView);
 
 		// Setup drawer view
-		setupDrawerContent(mNvDrawer);
+		setupDrawerContent(mNavigationView);
 
 		setDates();
-
+		//ColorStateList
+		//mNavigationView.setItemBackground();
 		// setting WeeklyPrograms displayed on startup. If we want to display something else on startup, change here.
 		Fragment fragment = null;
 		try {
@@ -113,12 +114,26 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			}
 		};
 	}
-
+//	@Override
+//	public boolean onOptionsItemSelected(MenuItem item) {
+//		// Handle item selection
+//		switch (item.getItemId()) {
+//			case R.id.new_game:
+//				newGame();
+//				return true;
+//			case R.id.help:
+//				showHelp();
+//				return true;
+//			default:
+//				return super.onOptionsItemSelected(item);
+//		}
+//	}
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (mDrawerToggle.onOptionsItemSelected(item)) {
 			return true;
 		}
+
 		return super.onOptionsItemSelected(item);
 	}
 
@@ -160,11 +175,11 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 				break;
 			case id.nav_upcoming_programs_fragment:
 				fragmentClass = UpcomingProgramsFragment.class;
-				mTvToolbarTitle.setText("Upcoming Programs");
+				mTvToolbarTitle.setText("Announcements");
 				break;
 			case id.nav_community_announcements:
 				fragmentClass = CommunityAnnouncementsFragment.class;
-				mTvToolbarTitle.setText("Community Announcements");
+				mTvToolbarTitle.setText("Community");
 				break;
 			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
@@ -195,7 +210,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	}
 
 	private void setDates(){
-		TextView tvHijriDate = (TextView)mNvDrawer.findViewById(id.tvHijriOnHeader);
+		TextView tvHijriDate = (TextView) mNavigationView.findViewById(id.tvHijriOnHeader);
 
 		// get Hijri date.
 		String hijriDate = SabaApplication.getSabaClient().getHijriDate();
@@ -208,7 +223,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			SabaApplication.getSabaClient().getHijriDate("hijriDate", MainActivity1.this);
 		}
 
-		TextView tvTodayDate = (TextView)mNvDrawer.findViewById(id.tvEnglishDateOnHeader);
+		TextView tvTodayDate = (TextView) mNavigationView.findViewById(id.tvEnglishDateOnHeader);
 		if(tvTodayDate != null){
 			DateFormat dateInstance = SimpleDateFormat.getDateInstance(DateFormat.FULL);
 			tvTodayDate.setText(dateInstance.format(Calendar.getInstance().getTime()));

@@ -6,9 +6,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -60,7 +62,11 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
             }
         };
         getChildFragmentManager().beginTransaction().add(R.id.map, mMapFragment).commit();
-
+        String address = getResources().getString(R.string.saba_address_with_phone);
+        TextView tvAddress = (TextView) view.findViewById(R.id.addressValue);
+        if(address!=null) {
+            tvAddress.setText(Html.fromHtml(address));
+        }
 //
 //        TextView tvMapView = (TextView) view.findViewById(R.id.tvMapView);
 //
