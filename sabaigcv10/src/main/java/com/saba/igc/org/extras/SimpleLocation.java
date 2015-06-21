@@ -1,5 +1,7 @@
 package com.saba.igc.org.extras;
 
+//https://github.com/delight-im/Android-SimpleLocation
+
 /**
  * Copyright 2014 www.delight.im <info@delight.im>
  *
@@ -16,17 +18,18 @@ package com.saba.igc.org.extras;
  * limitations under the License.
  */
 
-import java.util.Random;
-
-import android.content.Context;
-import android.content.Intent;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.os.Bundle;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
+import java.util.Random;
 import android.provider.Settings;
+import android.content.Intent;
+import android.os.Bundle;
+import android.location.LocationListener;
+import android.location.Location;
+import android.content.Context;
+import android.location.LocationManager;
 
 /** Utility class for easy access to the device location on Android */
 public class SimpleLocation {
@@ -87,6 +90,14 @@ public class SimpleLocation {
 
 	}
 
+	/** Callback that can be implemented in order to listen for events */
+	public static interface Listener {
+
+		/** Called whenever the device's position changes so that you can call {@link SimpleLocation#getPosition()} */
+		public void onPositionChanged();
+
+	}
+
 	/** The internal name of the provider for the coarse location */
 	private static final String PROVIDER_COARSE = LocationManager.NETWORK_PROVIDER;
 	/** The internal name of the provider for the fine location */
@@ -114,12 +125,15 @@ public class SimpleLocation {
 	private final boolean mPassive;
 	/** The internal after which new location updates are requested (in milliseconds) where longer intervals save battery */
 	private final long mInterval;
+	/** Whether to require a new location (`true`) or accept old (last known) locations as well (`false`) */
+	private final boolean mRequireNewLocation;
 	/** The blur radius (in meters) that will be used to blur the location for privacy reasons */
 	private int mBlurRadius;
 	/** The LocationListener instance used internally to listen for location updates */
 	private LocationListener mLocationListener;
 	/** The current location with latitude, longitude, speed and altitude */
 	private Location mPosition;
+	private Listener mListener;
 
 	/**
 	 * Constructs a new instance with default granularity, mode and interval
@@ -160,13 +174,38 @@ public class SimpleLocation {
 	 * @param interval the interval to request new location updates after (in milliseconds) where longer intervals save battery
 	 */
 	public SimpleLocation(final Context context, final boolean requireFine, final boolean passive, final long interval) {
+		this(context, requireFine, passive, interval, false);
+	}
+
+	/**
+	 * Constructs a new instance
+	 *
+	 * @param context the Context reference to get the system service from
+	 * @param requireFine whether to require fine location or use coarse location
+	 * @param passive whether to use passive mode (to save battery) or active mode
+	 * @param interval the interval to request new location updates after (in milliseconds) where longer intervals save battery
+	 * @param requireNewLocation whether to require a new location (`true`) or accept old (last known) locations as well (`false`)
+	 */
+	public SimpleLocation(final Context context, final boolean requireFine, final boolean passive, final long interval, final boolean requireNewLocation) {
 		mLocationManager = (LocationManager) context.getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 		mRequireFine = requireFine;
 		mPassive = passive;
 		mInterval = interval;
+		mRequireNewLocation = requireNewLocation;
 
-		mPosition = getCachedPosition();
-		cachePosition();
+		if (!mRequireNewLocation) {
+			mPosition = getCachedPosition();
+			cachePosition();
+		}
+	}
+
+	/**
+	 * Attaches or detaches a listener that informs about certain events
+	 *
+	 * @param listener the `SimpleLocation.Listener` instance to attach or `null` to detach
+	 */
+	public void setListener(final Listener listener) {
+		mListener = listener;
 	}
 
 	/**
@@ -175,21 +214,15 @@ public class SimpleLocation {
 	 * @return whether location access is enabled or not
 	 */
 	public boolean hasLocationEnabled() {
-		if (mRequireFine) {
-			return mLocationManager.isProviderEnabled(getProviderName());
+		return hasLocationEnabled(getProviderName());
+	}
+
+	private boolean hasLocationEnabled(final String providerName) {
+		try {
+			return mLocationManager.isProviderEnabled(providerName);
 		}
-		else {
-			if (mLocationManager.isProviderEnabled(getProviderName(false))) {
-				return true;
-			}
-			else {
-				try {
-					return mLocationManager.isProviderEnabled(getProviderName(true));
-				}
-				catch (Exception e) {
-					return false;
-				}
-			}
+		catch (Exception e) {
+			return false;
 		}
 	}
 
@@ -199,7 +232,9 @@ public class SimpleLocation {
 			endUpdates();
 		}
 
-		mPosition = getCachedPosition();
+		if (!mRequireNewLocation) {
+			mPosition = getCachedPosition();
+		}
 
 		mLocationListener = createLocationListener();
 		mLocationManager.requestLocationUpdates(getProviderName(), mInterval, 0, mLocationListener);
@@ -210,6 +245,7 @@ public class SimpleLocation {
 		if (mLocationListener != null) {
 			mLocationManager.removeUpdates(mLocationListener);
 			mLocationListener = null;
+			mListener = null;
 		}
 	}
 
@@ -340,6 +376,10 @@ public class SimpleLocation {
 			public void onLocationChanged(Location location) {
 				mPosition = location;
 				cachePosition();
+
+				if (mListener != null) {
+					mListener.onPositionChanged();
+				}
 			}
 
 			@Override
@@ -370,7 +410,10 @@ public class SimpleLocation {
 	 * @return the provider's name
 	 */
 	private String getProviderName(final boolean requireFine) {
+		// if fine location (GPS) is required
 		if (requireFine) {
+			// we just have to decide between active and passive mode
+
 			if (mPassive) {
 				return PROVIDER_FINE_PASSIVE;
 			}
@@ -378,12 +421,32 @@ public class SimpleLocation {
 				return PROVIDER_FINE;
 			}
 		}
+		// if both fine location (GPS) and coarse location (network) are acceptable
 		else {
-			if (mPassive) {
-				throw new RuntimeException("There is no passive provider for the coarse location");
+			// if we can use coarse location (network)
+			if (hasLocationEnabled(PROVIDER_COARSE)) {
+				// if we wanted passive mode
+				if (mPassive) {
+					// throw an exception because this is not possible
+					throw new RuntimeException("There is no passive provider for the coarse location");
+				}
+				// if we wanted active mode
+				else {
+					// use coarse location (network)
+					return PROVIDER_COARSE;
+				}
 			}
+			// if coarse location (network) is not available
 			else {
-				return PROVIDER_COARSE;
+				// if we can use fine location (GPS)
+				if (hasLocationEnabled(PROVIDER_FINE) || hasLocationEnabled(PROVIDER_FINE_PASSIVE)) {
+					// we have to use fine location (GPS) because coarse location (network) was not available
+					return getProviderName(true);
+				}
+				// no location is available so return the provider with the minimum permission level
+				else {
+					return PROVIDER_COARSE;
+				}
 			}
 		}
 	}
@@ -398,7 +461,12 @@ public class SimpleLocation {
 			return mCachedPosition;
 		}
 		else {
-			return mLocationManager.getLastKnownLocation(getProviderName());
+			try {
+				return mLocationManager.getLastKnownLocation(getProviderName());
+			}
+			catch (Exception e) {
+				return null;
+			}
 		}
 	}
 
@@ -415,7 +483,8 @@ public class SimpleLocation {
 	 * @param context the Context reference to start the Intent from
 	 */
 	public static void openSettings(final Context context) {
-		context.startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+		showSettingsAlert(context);
+
 	}
 
 	/**
@@ -524,4 +593,35 @@ public class SimpleLocation {
 		return results[0];
 	}
 
+	/**
+	 * Function to show settings alert dialog
+	 * On pressing Settings button will lauch Settings Options
+	 * */
+	public static void showSettingsAlert(final Context context){
+		AlertDialog.Builder alertDialog = new AlertDialog.Builder(context);
+
+		// Setting Dialog Title
+		alertDialog.setTitle("Location Settings");
+
+		// Setting Dialog Message
+		alertDialog.setMessage("Location is NOT enabled. Do you want to go to Location Settings option?");
+
+		// On pressing Settings button
+		alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog,int which) {
+				Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+				context.startActivity(intent);
+			}
+		});
+
+		// on pressing cancel button
+		alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.cancel();
+			}
+		});
+
+		// Showing Alert Message
+		alertDialog.show();
+	}
 }

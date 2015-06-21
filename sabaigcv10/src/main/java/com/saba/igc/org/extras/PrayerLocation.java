@@ -17,9 +17,11 @@ import android.os.IBinder;
 import android.provider.Settings;
 import android.util.Log;
 
+import com.saba.igc.org.listeners.LocationListenerForPrayers;
+
 public class PrayerLocation extends Service implements LocationListener {
     // The minimum distance to change Updates in meters
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 50; // 10 meters
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 5; // 10 meters
     // The minimum time between updates in milliseconds
     private static final long MIN_TIME_BW_UPDATES = 1000 * 30; // 30 seconds
 
@@ -27,6 +29,7 @@ public class PrayerLocation extends Service implements LocationListener {
     boolean mIsGPSEnabled = false;
     boolean mIsNetworkEnabled = false;
     boolean mCanGetLocation = false;
+    private LocationListenerForPrayers mLocationListenerForPrayers;
 
     Location mLocation; // location
     double mLatitude; // latitude
@@ -34,8 +37,9 @@ public class PrayerLocation extends Service implements LocationListener {
 
     protected LocationManager mLocationManager;
 
-    public PrayerLocation(Context context) {
+    public PrayerLocation(Context context, LocationListenerForPrayers locationListenerForPrayers) {
         this.mContext = context;
+        mLocationListenerForPrayers = locationListenerForPrayers;
         getLocation();
     }
 
@@ -102,10 +106,18 @@ public class PrayerLocation extends Service implements LocationListener {
      * Calling this function will stop using GPS in your app
      * */
     public void stopLocationService(){
+        mLocationListenerForPrayers = null;
+
         if(mLocationManager != null){
             mLocationManager.removeUpdates(this);
         }
     }
+
+    public void setListener(LocationListenerForPrayers locationListenerForPrayers){
+        mLocationListenerForPrayers = locationListenerForPrayers;
+        getLocation();
+    }
+
 
     public double getLatitude(){
         if(mLocation != null){
@@ -167,6 +179,8 @@ public class PrayerLocation extends Service implements LocationListener {
     @Override
     public void onLocationChanged(Location location) {
         mLocation = location;
+        if(mLocationListenerForPrayers!=null)
+            mLocationListenerForPrayers.onLocationUpdated(location);
     }
 
     @Override
@@ -185,5 +199,4 @@ public class PrayerLocation extends Service implements LocationListener {
     public IBinder onBind(Intent arg0) {
         return null;
     }
-
 }

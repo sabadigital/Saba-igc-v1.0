@@ -1,5 +1,6 @@
 package com.saba.igc.org.fragments;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.location.Location;
@@ -47,7 +48,8 @@ import java.util.TimeZone;
  * @create December, 2014
  * @version 1.0
  */
-public class PrayerTimesFragment extends Fragment implements SabaServerResponseListener, LocationListenerForPrayers{
+public class PrayerTimesFragment extends Fragment implements SabaServerResponseListener,
+																LocationListenerForPrayers{
 	
 	private final String TAG = "PrayerTimesFragment";
 	private SabaClient			mSabaClient;
@@ -59,10 +61,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private ProgressBar 		mPrayTimesProgressBar;
 	private PrayerLocation 		mPrayerLocationService;
 	private boolean				mPrayerTimesFromWebInProgress;
+	//private SimpleLocation 		mLocation;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mPrayerLocationService = new PrayerLocation(getActivity());
+		mPrayerLocationService = new PrayerLocation(getActivity(), this);
 		mSabaClient = SabaApplication.getSabaClient();
 
 		// helps to display menu in fragments.
@@ -77,6 +80,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 		setupUI(view);
 		refresh();
+
 		return view;
 	}
 
@@ -116,17 +120,17 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	// mark for delete.
 	//Implementation of LocationListenerForPrayers.
-	public void locationUpdated(Location newLocation)
-	{
-		Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
-		// getting prayer times from http://praytime.info/
-		mSabaClient.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), newLocation.getLatitude(), newLocation.getLongitude(), this);
-
-		// initiate the request to get the city name based of current latitude and longitude.
-		LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
-		locationBasedCityName.getAddressFromLocation(newLocation.getLatitude(), newLocation.getLongitude(),
-				getActivity(), new GeocoderHandler());
-	}
+//	public void locationUpdated(Location newLocation)
+//	{
+//		Log.d(TAG, "LocationListenerForPrayers::locationUpdated - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
+//		// getting prayer times from http://praytime.info/
+//		mSabaClient.getPrayTimes(getCurrentTimezoneOffsetInMinutes(), newLocation.getLatitude(), newLocation.getLongitude(), this);
+//
+//		// initiate the request to get the city name based of current latitude and longitude.
+//		LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
+//		locationBasedCityName.getAddressFromLocation(newLocation.getLatitude(), newLocation.getLongitude(),
+//				getActivity(), new GeocoderHandler());
+//	}
 
     @Override
 	public void processJsonObject(String programName, JSONObject response) {
@@ -201,10 +205,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			Log.d(TAG, "refresh - Will try to get PrayerTimes for - Latitude: " +
 					mPrayerLocationService.getLatitude() + " - Longitude: " + mPrayerLocationService.getLongitude());
 
-			// initiate the request to get the city name based of current latitude and longitude.
-			LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
-			locationBasedCityName.getAddressFromLocation(mPrayerLocationService.getLatitude(), mPrayerLocationService.getLongitude(),
-					getActivity(), new GeocoderHandler());
+			mPrayerLocationService.setListener(this);
+//			// initiate the request to get the city name based of current latitude and longitude.
+//			LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
+//			locationBasedCityName.getAddressFromLocation(mPrayerLocationService.getLatitude(), mPrayerLocationService.getLongitude(),
+//					getActivity(), new GeocoderHandler());
 
 		}
 	}
@@ -324,6 +329,58 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 		return PrayerTimes.getTodayPrayerTimes(city, sb.toString());
 	}
+
+	public void onLocationUpdated(Location newLocation){
+		Log.d(TAG, "LocationListenerForPrayers::onPositionChanged - Will try to get PrayerTimes for - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
+		if(mPrayerLocationService!=null)
+			mPrayerLocationService.stopLocationService();
+
+		// initiate the request to get the city name based of current latitude and longitude.
+		LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
+		locationBasedCityName.getAddressFromLocation(newLocation.getLatitude(), newLocation.getLongitude(),
+				getActivity(), new GeocoderHandler());
+	}
+
+	@Override
+	public void onAttach(Activity activity) {
+		super.onAttach(activity);
+
+//		// construct a new instance of SimpleLocation
+//		mLocation = new SimpleLocation(activity, /*requireFine*/false, /*passive*/true, /*interval*/0, false);
+//		mLocation.setListener(this);
+//
+//		// if we can't access the location yet
+//		if (!mLocation.hasLocationEnabled()) {
+//			// ask the user to enable location access
+//			SimpleLocation.openSettings(activity);
+//		}
+	}
+
+//	@Override
+//	public void onResume() {
+//		super.onResume();
+//
+//		// make the device update its location
+//		mLocation.beginUpdates();
+//
+//		// ...
+//	}
+//
+//	@Override
+//	public void onPause() {
+//		// stop location updates (saves battery)
+//		mLocation.endUpdates();
+//		super.onPause();
+//	}
+
+//	@Override
+//	public void onClick(View v) {
+//		final double latitude = mLocation.getLatitude();
+//		final double longitude = mLocation.getLatitude();
+//
+//		// TODO
+//	}
+
 
 	//------ refresh menu item.
 	@Override
