@@ -11,13 +11,14 @@
         android:layout_alignParentStart="true"
         android:text="@string/program_time"
         android:textStyle="bold"
-        android:textColor="#818181"
+        android:textColor="#797979"
         android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:paddingBottom="10dp"
         android:layout_alignBottom="@+id/tvProgramDetail"
+        android:layout_alignParentLeft="true"
         android:textSize="16sp"/>
 
     <TextView
@@ -25,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:linksClickable="true"
-        android:textStyle="bold"
         android:text="@string/program_detail"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"

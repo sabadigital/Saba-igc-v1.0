@@ -27,7 +27,7 @@
         android:textIsSelectable="true"
         android:textColor="@color/detail_text_color"
         android:textColorLink="@android:color/holo_blue_light"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/tvProgramTitle"
