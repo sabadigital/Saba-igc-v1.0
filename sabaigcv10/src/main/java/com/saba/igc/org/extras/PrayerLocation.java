@@ -179,12 +179,9 @@ public class PrayerLocation extends Service implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-        updatesCount++;
-        if(updatesCount == 2) {
-            mLocation = location;
-            if (mLocationChangeListener != null)
-                mLocationChangeListener.onLocationChanged(location);
-        }
+        mLocation = location;
+        if (mLocationChangeListener != null)
+            mLocationChangeListener.onLocationChanged(location);
     }
 
     @Override
