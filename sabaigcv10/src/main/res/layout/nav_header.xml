@@ -54,18 +54,16 @@
             android:layout_gravity="left"
             android:text="@string/english_date"
             android:textColor="?attr/colorAccent"
-            android:textStyle="bold"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
 
             <TextView
             android:id="@+id/tvHijriOnHeader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:textStyle="bold"
             android:text="@string/hijri_date"
             android:textColor="?attr/colorAccent"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
 
         </LinearLayout>
     </RelativeLayout>
