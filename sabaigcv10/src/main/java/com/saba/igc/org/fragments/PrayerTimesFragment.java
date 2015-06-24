@@ -28,6 +28,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import com.google.android.gms.location.LocationAvailability;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.saba.igc.org.R;
@@ -39,6 +40,7 @@ import com.saba.igc.org.extras.LocationBasedCityName;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.PrayTime;
 import com.saba.igc.org.models.PrayerTimes;
+import com.google.android.gms.location.LocationListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -55,12 +57,12 @@ import java.util.TimeZone;
 
 /**
  * @author Syed Aftab Naqvi
- * @create December, 2014
+ * December, 2014
  * @version 1.0
  */
 public class PrayerTimesFragment extends Fragment implements SabaServerResponseListener,
 		ConnectionCallbacks,
-		OnConnectionFailedListener {
+		OnConnectionFailedListener, LocationListener{
 
 	private SabaClient			mSabaClient;
 	private TextView 			mTvCityName;
@@ -73,20 +75,14 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private boolean				mPrayerTimesFromWebInProgress;
 
 	// ======= Google Play Services..
-	// LogCat tag
 	private static final String TAG = MainActivity.class.getSimpleName();
 	private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
 	private Location mLastLocation;
+	private boolean	 mAlreadyGotLocationUpdate = false;
 
 	// Google client to interact with Google API
 	private GoogleApiClient mGoogleApiClient;
-
 	private LocationRequest mLocationRequest;
-
-	// Location updates intervals in sec
-	private final int UPDATE_INTERVAL = 10000; // 10 sec
-	private final int FATEST_INTERVAL = 5000; // 5 sec
-	private final int DISPLACEMENT = 5; // 5 meters
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -98,6 +94,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			// Building the GoogleApi client
 			buildGoogleApiClient();
 			createLocationRequest();
+
+			if (mGoogleApiClient != null) {
+				mGoogleApiClient.connect();
+			}
 		}
 
 		// helps to display menu in fragments.
@@ -126,8 +126,6 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 		if(mPrayTimesProgressBar!=null)
 			mPrayTimesProgressBar.getIndeterminateDrawable().setColorFilter(0xFF446600, android.graphics.PorterDuff.Mode.MULTIPLY);
-
-
 	}
 
     @Override
@@ -150,12 +148,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				}
 			} catch (JSONException e) {
 				e.printStackTrace();
-			} finally {
-				if(mPrayerTimesFromWebInProgress == true)
+			}
+				if(mPrayerTimesFromWebInProgress)
 					mPrayTimesProgressBar.setVisibility(View.VISIBLE);
 
 				return; // we should return from here. Processing of hijriDate is done here.
-			}
 		}
 		mPrayerTimesFromWebInProgress = false;
 
@@ -175,15 +172,38 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		// we are not expecting any data here in this case....
 	}
 
+	private void clearUIControls(){
+		if(mAdapter!=null)
+			mAdapter.clear();
+		mTvHijriDate.setText("");
+		mTvCityName.setText("");
+	}
+
+	private void refreshUI(){
+		mPrayTimesProgressBar.setVisibility(View.VISIBLE);
+		clearUIControls();
+
+		setDates();
+		// Kicking off the process to get the location and then prayer times,
+		// first we will try Database, if city doesn't exits then we will reach out
+		// to web to get the prayer times.
+		if (mGoogleApiClient != null) {
+			if(!mGoogleApiClient.isConnected()) {
+				mGoogleApiClient.connect();
+			} else {
+				//startLocationUpdates();
+				processCurrentLocation();
+			}
+		}
+	}
+
 	private String getCurrentTimezoneOffsetInMinutes() {
 
 		TimeZone tz = TimeZone.getDefault();
 		Calendar cal = GregorianCalendar.getInstance(tz);
 		int offsetInMillis = tz.getOffset(cal.getTimeInMillis());
 
-		String offset = String.format("%d", offsetInMillis/(1000*60)); // offset in minutes
-
-		return offset;
+		return String.format("%d", offsetInMillis/(1000*60)); // in minutes
 	}
 
 	private void setDates(){
@@ -209,7 +229,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
 		// Setting Dialog Title
-		alertDialog.setTitle("Couldn't find your city.");
+		alertDialog.setTitle("Geocoder is not responding in timely fashion.");
 
 		// Setting Dialog Message
 		alertDialog.setMessage("Make sure, you are connected to internet and GPS is working. Please try again in few minutes.");
@@ -257,9 +277,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
         }
     }
 
-	public void getCurrentLocation(){
-		checkPlayServices();
-
+	public void processCurrentLocation(){
+		LocationAvailability la = LocationServices.FusedLocationApi.getLocationAvailability(mGoogleApiClient);
+		if (la.isLocationAvailable()) {
+			Log.d(TAG, "**** Location Available ****");
+		}
 		// Gets the best and most recent location currently available,
 		// which may be null in rare cases when a location is not available.
 		mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
@@ -268,7 +290,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		if (mLastLocation == null) {
 			showSettingsAlert();
 			mPrayTimesProgressBar.setVisibility(View.GONE);
-		}else{
+		} else {
 			// Determine whether a Geocoder is available.
 			if (!Geocoder.isPresent()) {
 				Toast.makeText(getActivity(), "Sorry, Geocoder is not available.", Toast.LENGTH_LONG).show();
@@ -294,7 +316,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		// "PrayTime"(adapter uses this array).
 		if(prayerTimes!=null && prayerTimes.size()>0){
 			mPrayTimesProgressBar.setVisibility(View.GONE);
-			mPrayTimes = new ArrayList<PrayTime>(prayerTimes.size());
+			mPrayTimes = new ArrayList<>(prayerTimes.size());
 			PrayerTimes prayerTime = prayerTimes.get(0);
 
 			if(prayerTime == null){
@@ -331,23 +353,13 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public List<PrayerTimes> getTodayPrayerTimesFromDB(String city){
 		// check database for this city and it it exists then we will get the prayertimes from our database.
 		// otherwise get the prayertimes from praytime.info.
-		StringBuilder sb = new StringBuilder();
+		StringBuilder sb;
+		sb = new StringBuilder();
 		sb.append(Calendar.getInstance().get(Calendar.MONTH)); // month is zero based.
 		sb.append("-");
 		sb.append(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
 
 		return PrayerTimes.getTodayPrayerTimes(city, sb.toString());
-	}
-
-	public void onLocationChanged(Location newLocation){
-		Log.d(TAG, "LocationListenerForPrayers::onLocationChanged - Will try to get cityName and State from GeoCoder - Latitude: " + newLocation.getLatitude() + " - Longitude: " + newLocation.getLongitude());
-//		if(mPrayerLocationService!=null)
-//			mPrayerLocationService.stopLocationService();
-
-		// initiate the request to get the city name based of current latitude and longitude.
-		LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
-		locationBasedCityName.getAddressFromLocation(newLocation.getLatitude(), newLocation.getLongitude(),
-				getActivity(), new GeocoderHandler());
 	}
 
 	//------ refresh menu item.
@@ -363,28 +375,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		switch (item.getItemId()) {
 			case R.id.refreshFragment:
 				mPrayTimesProgressBar.setVisibility(View.VISIBLE);
-				if(mAdapter!=null)
-					mAdapter.clear();
-				mTvHijriDate.setText("");
-				mTvCityName.setText("");
-				setDates();
-				
-				// Kicking off the process to get the location and then prayer times,
-				// first we will try Database, if city doesn't exits then we will reach out
-				// to web to get the prayer times.
-				getCurrentLocation();
+				refreshUI();
 				return true;
 		}
 
 		return super.onOptionsItemSelected(item);
-	}
-
-	@Override
-	public void onStart() {
-		super.onStart();
-		if (mGoogleApiClient != null) {
-			mGoogleApiClient.connect();
-		}
 	}
 
 	@Override
@@ -396,15 +391,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	}
 
 	@Override
-	public void onResume() {
-		super.onResume();
-		checkPlayServices();
-	}
-
-	@Override
 	public void onPause() {
 		// stop location updates (saves battery)
 		super.onPause();
+		stopLocationUpdates();
 	}
 
 	/**
@@ -421,6 +411,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	 * Creating location request object
 	 * */
 	protected void createLocationRequest() {
+		// Location updates intervals in sec
+		final int UPDATE_INTERVAL = 5000; // 5 sec
+		final int FATEST_INTERVAL = 3000; // 3 sec
+		final int DISPLACEMENT = 1; // 1 meters
+
 		mLocationRequest = new LocationRequest();
 		mLocationRequest.setInterval(UPDATE_INTERVAL);
 		mLocationRequest.setFastestInterval(FATEST_INTERVAL);
@@ -461,13 +456,49 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public void onConnected(Bundle arg0) {
-		// Once connected with google api, get the location
-		getCurrentLocation();
+		//startLocationUpdates();
+		processCurrentLocation();
 	}
 
 	@Override
 	public void onConnectionSuspended(int arg0) {
 		mGoogleApiClient.connect();
+	}
+
+	/**
+	 * Starting the location updates
+	 * */
+	protected void startLocationUpdates() {
+		mAlreadyGotLocationUpdate = false;
+		LocationServices.FusedLocationApi.requestLocationUpdates(
+				mGoogleApiClient, mLocationRequest, this);
+	}
+
+	/**
+	 * Stopping location updates
+	 */
+	protected void stopLocationUpdates() {
+		LocationServices.FusedLocationApi.removeLocationUpdates(
+				mGoogleApiClient, this);
+	}
+
+	/*
+	*
+	*
+	* */
+	@Override
+	public void onLocationChanged(Location location) {
+		if(mAlreadyGotLocationUpdate){
+			return;
+		}
+
+		mAlreadyGotLocationUpdate = true;
+		// Assign the new location
+		mLastLocation = location;
+		Toast.makeText(getActivity(), "Location changed!",
+				Toast.LENGTH_SHORT).show();
+		stopLocationUpdates();
+		processCurrentLocation();
 	}
 
 	// show settings Alert
@@ -482,7 +513,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		alertDialog.setTitle("Location Settings");
 
 		// Setting Dialog Message
-		alertDialog.setMessage("Locaton is NOT enabled. Do you want to go to settings menu?");
+		alertDialog.setMessage("Location is NOT enabled. Do you want to go to settings menu?");
 
 		// On pressing Settings button
 		alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
