@@ -394,7 +394,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public void onPause() {
 		// stop location updates (saves battery)
 		super.onPause();
-		stopLocationUpdates();
+//		stopLocationUpdates();
 	}
 
 	/**
