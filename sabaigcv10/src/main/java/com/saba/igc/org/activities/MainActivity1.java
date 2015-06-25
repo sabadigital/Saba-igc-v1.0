@@ -17,7 +17,6 @@ import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.application.SabaApplication;
-import com.saba.igc.org.fragments.CommunityAnnouncementsFragment;
 import com.saba.igc.org.fragments.ContactAndDirectionsFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
 import com.saba.igc.org.fragments.UpcomingProgramsFragment;
@@ -177,10 +176,10 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 				fragmentClass = UpcomingProgramsFragment.class;
 				mTvToolbarTitle.setText("Announcements");
 				break;
-			case id.nav_community_announcements:
-				fragmentClass = CommunityAnnouncementsFragment.class;
-				mTvToolbarTitle.setText("Community");
-				break;
+//			case id.nav_community_announcements:
+//				fragmentClass = CommunityAnnouncementsFragment.class;
+//				mTvToolbarTitle.setText("Community");
+//				break;
 			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
 				mTvToolbarTitle.setText("Contact and Directions");

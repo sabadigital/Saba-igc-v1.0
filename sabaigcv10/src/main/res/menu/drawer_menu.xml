@@ -11,10 +11,10 @@
             android:id="@+id/nav_upcoming_programs_fragment"
             android:icon="@drawable/ic_events_announcements"
             android:title="Announcements" />
-        <item
-            android:id="@+id/nav_community_announcements"
-            android:icon="@drawable/ic_community"
-            android:title="Community Announcements" />
+        <!--<item-->
+            <!--android:id="@+id/nav_community_announcements"-->
+            <!--android:icon="@drawable/ic_community"-->
+            <!--android:title="Community Announcements" />-->
         <item
             android:id="@+id/nav_prayer_times_fragment"
             android:icon="@drawable/ic_prayer"

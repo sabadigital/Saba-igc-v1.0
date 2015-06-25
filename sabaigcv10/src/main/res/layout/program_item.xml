@@ -23,6 +23,7 @@
         android:layout_height="fill_parent"
         android:text="@string/program_description"
         android:layout_margin="12dp"
+        android:paddingBottom="12dp"
         android:linksClickable="true"
         android:textIsSelectable="true"
         android:textColor="@color/detail_text_color"
