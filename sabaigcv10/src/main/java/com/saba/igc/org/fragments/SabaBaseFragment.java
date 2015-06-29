@@ -57,19 +57,12 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 		View view = inflater.inflate(R.layout.activity_main, container, false);
 		
-//		mProgramsProgressBar = (ProgressBar) view.findViewById(R.id.programsProgressBar);
-//		if(mProgramsProgressBar!=null)
-//			mProgramsProgressBar.getIndeterminateDrawable().setColorFilter(0xFFFFFFFF, android.graphics.PorterDuff.Mode.MULTIPLY);
-
         mLvPrograms = (ListView) view.findViewById(R.id.lvUpcomingPrograms);
         //mTvLastRrefreshedValue = (TextView) view.findViewById(R.id.tvLastRrefreshedValue);
         
         if(mPrograms != null && mPrograms.size() == 0) {
 			mPrograms = new ArrayList<SabaProgram>();
 		}
-//        } else {
-//        	mProgramsProgressBar.setVisibility(View.GONE);
-//        }
 
 		mAdapter = new ProgramsArrayAdapter(getActivity(), mPrograms);
 		mLvPrograms.setAdapter(mAdapter);
@@ -91,7 +84,6 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_red_dark,
 				android.R.color.holo_green_dark,
 				android.R.color.holo_blue_dark);
-//		mSwipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#00000000"));
 		mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 			@Override
 			public void onRefresh() {
@@ -100,6 +92,15 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 
 				//Refreshing data from server
 				populatePrograms();
+			}
+		});
+
+		// shows the refreshView in begining - if we sent the network request.
+		mSwipeRefreshLayout.post(new Runnable() {
+			@Override
+			public void run() {
+				if (mRefreshInProgress)
+					mSwipeRefreshLayout.setRefreshing(true);
 			}
 		});
 
