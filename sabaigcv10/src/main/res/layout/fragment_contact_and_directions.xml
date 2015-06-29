@@ -19,7 +19,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="General Inquiries"
+            android:text="Android Support"
             android:id="@+id/tvGeneralInquiries"
             android:layout_alignParentEnd="true"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -33,7 +33,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="saba@saba-igc.org"
+            android:text="app@saba-igc.org"
             android:textColorLink="@color/link_color"
             android:id="@+id/tvGeneralInquireEmail"
             android:layout_alignStart="@+id/tvGeneralInquiries"
@@ -100,7 +100,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Website Support"
+            android:text="General Inquiries"
             android:id="@+id/webSupportLabel"
             android:layout_alignStart="@+id/tvGeneralInquiries"
             android:layout_below="@+id/tvSabaSchoolValue"
@@ -114,7 +114,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="webmaster@saba-igc.org"
+            android:text="saba@saba-igc.org"
             android:textColorLink="@color/link_color"
             android:id="@+id/webSupportValue"
             android:layout_alignStart="@+id/tvGeneralInquiries"
