@@ -1,51 +1,76 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
-	<!--android:background="#c0c0c0"-->
-    <eu.erikw.PullToRefreshListView
-        android:id="@+id/lvUpcomingPrograms"
-        android:layout_width="wrap_content"
-		android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:divider="@color/divider"
-		android:dividerHeight="0.1dp"
+<android.support.v4.widget.SwipeRefreshLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/swipeRefreshLayout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<ListView
+		android:id="@+id/lvUpcomingPrograms"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@color/dark_divider"
+		android:dividerHeight="0.01dp"
 		android:listSelector="#00000000">
-    </eu.erikw.PullToRefreshListView>
-	<!--android:layout_height="wrap_content"-->
-	<!--android:background="#c0c0c0"-->
-	<!--android:listSelector="#00000000"-->
+	</ListView>
+
 	<ProgressBar
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:id="@+id/programsProgressBar"
 		style="@android:style/Widget.Material.ProgressBar.Small"
 		android:layout_centerInParent="true"
-		android:progressDrawable="@drawable/green_progress"
 		tools:ignore="NewApi" />
 
-	<!--android:layout_below="@+id/tvLastRefreshed"-->
-	<!--<TextView-->
-	    <!--android:id="@+id/tvLastRefreshed"-->
-	    <!--android:layout_width="wrap_content"-->
-	    <!--android:layout_height="wrap_content"-->
-	    <!--android:layout_alignLeft="@+id/lvUpcomingPrograms"-->
-	    <!--android:layout_alignParentTop="true"-->
-	    <!--android:text="@string/last_refreshed_label" -->
-	    <!--android:layout_marginLeft="8dp"-->
-	    <!--android:paddingLeft="10dp"-->
-	    <!--android:paddingEnd="0dp"/>-->
+</android.support.v4.widget.SwipeRefreshLayout>
 
-	<!--<TextView-->
-	    <!--android:id="@+id/tvLastRrefreshedValue"-->
-	    <!--android:layout_width="wrap_content"-->
-	    <!--android:layout_height="wrap_content"-->
-	    <!--android:layout_alignParentTop="true"-->
-	    <!--android:layout_alignRight="@+id/lvUpcomingPrograms"-->
-	    <!--android:text="@string/last_refrshed_value" -->
-	    <!--android:layout_marginRight="8dp"-->
-	    <!--android:paddingRight="10dp"-->
-	    <!--android:paddingLeft="0dp"/>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="${relativePackage}.${activityClass}" >-->
+	<!--&lt;!&ndash;android:background="#c0c0c0"&ndash;&gt;-->
+    <!--<eu.erikw.PullToRefreshListView-->
+        <!--android:id="@+id/lvUpcomingPrograms"-->
+        <!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="fill_parent"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:divider="@color/dark_divider"-->
+		<!--android:dividerHeight="0.01dp"-->
+		<!--android:listSelector="#00000000">-->
+    <!--</eu.erikw.PullToRefreshListView>-->
+	<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+	<!--&lt;!&ndash;android:background="#c0c0c0"&ndash;&gt;-->
+	<!--&lt;!&ndash;android:listSelector="#00000000"&ndash;&gt;-->
+	<!--<ProgressBar-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:id="@+id/programsProgressBar"-->
+		<!--style="@android:style/Widget.Material.ProgressBar.Small"-->
+		<!--android:layout_centerInParent="true"-->
+		<!--tools:ignore="NewApi" />-->
+	<!--&lt;!&ndash;android:progressDrawable="@drawable/green_progress"&ndash;&gt;-->
+	<!--&lt;!&ndash;android:layout_below="@+id/tvLastRefreshed"&ndash;&gt;-->
+	<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:id="@+id/tvLastRefreshed"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_alignLeft="@+id/lvUpcomingPrograms"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:text="@string/last_refreshed_label" &ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_marginLeft="8dp"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:paddingEnd="0dp"/>&ndash;&gt;-->
 
-</RelativeLayout>
+	<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:id="@+id/tvLastRrefreshedValue"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_alignRight="@+id/lvUpcomingPrograms"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:text="@string/last_refrshed_value" &ndash;&gt;-->
+	    <!--&lt;!&ndash;android:layout_marginRight="8dp"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:paddingRight="10dp"&ndash;&gt;-->
+	    <!--&lt;!&ndash;android:paddingLeft="0dp"/>&ndash;&gt;-->
+
+<!--</RelativeLayout>-->

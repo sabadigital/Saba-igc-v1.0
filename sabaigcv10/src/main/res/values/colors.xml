@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="divider">#666666</color>
-    <color name="selected_color">#666666</color>
-    <color name="heading_text_color">#191916</color>
-    <color name="detail_text_color">#323232</color>
-    <color name="gray_color">#c6c6c6</color>
-    <color name="background_color">#FFFFFF</color>
-    <color name="link_color">#00aaFF</color>
+
+    <color name="divider">#10FFFFFF</color>
+    <color name="dark_divider">#50FFFFFF</color>
+    <color name="selected_color">#10FFFFFF</color>
+    <!--<color name="heading_text_color">#191916</color>-->
+    <color name="heading_text_color">#FFFFFF</color>
+    <color name="detail_text_color">#AAFFFFFF</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="background_color">#20FFFFFF</color>
+    <color name="link_color">#00FFFF</color>
+    <color name="program_time_color">#80FFFFFF</color>
+    <color name="transparent_color">#00000000</color>
+
 </resources>
+
+    <!--<color name="divider">#666666</color>-->
+    <!--<color name="detail_text_color">#323232</color>-->
 

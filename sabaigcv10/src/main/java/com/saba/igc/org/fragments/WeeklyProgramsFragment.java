@@ -2,14 +2,10 @@ package com.saba.igc.org.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.activities.DailyProgramDetailActivity;
@@ -32,18 +28,15 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 	public WeeklyProgramsFragment(){	
 	}
 
-	public View onCreateView(LayoutInflater inflater,
-							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
-		return super.onCreateView(inflater, container, savedInstanceState);
-	}
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
 		mProgramName = PROGRAM_NAME;
 		// get programs from database. if program exists then display. otherwise make a network request.  
 		mPrograms =  SabaProgram.getSabaPrograms(PROGRAM_NAME);
 		if(mPrograms !=  null && mPrograms.size() == 0){
+			mRefreshInProgress = true;
 			// make a network request to pull the data from server.
 			mSabaClient.getWeeklyPrograms(this);
 		}
@@ -54,16 +47,19 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 	
 	@Override
 	protected void populatePrograms() {
-		mProgramsProgressBar.setVisibility(View.VISIBLE);
+		mSwipeRefreshLayout.setRefreshing(true);
 		mAdapter.clear();
+		mRefreshInProgress = true;
 		mSabaClient.getWeeklyPrograms(this);
 	}
 	
 	// make sure this will be called only in case of WeeklyPrograms.
 	@Override
 	public void processJsonObject(String programName, JSONArray responseJSONArray){
-		mProgramsProgressBar.setVisibility(View.GONE);
-		mLvPrograms.onRefreshComplete();
+		mRefreshInProgress = false;
+		if (mSwipeRefreshLayout.isRefreshing()) {
+			mSwipeRefreshLayout.setRefreshing(false);
+		}
 		if(responseJSONArray == null){
 			Log.d(TAG, "processJsonObject: responseJSONArray is null");
 			return;
@@ -90,6 +86,10 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 		// The action bar home/up action should open or close the drawer.
 		switch (item.getItemId()) {
 			case R.id.refreshFragment:
+				if(mRefreshInProgress)
+					return true;
+
+
 				populatePrograms();
 				return true;
 		}

@@ -46,7 +46,7 @@ public class CommunityAnnouncementsFragment extends SabaBaseFragment {
 
 	@Override
 	protected void populatePrograms() {
-		mProgramsProgressBar.setVisibility(View.VISIBLE);
+		//mProgramsProgressBar.setVisibility(View.VISIBLE);
 		mAdapter.clear();
 		mSabaClient.getCommunityAnnouncements(this);
 	}

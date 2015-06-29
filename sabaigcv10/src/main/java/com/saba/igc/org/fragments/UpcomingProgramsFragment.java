@@ -19,8 +19,7 @@ import com.saba.igc.org.models.SabaProgram;
  */
 public class UpcomingProgramsFragment extends SabaBaseFragment {
 	private final String PROGRAM_NAME = "Upcoming Programs";
-	private final String TAG = "UpcomingProgramsFragment"; 
-	
+	private final String TAG = "UpcomingProgramsFragment";
 	public UpcomingProgramsFragment(){
 	}
 
@@ -37,6 +36,7 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 		// get programs from database. if program exists then display. otherwise make a network request.
 		mPrograms =  SabaProgram.getSabaPrograms(PROGRAM_NAME);
 		if(mPrograms != null && mPrograms.size() == 0){
+			mRefreshInProgress = true;
 			// make a network request to pull the data from server.
 			mSabaClient.getUpcomingPrograms(this);
 		}
@@ -47,7 +47,8 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 	
 	@Override
 	protected void populatePrograms() {
-		mProgramsProgressBar.setVisibility(View.VISIBLE);
+		mRefreshInProgress = true;
+		mSwipeRefreshLayout.setRefreshing(true);
 		mAdapter.clear();
 		mSabaClient.getUpcomingPrograms(this);
 	}
@@ -64,10 +65,18 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 		inflater.inflate(R.menu.refresh_menu, menu);
 	}
 
+	// read about this exception....
+//	java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+
+
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.refreshFragment:
+				if(mRefreshInProgress)
+					return true;
+
 				populatePrograms();
 				return true;
 		}

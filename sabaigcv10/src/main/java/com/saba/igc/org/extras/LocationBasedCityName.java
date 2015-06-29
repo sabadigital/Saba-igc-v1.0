@@ -20,7 +20,7 @@ import java.util.Locale;
  */
 
 public class LocationBasedCityName {
-    private final String TAG = "LocationAddress";
+    private final String TAG = "LocationBasedCityName";
 
     public void getAddressFromLocation(final double latitude, final double longitude,
                                               final Context context, final Handler handler) {

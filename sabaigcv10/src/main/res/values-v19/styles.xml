@@ -4,9 +4,9 @@
 		<!-- Customize your theme here. -->
 		<item name="android:windowTranslucentStatus">true</item>
 		<!-- Base application theme. -->
-		<item name="colorPrimary">#446600</item>
-		<item name="colorPrimaryDark">#334d00</item>
-		<item name="colorAccent">#E0E0E0</item>
+		<item name="colorPrimary">#334d00</item>
+		<item name="colorPrimaryDark">#00000000</item>
+		<item name="colorAccent">#FFFFFF</item>
 		<item name="android:activatedBackgroundIndicator">@drawable/list_selector</item>
 	</style>
 </resources>

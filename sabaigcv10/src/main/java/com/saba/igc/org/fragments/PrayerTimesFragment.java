@@ -28,7 +28,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
-import com.google.android.gms.location.LocationAvailability;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.saba.igc.org.R;
@@ -40,7 +40,6 @@ import com.saba.igc.org.extras.LocationBasedCityName;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.PrayTime;
 import com.saba.igc.org.models.PrayerTimes;
-import com.google.android.gms.location.LocationListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -125,7 +124,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		mPrayTimesProgressBar 	= (ProgressBar) view.findViewById(R.id.prayTimesProgressBar);
 
 		if(mPrayTimesProgressBar!=null)
-			mPrayTimesProgressBar.getIndeterminateDrawable().setColorFilter(0xFF446600, android.graphics.PorterDuff.Mode.MULTIPLY);
+			mPrayTimesProgressBar.getIndeterminateDrawable().setColorFilter(0xFFFFFFFF, android.graphics.PorterDuff.Mode.MULTIPLY);
 	}
 
     @Override
@@ -278,10 +277,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
     }
 
 	public void processCurrentLocation(){
-		LocationAvailability la = LocationServices.FusedLocationApi.getLocationAvailability(mGoogleApiClient);
-		if (la.isLocationAvailable()) {
-			Log.d(TAG, "**** Location Available ****");
-		}
+//		LocationAvailability la = LocationServices.FusedLocationApi.getLocationAvailability(mGoogleApiClient);
+//		if (la != null && la.isLocationAvailable()) {
+//			Log.d(TAG, "**** Location Available ****");
+//		}
 		// Gets the best and most recent location currently available,
 		// which may be null in rare cases when a location is not available.
 		mLastLocation = LocationServices.FusedLocationApi.getLastLocation(

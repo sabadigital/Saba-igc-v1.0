@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.models.SabaProgram;
@@ -38,7 +37,7 @@ public class GeneralAnnouncementsFragment extends SabaBaseFragment {
 	
 	@Override
 	protected void populatePrograms() {
-		mProgramsProgressBar.setVisibility(View.VISIBLE);
+		//mProgramsProgressBar.setVisibility(View.VISIBLE);
 		mAdapter.clear();
 		mSabaClient.getGeneralAnnouncements(this);
 	}

@@ -21,8 +21,10 @@
 <resources>
 <!-- Base application theme. -->
 <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-    <item name="colorPrimary">#446600</item>
-    <item name="colorPrimaryDark">#334d00</item>
-    <item name="colorAccent">#E0E0E0</item>
+    <item name="colorPrimary">#334d00</item>
+    <!--<item name="colorPrimary">#446600</item>-->
+    <item name="colorPrimaryDark">#00000000</item>
+    <!--<item name="colorPrimaryDark1">#334d00</item>-->
+    <item name="colorAccent">#FFFFFF</item>
 </style>
 </resources>

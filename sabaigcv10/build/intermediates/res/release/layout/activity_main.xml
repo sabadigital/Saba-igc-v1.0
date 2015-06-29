@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	<!--android:background="#c0c0c0"-->
+    <eu.erikw.PullToRefreshListView
+        android:id="@+id/lvUpcomingPrograms"
+        android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:divider="@color/divider"
+		android:dividerHeight="0.1dp"
+		android:listSelector="#00000000">
+    </eu.erikw.PullToRefreshListView>
+	<!--android:layout_height="wrap_content"-->
+	<!--android:background="#c0c0c0"-->
+	<!--android:listSelector="#00000000"-->
+	<ProgressBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/programsProgressBar"
+		style="@android:style/Widget.Material.ProgressBar.Small"
+		android:layout_centerInParent="true"
+		android:progressDrawable="@drawable/green_progress"
+		tools:ignore="NewApi" />
+
+	<!--android:layout_below="@+id/tvLastRefreshed"-->
+	<!--<TextView-->
+	    <!--android:id="@+id/tvLastRefreshed"-->
+	    <!--android:layout_width="wrap_content"-->
+	    <!--android:layout_height="wrap_content"-->
+	    <!--android:layout_alignLeft="@+id/lvUpcomingPrograms"-->
+	    <!--android:layout_alignParentTop="true"-->
+	    <!--android:text="@string/last_refreshed_label" -->
+	    <!--android:layout_marginLeft="8dp"-->
+	    <!--android:paddingLeft="10dp"-->
+	    <!--android:paddingEnd="0dp"/>-->
+
+	<!--<TextView-->
+	    <!--android:id="@+id/tvLastRrefreshedValue"-->
+	    <!--android:layout_width="wrap_content"-->
+	    <!--android:layout_height="wrap_content"-->
+	    <!--android:layout_alignParentTop="true"-->
+	    <!--android:layout_alignRight="@+id/lvUpcomingPrograms"-->
+	    <!--android:text="@string/last_refrshed_value" -->
+	    <!--android:layout_marginRight="8dp"-->
+	    <!--android:paddingRight="10dp"-->
+	    <!--android:paddingLeft="0dp"/>-->
+
+</RelativeLayout>
+<!-- From: file:/Users/snaqvi/Dev/Android-Projects/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/activity_main.xml -->

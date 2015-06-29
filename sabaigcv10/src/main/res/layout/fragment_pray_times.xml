@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E0E0E0">
+    >
 
     <TextView
         android:id="@+id/tvCityName"
@@ -12,9 +12,9 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/city_name"
-        android:layout_marginTop = "15dp"
+        android:layout_marginTop = "10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/detail_text_color"
+        android:textColor="@color/heading_text_color"
         android:textStyle="bold" />
 
     <TextView
@@ -26,8 +26,7 @@
         android:text="@string/english_date"
         android:layout_marginTop = "5dp"
         android:layout_marginBottom = "5dp"
-        android:textColor="@color/detail_text_color"
-        android:textStyle="bold" />
+        android:textColor="@color/detail_text_color"/>
 
     <!-- Change ListView height 'from wrap_content' to 'fill_parent'or
      'match_parent'......it might work as it worked for me. –  ASP Dec 6 '13 at 7:38 -->
@@ -35,11 +34,11 @@
         android:id="@+id/lvPrayTimes"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"
+        android:divider="@color/divider"
+        android:dividerHeight="0.01dp"
         android:listSelector="#00000000"
         android:layout_below="@+id/tvHijriDate"
-        android:background="#E0E0E0">
+        >
 
     </ListView>
 
@@ -63,7 +62,6 @@
         android:layout_below="@+id/tvEnglishDate"
         android:layout_alignParentStart="true"
         android:layout_marginBottom = "10dp"
-        android:textColor="@color/detail_text_color"
-        android:textStyle="bold" />
+        android:textColor="@color/detail_text_color" />
 
 </RelativeLayout>

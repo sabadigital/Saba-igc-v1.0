@@ -3,12 +3,13 @@ package com.saba.igc.org.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ProgressBar;
+import android.widget.ListView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.ProgramsArrayAdapter;
@@ -25,9 +26,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import eu.erikw.PullToRefreshListView;
-import eu.erikw.PullToRefreshListView.OnRefreshListener;
-
 /**
  * @author Syed Aftab Naqvi
  * @create December, 2014
@@ -35,12 +33,15 @@ import eu.erikw.PullToRefreshListView.OnRefreshListener;
  */
 public abstract class SabaBaseFragment extends Fragment implements SabaServerResponseListener {
 
-	protected SabaClient 			mSabaClient;
-	protected ProgramsArrayAdapter 	mAdapter;
-	protected List<SabaProgram> 	mPrograms;
-	protected PullToRefreshListView mLvPrograms;
-	protected ProgressBar 			mProgramsProgressBar;
-	protected String 				mProgramName;
+	private   String				TAG					= "SabaBaseFragment";
+	protected SabaClient 			mSabaClient 		= null;
+	protected ProgramsArrayAdapter 	mAdapter 			= null;
+	protected List<SabaProgram> 	mPrograms 			= null;
+	protected ListView 				mLvPrograms 		= null;
+	//protected ProgressBar 		mProgramsProgressBar;
+	protected String 				mProgramName 		= null;
+	protected SwipeRefreshLayout 	mSwipeRefreshLayout	= null;
+	protected boolean				mRefreshInProgress	= false;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -56,18 +57,19 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 		View view = inflater.inflate(R.layout.activity_main, container, false);
 		
-		mProgramsProgressBar = (ProgressBar) view.findViewById(R.id.programsProgressBar);
-		if(mProgramsProgressBar!=null)
-			mProgramsProgressBar.getIndeterminateDrawable().setColorFilter(0xFF446600, android.graphics.PorterDuff.Mode.MULTIPLY);
+//		mProgramsProgressBar = (ProgressBar) view.findViewById(R.id.programsProgressBar);
+//		if(mProgramsProgressBar!=null)
+//			mProgramsProgressBar.getIndeterminateDrawable().setColorFilter(0xFFFFFFFF, android.graphics.PorterDuff.Mode.MULTIPLY);
 
-        mLvPrograms = (PullToRefreshListView) view.findViewById(R.id.lvUpcomingPrograms);
+        mLvPrograms = (ListView) view.findViewById(R.id.lvUpcomingPrograms);
         //mTvLastRrefreshedValue = (TextView) view.findViewById(R.id.tvLastRrefreshedValue);
         
-        if(mPrograms != null && mPrograms.size() == 0){
-        	mPrograms = new ArrayList<SabaProgram>();
-        } else {
-        	mProgramsProgressBar.setVisibility(View.GONE);
-        }
+        if(mPrograms != null && mPrograms.size() == 0) {
+			mPrograms = new ArrayList<SabaProgram>();
+		}
+//        } else {
+//        	mProgramsProgressBar.setVisibility(View.GONE);
+//        }
 
 		mAdapter = new ProgramsArrayAdapter(getActivity(), mPrograms);
 		mLvPrograms.setAdapter(mAdapter);
@@ -83,24 +85,30 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 				}
 			}
 		});
-		
-		mLvPrograms.setOnRefreshListener(new OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                // Your code to refresh the list here.
-                // Make sure you call listView.onRefreshComplete() when
-                // once the network request has completed successfully.
-            	populatePrograms();
-            }
-        });
-		
+
+		//Initialize swipe to refresh view
+		mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout);
+//		mSwipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#00000000"));
+		mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+			@Override
+			public void onRefresh() {
+				if(mRefreshInProgress)
+					return;
+
+				//Refreshing data from server
+				populatePrograms();
+			}
+		});
+
 		return view;
 	}
 	
 	@Override
 	public void processJsonObject(String programName, JSONObject response) {
-		mLvPrograms.onRefreshComplete();
-		mProgramsProgressBar.setVisibility(View.GONE);
+		if (mSwipeRefreshLayout.isRefreshing()) {
+			mSwipeRefreshLayout.setRefreshing(false);
+		}
+
 		if(response == null){
 			// display error.
 			// improvement: try to read the old data from the database....
@@ -126,8 +134,10 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	}
 
 	public void processJsonObject(String programName, JSONArray response){
-		mProgramsProgressBar.setVisibility(View.GONE);
-		mLvPrograms.onRefreshComplete();
+		mRefreshInProgress = false;
+		if (mSwipeRefreshLayout.isRefreshing()) {
+			mSwipeRefreshLayout.setRefreshing(false);
+		}
 
 		mProgramName = programName;
 		List<SabaProgram> programs = null;

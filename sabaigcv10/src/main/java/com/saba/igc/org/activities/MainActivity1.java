@@ -165,16 +165,18 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		// Create a new fragment and specify the planet to show based on
 		// position
 		Fragment fragment = null;
-
+		android.support.v4.widget.DrawerLayout layout =(android.support.v4.widget.DrawerLayout)findViewById(id.drawer_layout);
 		Class fragmentClass;
 		switch(menuItem.getItemId()) {
 			case id.nav_weekly_schedule_fragment:
 				fragmentClass = WeeklyProgramsFragment.class;
 				mTvToolbarTitle.setText("Weekly Schedule");
+				layout.setBackgroundResource(drawable.weekly_programs);
 				break;
 			case id.nav_upcoming_programs_fragment:
 				fragmentClass = UpcomingProgramsFragment.class;
 				mTvToolbarTitle.setText("Announcements");
+				layout.setBackgroundResource(drawable.events_announcements);
 				break;
 //			case id.nav_community_announcements:
 //				fragmentClass = CommunityAnnouncementsFragment.class;
@@ -183,10 +185,12 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
 				mTvToolbarTitle.setText("Contact and Directions");
+				layout.setBackgroundResource(drawable.weekly_programs);
 				break;
 			case id.nav_prayer_times_fragment:
 				fragmentClass = PrayerTimesFragment.class;
 				mTvToolbarTitle.setText("Prayer Times");
+				layout.setBackgroundResource(drawable.prayers1);
 				break;
 			default:
 				fragmentClass = WeeklyProgramsFragment.class;

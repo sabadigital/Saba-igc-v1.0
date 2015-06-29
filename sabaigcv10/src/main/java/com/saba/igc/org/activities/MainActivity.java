@@ -2,9 +2,11 @@ package com.saba.igc.org.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 
 import com.saba.igc.org.R;
@@ -21,8 +23,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import eu.erikw.PullToRefreshListView;
-
 /**
  * @author Syed Aftab Naqvi
  * @create December, 2014
@@ -33,8 +33,9 @@ public class MainActivity extends Activity implements SabaServerResponseListener
 	private SabaClient mSabaClient;
 	private ProgramsArrayAdapter mAdapter;
 	private ArrayList<SabaProgram> mPrograms;
-	private PullToRefreshListView mLvUpcomingPrograms;
+	private ListView mLvUpcomingPrograms;
 	private ProgressBar mProgramsProgressBar;
+	private SwipeRefreshLayout mSwipeRefreshLayout = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class MainActivity extends Activity implements SabaServerResponseListener
 		mSabaClient.getUpcomingPrograms(this);
 		
 		mProgramsProgressBar = (ProgressBar) findViewById(R.id.programsProgressBar);
-        mLvUpcomingPrograms = (PullToRefreshListView) findViewById(R.id.lvUpcomingPrograms);
+        mLvUpcomingPrograms = (ListView) findViewById(R.id.lvUpcomingPrograms);
         
 		mPrograms = new ArrayList<SabaProgram>();
 		mAdapter = new ProgramsArrayAdapter(this, mPrograms);
@@ -55,7 +56,16 @@ public class MainActivity extends Activity implements SabaServerResponseListener
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+									int position, long id) {
+			}
+		});
+
+		//Initialize swipe to refresh view
+		mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+		mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+			@Override
+			public void onRefresh() {
+				//Refreshing data on server
 			}
 		});
 	}
