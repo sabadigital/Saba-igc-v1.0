@@ -11,6 +11,7 @@ import android.os.Message;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -19,7 +20,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -70,8 +70,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private List<PrayTime> 		mPrayTimes;
 	private ListView	 		mLvPrayTimes;
 	private PrayTimeAdapter 	mAdapter;
-	private ProgressBar 		mPrayTimesProgressBar;
 	private boolean				mPrayerTimesFromWebInProgress;
+	private SwipeRefreshLayout 	mSwipeRefreshLayout	= null;
 
 	// ======= Google Play Services..
 	private static final String TAG = MainActivity.class.getSimpleName();
@@ -121,15 +121,30 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		mTvTodayDate		 	= (TextView) view.findViewById(R.id.tvEnglishDate);
 		//mLvPrayTimes 			= (eu.erikw.PullToRefreshListView) view.findViewById(R.id.lvPrayTimes);
 		mLvPrayTimes 			= (ListView) view.findViewById(R.id.lvPrayTimes);
-		mPrayTimesProgressBar 	= (ProgressBar) view.findViewById(R.id.prayTimesProgressBar);
 
-		if(mPrayTimesProgressBar!=null)
-			mPrayTimesProgressBar.getIndeterminateDrawable().setColorFilter(0xFFFFFFFF, android.graphics.PorterDuff.Mode.MULTIPLY);
+		//Initialize swipe to refresh view
+		mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout);
+		mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_red_dark,
+				android.R.color.holo_green_dark,
+				android.R.color.holo_blue_dark);
+		mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+			@Override
+			public void onRefresh() {
+				if (mPrayerTimesFromWebInProgress)
+					return;
+
+				//Refreshing data from server
+				refreshUI();
+			}
+		});
 	}
 
     @Override
 	public void processJsonObject(String programName, JSONObject response) {
-		mPrayTimesProgressBar.setVisibility(View.GONE);
+		if (mSwipeRefreshLayout.isRefreshing()) {
+			mSwipeRefreshLayout.setRefreshing(false);
+		}
+
 		if(response == null){
 			Log.d(TAG, "json object is null for :" + programName);
 			return;
@@ -148,10 +163,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}
-				if(mPrayerTimesFromWebInProgress)
-					mPrayTimesProgressBar.setVisibility(View.VISIBLE);
+			if(mPrayerTimesFromWebInProgress)
+				mSwipeRefreshLayout.setRefreshing(true);
 
-				return; // we should return from here. Processing of hijriDate is done here.
+			return; // we should return from here. Processing of hijriDate is done here.
 		}
 		mPrayerTimesFromWebInProgress = false;
 
@@ -179,7 +194,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	}
 
 	private void refreshUI(){
-		mPrayTimesProgressBar.setVisibility(View.VISIBLE);
+		mSwipeRefreshLayout.setRefreshing(true);
+
 		clearUIControls();
 
 		setDates();
@@ -261,7 +277,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
             mTvCityName.setText(cityName);
 
 			if(cityName == null || cityName.isEmpty()) {
-				mPrayTimesProgressBar.setVisibility(View.GONE);
+				if (mSwipeRefreshLayout.isRefreshing()) {
+					mSwipeRefreshLayout.setRefreshing(false);
+				}
 				showAlert();
 				return;
 			}
@@ -288,7 +306,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 		if (mLastLocation == null) {
 			showSettingsAlert();
-			mPrayTimesProgressBar.setVisibility(View.GONE);
+			if (mSwipeRefreshLayout.isRefreshing()) {
+				mSwipeRefreshLayout.setRefreshing(false);
+			}
 		} else {
 			// Determine whether a Geocoder is available.
 			if (!Geocoder.isPresent()) {
@@ -314,7 +334,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		// following block of code converts "PrayerTimes"(read from database) to
 		// "PrayTime"(adapter uses this array).
 		if(prayerTimes!=null && prayerTimes.size()>0){
-			mPrayTimesProgressBar.setVisibility(View.GONE);
+			if (mSwipeRefreshLayout.isRefreshing()) {
+				mSwipeRefreshLayout.setRefreshing(false);
+			}
+
 			mPrayTimes = new ArrayList<>(prayerTimes.size());
 			PrayerTimes prayerTime = prayerTimes.get(0);
 
@@ -373,7 +396,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.refreshFragment:
-				mPrayTimesProgressBar.setVisibility(View.VISIBLE);
+
 				refreshUI();
 				return true;
 		}
@@ -455,7 +478,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public void onConnected(Bundle arg0) {
-		//startLocationUpdates();
+		mSwipeRefreshLayout.setRefreshing(true);
 		processCurrentLocation();
 	}
 
