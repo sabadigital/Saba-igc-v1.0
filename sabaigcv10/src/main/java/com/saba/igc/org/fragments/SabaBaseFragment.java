@@ -79,8 +79,8 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
-				if(mProgramName.compareTo("Weekly Programs")==0){
+									int position, long id) {
+				if (mProgramName.compareTo("Weekly Programs") == 0) {
 					processOnItemClick(position);
 				}
 			}
@@ -88,11 +88,14 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 
 		//Initialize swipe to refresh view
 		mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout);
+		mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_red_dark,
+				android.R.color.holo_green_dark,
+				android.R.color.holo_blue_dark);
 //		mSwipeRefreshLayout.setProgressBackgroundColorSchemeColor(Color.parseColor("#00000000"));
 		mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 			@Override
 			public void onRefresh() {
-				if(mRefreshInProgress)
+				if (mRefreshInProgress)
 					return;
 
 				//Refreshing data from server
