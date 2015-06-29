@@ -137,6 +137,15 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				refreshUI();
 			}
 		});
+
+		// shows the refreshView in begining - if we sent the network request.
+		mSwipeRefreshLayout.post(new Runnable() {
+			@Override
+			public void run() {
+				mSwipeRefreshLayout.setRefreshing(true);
+			}
+		});
+
 	}
 
     @Override
@@ -478,7 +487,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public void onConnected(Bundle arg0) {
-		mSwipeRefreshLayout.setRefreshing(true);
+		//mSwipeRefreshLayout.setRefreshing(true);
 		processCurrentLocation();
 	}
 
