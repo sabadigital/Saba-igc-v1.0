@@ -6,7 +6,7 @@
     <color name="selected_color">#10FFFFFF</color>
     <!--<color name="heading_text_color">#191916</color>-->
     <color name="heading_text_color">#FFFFFF</color>
-    <color name="detail_text_color">#AAFFFFFF</color>
+    <color name="detail_text_color">#DDFFFFFF</color>
     <color name="white_color">#FFFFFF</color>
     <color name="background_color">#20FFFFFF</color>
     <color name="link_color">#00FFFF</color>
