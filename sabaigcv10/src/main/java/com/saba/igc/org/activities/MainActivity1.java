@@ -1,6 +1,9 @@
 package com.saba.igc.org.activities;
 
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -15,6 +18,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.assist.ImageSize;
+import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.saba.igc.org.R;
 import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.fragments.ContactAndDirectionsFragment;
@@ -165,18 +171,18 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		// Create a new fragment and specify the planet to show based on
 		// position
 		Fragment fragment = null;
-		android.support.v4.widget.DrawerLayout layout =(android.support.v4.widget.DrawerLayout)findViewById(id.drawer_layout);
 		Class fragmentClass;
+		int resId = 0;
 		switch(menuItem.getItemId()) {
 			case id.nav_weekly_schedule_fragment:
 				fragmentClass = WeeklyProgramsFragment.class;
 				mTvToolbarTitle.setText("Weekly Schedule");
-				layout.setBackgroundResource(drawable.weekly_programs);
+				resId = R.drawable.weekly_programs;
 				break;
 			case id.nav_upcoming_programs_fragment:
 				fragmentClass = UpcomingProgramsFragment.class;
 				mTvToolbarTitle.setText("Announcements");
-				layout.setBackgroundResource(drawable.events_announcements);
+				resId = R.drawable.events_announcements;
 				break;
 //			case id.nav_community_announcements:
 //				fragmentClass = CommunityAnnouncementsFragment.class;
@@ -185,19 +191,36 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
 				mTvToolbarTitle.setText("Contact and Directions");
-				layout.setBackgroundResource(drawable.weekly_programs);
+				resId = R.drawable.weekly_programs;
 				break;
 			case id.nav_prayer_times_fragment:
 				fragmentClass = PrayerTimesFragment.class;
 				mTvToolbarTitle.setText("Prayer Times");
-				layout.setBackgroundResource(drawable.prayers1);
+				resId = R.drawable.prayers1;
 				break;
 			default:
 				fragmentClass = WeeklyProgramsFragment.class;
+				resId = R.drawable.weekly_programs;
 		}
 
 		try {
 			fragment = (Fragment) fragmentClass.newInstance();
+
+			final DrawerLayout layout = (DrawerLayout)findViewById(id.drawer_layout);
+			// Load image, decode it to Bitmap and return Bitmap to callback
+			ImageSize targetSize = new ImageSize(640, 1136); // result Bitmap will be fit to this size
+			ImageLoader.getInstance().loadImage("drawable://" + resId, targetSize, null, new SimpleImageLoadingListener() {
+				@Override
+				public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
+					Drawable d = new BitmapDrawable(getResources(), loadedImage);
+					layout.setBackground(d);
+				}
+			});
+			
+//			Bitmap loadedImage = ImageLoader.getInstance().loadImageSync("drawable://" + resId);
+//			Drawable d = new BitmapDrawable(getResources(), loadedImage);
+//			layout.setBackground(d);
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -3,35 +3,40 @@ package com.saba.igc.org.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.os.Handler;
 
 import com.saba.igc.org.R;
-
 /**
  * Created by Syed Aftab Naqvi on 1/18/15.
  */
-public class SplashScreenActivity extends Activity{
-    private TextView mTvContinue;
+
+public class SplashScreenActivity extends Activity {
+
+    // Splash screen timer
+    private static int SPLASH_TIME_OUT = 1500;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_splash_screen);
-        setupUI();
-    }
+        new Handler().postDelayed(new Runnable() {
 
-    private void setupUI() {
-        mTvContinue = (TextView)findViewById(R.id.tvContinue);
-        if(mTvContinue != null) {
-            mTvContinue.setOnClickListener(new View.OnClickListener() {
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
 
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(SplashScreenActivity.this, MainActivity1.class);
-                    startActivity(intent);
-                    finish();
-                }
-            });
-        }
+            @Override
+            public void run() {
+                // This method will be executed once the timer is over
+                // Start your app main activity
+                Intent i = new Intent(SplashScreenActivity.this, MainActivity1.class);
+                startActivity(i);
+
+                // close this activity
+                finish();
+            }
+        }, SPLASH_TIME_OUT);
     }
 }
