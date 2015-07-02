@@ -18,7 +18,7 @@ import com.saba.igc.org.models.SabaProgram;
  * @version 1.0
  */
 public class UpcomingProgramsFragment extends SabaBaseFragment {
-	private final String PROGRAM_NAME = "Upcoming Programs";
+	private final String PROGRAM_NAME = "Announcements";
 	private final String TAG = "UpcomingProgramsFragment";
 	public UpcomingProgramsFragment(){
 	}

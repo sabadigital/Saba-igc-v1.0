@@ -25,7 +25,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * @author Syed Aftab Naqvi
  * @create December, 2014
@@ -122,15 +121,15 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		try{
 			mProgramName = response.getString("title");
 			JSONArray ProgramsJson = response.getJSONArray("entry");
-			List<SabaProgram> programs = null;                                            
+			//List<SabaProgram> programs = null;
 			if(mProgramName != null && mProgramName.compareToIgnoreCase("Weekly Programs") == 0){
 				// parse weekly programs differently....
 				List<List<DailyProgram>> weeklyPrograms = DailyProgram.fromJSONArray(programName, ProgramsJson);
 				SabaProgram.fromWeeklyPrograms(mProgramName, weeklyPrograms);
 			} else {
-				programs = SabaProgram.fromJSONArray(mProgramName, ProgramsJson);
+				mPrograms = SabaProgram.fromJSONArray(mProgramName, ProgramsJson);
 			}
-			addAll(programs);
+			addAll(mPrograms);
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -144,22 +143,21 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		}
 
 		mProgramName = programName;
-		List<SabaProgram> programs = null;
+		//List<SabaProgram> programs = null;
 		if(mProgramName != null && mProgramName.compareToIgnoreCase("Weekly Programs") == 0){
 			// parse weekly programs differently....
 			List<List<DailyProgram>> weeklyPrograms = DailyProgram.fromJSONArray(programName, response);
-			programs = SabaProgram.fromWeeklyPrograms(mProgramName, weeklyPrograms);
+			mPrograms = SabaProgram.fromWeeklyPrograms(mProgramName, weeklyPrograms);
 		} else {
-			programs = SabaProgram.fromJSONArray(mProgramName, response);
+			mPrograms = SabaProgram.fromJSONArray(mProgramName, response);
 		}
-		addAll(programs);
+		addAll(mPrograms);
+		mAdapter.addAll(mPrograms);
 	}
 	
 	// Delegate the adding to the internal adapter. // most recommended approach... minimize the code... 
 	public void addAll(List<SabaProgram> programs){
-		mAdapter.addAll(programs);
-		
-		// delete existing records. We don't want to keep duplicate entries. 
+		// delete existing records. We don't want to keep duplicate entries.
 		 SabaProgram.deleteSabaPrograms(mProgramName);
 		
 		// save new/latest programs.
@@ -191,4 +189,24 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	
 	protected abstract void populatePrograms();
 	protected abstract void processOnItemClick(int position);
+
+//	@Override
+//	public void onDestroyView(){
+//		super.onDestroyView();
+//		Log.d(TAG, "onDestroyView: ********** " + mProgramName);
+////		mSwipeRefreshLayout.setRefreshing(false);
+////		mSabaClient.removeTarget(mProgramName, this);
+////		mAdapter.clear();
+////		mPrograms.clear();
+//	}
+//
+//	@Override
+//	public void onDetach(){
+//		super.onDetach();
+//		Log.d(TAG, "onDetach ********** " + mProgramName);
+//		mSwipeRefreshLayout.setRefreshing(false);
+//		mSabaClient.removeTarget(mProgramName, this);
+//		mAdapter.clear();
+//		mPrograms.clear();
+//	}
 }

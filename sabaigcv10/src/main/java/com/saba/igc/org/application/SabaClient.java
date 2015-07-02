@@ -16,6 +16,8 @@ import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Syed Aftab Naqvi
@@ -23,9 +25,9 @@ import java.util.Calendar;
  * @version 1.0
  */
 public class SabaClient {
+	private static Map<String, SabaServerResponseListener> mMap;
 	private static SabaClient sabaClient;
 	private static Context mContext;
-//	private SabaServerResponseListener mTarget;
 	private static final String SABA_BASE_URL = "http://www.saba-igc.org/mobileapp/datafeedproxy.php?sheetName=weekly&sheetId=";
 	private static String PRAY_TIME_INFO_URL = "http://praytime.info/getprayertimes.php?lat=34.024899&lon=-117.89730099999997&gmt=-480&m=11&d=31&y=2014&school=0";
 	private static String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=";
@@ -41,38 +43,53 @@ public class SabaClient {
 	   if(sabaClient == null) {
 		   mContext = context;
 		   sabaClient = new SabaClient();
+		   mMap = new HashMap<String, SabaServerResponseListener>();
 	   }
 
 	   return sabaClient;
 	}
-	
-	public void getUpcomingPrograms(final SabaServerResponseListener targert){
-		
+
+	public boolean isInProgress(){
+		return mMap.size()==0?false:true;
+	}
+
+	public void removeTarget(String program, SabaServerResponseListener target){
+//		Log.d("SabaClient", "********** - going to find a " + program);
+//		for(String str : mMap.keySet())
+//			Log.d("SabaClient", "********** - Map key: " + str);
+		if(mMap.containsKey(program)){
+//			Log.d("SabaClient", "********** - fond a request and going to remove...");
+			mMap.remove(program);
+		}
+	}
+	public void getUpcomingPrograms(final SabaServerResponseListener target){
 		// check the database, if lastUpdate was recent? 
 		// sheet # 2 is Upcoming programs
-		sendRequest("Upcoming Programs", SABA_BASE_URL+2, targert);
+		sendRequest("Announcements", SABA_BASE_URL+2, target);
  	}
 	
-	public void getWeeklyPrograms(final SabaServerResponseListener targert){
+	public void getWeeklyPrograms(final SabaServerResponseListener target){
 		// sheet # 4 is Weekly Announcements
-		sendRequest("Weekly Programs", SABA_BASE_URL+4, targert);
+		sendRequest("Weekly Programs", SABA_BASE_URL+4, target);
 
 	}
 	
-	public void getCommunityAnnouncements(final SabaServerResponseListener targert){
+	public void getCommunityAnnouncements(final SabaServerResponseListener target){
 		// sheet # 5 is Community Announcements
-		sendRequest("Community Announcements", SABA_BASE_URL+5, targert);
+		sendRequest("Community", SABA_BASE_URL+5, target);
 	}
 	
-	public void getGeneralAnnouncements(final SabaServerResponseListener targert){
+	public void getGeneralAnnouncements(final SabaServerResponseListener target){
 		// sheet # 6 is General Announcements
-		sendRequest("General Announcements", SABA_BASE_URL + 6, targert);
+		sendRequest("General Announcements", SABA_BASE_URL + 6, target);
 	}
 	
-	private void sendRequest(final String programName, final String url, final SabaServerResponseListener targert){
+	private void sendRequest(final String programName, final String url, final SabaServerResponseListener target){
+		//\Log.d("SabaClient", "********* sending request out for : " + programName);
+		mMap.put(programName, target);
+
 		// create the network client
     	AsyncHttpClient client = new AsyncHttpClient();
-
 		client.setTimeout(TIME_OUT);
 
 		// trigger the network request
@@ -82,7 +99,14 @@ public class SabaClient {
 								  Throwable throwable, JSONObject errorResponse) {
 				super.onFailure(statusCode, headers, throwable, errorResponse);
 				throwable.printStackTrace();
-				targert.processJsonObject(programName, errorResponse);
+
+				SabaServerResponseListener listener = mMap.get(programName);
+				if(listener != null) {
+					target.processJsonObject(programName, errorResponse);
+					removeTarget(programName, listener);
+				}
+
+				//target.processJsonObject(programName, errorResponse);
 			}
 
 //			@Override
@@ -121,14 +145,23 @@ public class SabaClient {
 			public void onSuccess(int statusCode, Header[] headers,
 								  JSONArray response) {
 				super.onSuccess(statusCode, headers, response);
-				targert.processJsonObject(programName, response);
+				SabaServerResponseListener listener = mMap.get(programName);
+				if(listener != null) {
+					listener.processJsonObject(programName, response);
+					removeTarget(programName, listener);
+				}
 			}
 
 			@Override
 			public void onSuccess(int statusCode, Header[] headers,
 								  JSONObject response) {
 				super.onSuccess(statusCode, headers, response);
-				targert.processJsonObject(programName, response);
+
+				SabaServerResponseListener listener = mMap.get(programName);
+				if(listener != null) {
+					target.processJsonObject(programName, response);
+					removeTarget(programName, listener);
+				}
 			}
 		});
 	}
@@ -166,7 +199,7 @@ public class SabaClient {
 
 		Log.d("PrayerTime URL: ", sb.toString());
 
-		sendRequest("Pray Times", sb.toString(), target);
+		sendRequest("Prayer Times", sb.toString(), target);
 	}
 
 	private void savePreferences(String key, String value) {

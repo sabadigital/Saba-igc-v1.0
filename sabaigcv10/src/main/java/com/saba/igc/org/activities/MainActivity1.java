@@ -54,6 +54,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	private NavigationView 			mNavigationView;
 	private ActionBarDrawerToggle 	mDrawerToggle;
 	private final String TAG = 		"MainActivity1";
+	private Fragment				mCurrentFragment;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +78,13 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		if(actionBar != null) {
 			actionBar.setHomeAsUpIndicator(drawable.ic_menu_white_36dp);
 			actionBar.setDisplayHomeAsUpEnabled(true);
+			mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					if(SabaApplication.getSabaClient().isInProgress() == false)
+						mDrawer.openDrawer(mNavigationView);
+				}
+			});
 
 			// sets toolbar title in center.
 			View view = getLayoutInflater().inflate(layout.custom_toolbar_view, null);
@@ -91,20 +99,22 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		setupDrawerContent(mNavigationView);
 
 		setDates();
-		//ColorStateList
-		//mNavigationView.setItemBackground();
+
 		// setting WeeklyPrograms displayed on startup. If we want to display something else on startup, change here.
 		Fragment fragment = null;
 		try {
 			fragment = (Fragment) WeeklyProgramsFragment.class.newInstance();
 			mTvToolbarTitle.setText("Weekly Schedule");
+			mCurrentFragment = fragment;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 		// Insert the fragment by replacing any existing fragment
 		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager.beginTransaction().replace(id.flContent, fragment).commit();
+		fragmentManager.beginTransaction().replace(id.flContent, fragment, "Weekly Programs").commit();
+
+		mDrawer.openDrawer(mNavigationView);
 	}
 
 	private ActionBarDrawerToggle setupDrawerToggle() {
@@ -119,20 +129,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			}
 		};
 	}
-//	@Override
-//	public boolean onOptionsItemSelected(MenuItem item) {
-//		// Handle item selection
-//		switch (item.getItemId()) {
-//			case R.id.new_game:
-//				newGame();
-//				return true;
-//			case R.id.help:
-//				showHelp();
-//				return true;
-//			default:
-//				return super.onOptionsItemSelected(item);
-//		}
-//	}
+
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (mDrawerToggle.onOptionsItemSelected(item)) {
@@ -168,20 +165,31 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	}
 
 	public void selectDrawerItem(MenuItem menuItem) {
+		if(SabaApplication.getSabaClient().isInProgress() == true){
+			//Log.d(TAG, "******** going to remove the request from map...");
+			SabaApplication.getSabaClient().removeTarget(mCurrentFragment.getTag(), (SabaServerResponseListener)mCurrentFragment);
+		}
+
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		//Log.d(TAG, "******** Total Fragments" + fragmentManager.getFragments().size());
+		fragmentManager.beginTransaction().disallowAddToBackStack().remove(mCurrentFragment).commitAllowingStateLoss();
+		fragmentManager.popBackStackImmediate();
+
 		// Create a new fragment and specify the planet to show based on
 		// position
 		Fragment fragment = null;
+		String title = "";
 		Class fragmentClass;
 		int resId = 0;
 		switch(menuItem.getItemId()) {
 			case id.nav_weekly_schedule_fragment:
 				fragmentClass = WeeklyProgramsFragment.class;
-				mTvToolbarTitle.setText("Weekly Schedule");
+				title = "Weekly Schedule";
 				resId = R.drawable.weekly_programs;
 				break;
 			case id.nav_upcoming_programs_fragment:
 				fragmentClass = UpcomingProgramsFragment.class;
-				mTvToolbarTitle.setText("Announcements");
+				title = "Announcements";
 				resId = R.drawable.events_announcements;
 				break;
 //			case id.nav_community_announcements:
@@ -190,22 +198,25 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 //				break;
 			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
-				mTvToolbarTitle.setText("Contact and Directions");
+				title = "Contact and Directions";
 				resId = R.drawable.weekly_programs;
 				break;
 			case id.nav_prayer_times_fragment:
 				fragmentClass = PrayerTimesFragment.class;
-				mTvToolbarTitle.setText("Prayer Times");
+				title = "Prayer Times";
 				resId = R.drawable.prayers1;
 				break;
 			default:
 				fragmentClass = WeeklyProgramsFragment.class;
 				resId = R.drawable.weekly_programs;
+				title = "Weekly Schedule";
 		}
 
+
+
+		mTvToolbarTitle.setText(title);
 		try {
 			fragment = (Fragment) fragmentClass.newInstance();
-
 			final DrawerLayout layout = (DrawerLayout)findViewById(id.drawer_layout);
 			// Load image, decode it to Bitmap and return Bitmap to callback
 			ImageSize targetSize = new ImageSize(640, 1136); // result Bitmap will be fit to this size
@@ -216,7 +227,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 					layout.setBackground(d);
 				}
 			});
-			
+
 //			Bitmap loadedImage = ImageLoader.getInstance().loadImageSync("drawable://" + resId);
 //			Drawable d = new BitmapDrawable(getResources(), loadedImage);
 //			layout.setBackground(d);
@@ -226,9 +237,13 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		}
 
 		// Insert the fragment by replacing any existing fragment
-		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager.beginTransaction().replace(id.flContent, fragment).commit();
+		//Log.d(TAG, "******** Total Fragments - after remove: " + fragmentManager.getFragments().size());
+		fragmentManager.beginTransaction().add(id.flContent, fragment, title).commit();
+		//Log.d(TAG, "******** new Fragment Tag: " + fragment.getTag() + " ---- " + fragment.toString());
+		//Log.d(TAG, "******** Total Fragments - after adding new fragment: " + fragmentManager.getFragments().size());
+		//fragmentManager.beginTransaction().replace(id.flContent, fragment, title).commit();
 
+		mCurrentFragment = fragment;
 		// Highlight the selected item, update the title, and close the drawer
 		menuItem.setChecked(true);
 		setTitle(menuItem.getTitle());

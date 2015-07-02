@@ -71,6 +71,7 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 		mPrograms = SabaProgram.fromWeeklyPrograms(mProgramName, mWeeklyPrograms);
 		addAllWeeklyPrograms(mWeeklyPrograms);
 		addAll(mPrograms);
+		mAdapter.addAll(mPrograms);
 	}
 
 	//------ refresh menu item.
