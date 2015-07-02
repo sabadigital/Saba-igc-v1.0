@@ -76,7 +76,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	// ======= Google Play Services..
 	private static final String TAG = MainActivity.class.getSimpleName();
 	private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
-	private Location mLastLocation;
+	private Location mLastLocation = null;
 	private boolean	 mAlreadyGotLocationUpdate = false;
 
 	// Google client to interact with Google API
@@ -199,12 +199,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		if(mAdapter!=null)
 			mAdapter.clear();
 		mTvHijriDate.setText("");
-		mTvCityName.setText("");
+		mTvCityName.setText("Loading...");
 	}
 
 	private void refreshUI(){
 		mSwipeRefreshLayout.setRefreshing(true);
-
 		clearUIControls();
 
 		setDates();
@@ -215,14 +214,13 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			if(!mGoogleApiClient.isConnected()) {
 				mGoogleApiClient.connect();
 			} else {
-				//startLocationUpdates();
-				processCurrentLocation();
+				startLocationUpdates();
+				//processCurrentLocation();
 			}
 		}
 	}
 
 	private String getCurrentTimezoneOffsetInMinutes() {
-
 		TimeZone tz = TimeZone.getDefault();
 		Calendar cal = GregorianCalendar.getInstance(tz);
 		int offsetInMillis = tz.getOffset(cal.getTimeInMillis());
@@ -310,8 +308,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 //		}
 		// Gets the best and most recent location currently available,
 		// which may be null in rare cases when a location is not available.
-		mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
-				mGoogleApiClient);
+		//mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
+		//		mGoogleApiClient);
 
 		if (mLastLocation == null) {
 			showSettingsAlert();
@@ -329,6 +327,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
 			locationBasedCityName.getAddressFromLocation(mLastLocation.getLatitude(), mLastLocation.getLongitude(),
 					getActivity(), new GeocoderHandler());
+
+			stopLocationUpdates();
 		}
 	}
 
@@ -425,7 +425,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public void onPause() {
 		// stop location updates (saves battery)
 		super.onPause();
-//		stopLocationUpdates();
+		stopLocationUpdates();
 	}
 
 	/**
@@ -445,7 +445,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		// Location updates intervals in sec
 		final int UPDATE_INTERVAL = 5000; // 5 sec
 		final int FATEST_INTERVAL = 3000; // 3 sec
-		final int DISPLACEMENT = 1; // 1 meters
+		final int DISPLACEMENT = 0; // 1 meters
 
 		mLocationRequest = new LocationRequest();
 		mLocationRequest.setInterval(UPDATE_INTERVAL);
@@ -487,8 +487,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public void onConnected(Bundle arg0) {
-		//mSwipeRefreshLayout.setRefreshing(true);
-		processCurrentLocation();
+		mSwipeRefreshLayout.setRefreshing(true);
+		mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+		startLocationUpdates();
 	}
 
 	@Override
@@ -519,19 +520,33 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	* */
 	@Override
 	public void onLocationChanged(Location location) {
-		if(mAlreadyGotLocationUpdate){
+		if(mLastLocation == null){
+			mLastLocation = location;
 			return;
 		}
 
-		mAlreadyGotLocationUpdate = true;
+		if(isItBetterLocation(location)) {
+			//Log.d(TAG, "********* Lon: " + location.getLongitude() + " ------- lat " + location.getLatitude());
+			mAlreadyGotLocationUpdate = true;
+			Toast.makeText(getActivity(), "Location changed!",
+					Toast.LENGTH_SHORT).show();
+			processCurrentLocation();
+		}
+
 		// Assign the new location
 		mLastLocation = location;
-		Toast.makeText(getActivity(), "Location changed!",
-				Toast.LENGTH_SHORT).show();
-		stopLocationUpdates();
-		processCurrentLocation();
 	}
 
+	// if oldLocation and newLocation is same then we should get the city name and then prayerTimes.
+	private boolean isItBetterLocation(Location newLocation){
+		double oldLon = Math.round(mLastLocation.getLongitude()*10000)/10000.0d;
+		double oldLat = Math.round(mLastLocation.getLatitude()*10000)/10000.0d;
+
+		double newLon = Math.round(newLocation.getLongitude()*10000)/10000.0d;
+		double newLat = Math.round(newLocation.getLatitude()*10000)/10000.0d;
+
+		return (oldLon == newLon && oldLat == newLat);
+	}
 	// show settings Alert
 	/**
 	 * Function to show settings alert dialog
