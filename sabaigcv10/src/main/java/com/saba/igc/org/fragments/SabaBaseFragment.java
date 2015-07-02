@@ -190,23 +190,12 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	protected abstract void populatePrograms();
 	protected abstract void processOnItemClick(int position);
 
-//	@Override
-//	public void onDestroyView(){
-//		super.onDestroyView();
-//		Log.d(TAG, "onDestroyView: ********** " + mProgramName);
-////		mSwipeRefreshLayout.setRefreshing(false);
-////		mSabaClient.removeTarget(mProgramName, this);
-////		mAdapter.clear();
-////		mPrograms.clear();
-//	}
-//
-//	@Override
-//	public void onDetach(){
-//		super.onDetach();
-//		Log.d(TAG, "onDetach ********** " + mProgramName);
-//		mSwipeRefreshLayout.setRefreshing(false);
-//		mSabaClient.removeTarget(mProgramName, this);
-//		mAdapter.clear();
-//		mPrograms.clear();
-//	}
+	@Override
+	public void onPause(){
+		super.onPause();
+		//Log.d(TAG, "onPause ********** " + mProgramName);
+
+		if(mSwipeRefreshLayout.isRefreshing())
+			mSwipeRefreshLayout.setRefreshing(false);
+	}
 }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -78,13 +79,15 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		if(actionBar != null) {
 			actionBar.setHomeAsUpIndicator(drawable.ic_menu_white_36dp);
 			actionBar.setDisplayHomeAsUpEnabled(true);
-			mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					if(SabaApplication.getSabaClient().isInProgress() == false)
-						mDrawer.openDrawer(mNavigationView);
-				}
-			});
+
+//			following code captures the ham-burger menu click event.
+//			mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//				@Override
+//				public void onClick(View v) {
+//					if(SabaApplication.getSabaClient().isInProgress() == false)
+//						mDrawer.openDrawer(mNavigationView);
+//				}
+//			});
 
 			// sets toolbar title in center.
 			View view = getLayoutInflater().inflate(layout.custom_toolbar_view, null);
@@ -114,7 +117,8 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		FragmentManager fragmentManager = getSupportFragmentManager();
 		fragmentManager.beginTransaction().replace(id.flContent, fragment, "Weekly Programs").commit();
 
-		mDrawer.openDrawer(mNavigationView);
+		//mDrawer.openDrawer(mNavigationView);
+		mDrawer.closeDrawers();
 	}
 
 	private ActionBarDrawerToggle setupDrawerToggle() {
@@ -165,15 +169,10 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	}
 
 	public void selectDrawerItem(MenuItem menuItem) {
-		if(SabaApplication.getSabaClient().isInProgress() == true){
-			//Log.d(TAG, "******** going to remove the request from map...");
-			SabaApplication.getSabaClient().removeTarget(mCurrentFragment.getTag(), (SabaServerResponseListener)mCurrentFragment);
-		}
-
-		FragmentManager fragmentManager = getSupportFragmentManager();
-		//Log.d(TAG, "******** Total Fragments" + fragmentManager.getFragments().size());
-		fragmentManager.beginTransaction().disallowAddToBackStack().remove(mCurrentFragment).commitAllowingStateLoss();
-		fragmentManager.popBackStackImmediate();
+//		if(SabaApplication.getSabaClient().isInProgress() == true){
+//			//Log.d(TAG, "******** going to remove the request from map...");
+//			SabaApplication.getSabaClient().removeTarget(mCurrentFragment.getTag(), (SabaServerResponseListener)mCurrentFragment);
+//		}
 
 		// Create a new fragment and specify the planet to show based on
 		// position
@@ -212,8 +211,6 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 				title = "Weekly Schedule";
 		}
 
-
-
 		mTvToolbarTitle.setText(title);
 		try {
 			fragment = (Fragment) fragmentClass.newInstance();
@@ -236,12 +233,16 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 			e.printStackTrace();
 		}
 
-		// Insert the fragment by replacing any existing fragment
-		//Log.d(TAG, "******** Total Fragments - after remove: " + fragmentManager.getFragments().size());
-		fragmentManager.beginTransaction().add(id.flContent, fragment, title).commit();
-		//Log.d(TAG, "******** new Fragment Tag: " + fragment.getTag() + " ---- " + fragment.toString());
-		//Log.d(TAG, "******** Total Fragments - after adding new fragment: " + fragmentManager.getFragments().size());
-		//fragmentManager.beginTransaction().replace(id.flContent, fragment, title).commit();
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		FragmentTransaction ft = fragmentManager.beginTransaction();
+
+		ft.hide(mCurrentFragment);
+		if(fragment.isAdded()){
+			ft.show(fragment);
+		} else {
+			ft.add(id.flContent, fragment, title);
+		}
+		ft.commit();
 
 		mCurrentFragment = fragment;
 		// Highlight the selected item, update the title, and close the drawer
