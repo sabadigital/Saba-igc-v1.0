@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.DailyProgramsArrayAdapter;
+import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.models.DailyProgram;
 
 import java.util.List;
@@ -40,6 +41,9 @@ public class DailyProgramDetailActivity extends AppCompatActivity {
 			toolbar.addView(view);
 			setTitle(""); // to make API 16 compatible.
 		}
+
+		// Send screen name.
+		SabaApplication.sendAnalyticsScreenName(getResources().getString(R.string.daily_program_details_activity));
 	}
 
 	private void setupUI() {

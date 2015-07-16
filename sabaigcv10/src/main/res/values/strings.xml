@@ -81,7 +81,7 @@
     <string name="contact_directions_fragment">Contact and Directions Fragment</string>
     <string name="weekly_schedule_fragment">Weekly Schedule Fragment</string>
     <string name="announcements_fragment">Announcements Fragment</string>
-    <string name="daily_program_details_fragment">Daily Program Details Fragment</string>
+    <string name="daily_program_details_activity">Daily Program Details Activity</string>
     <string name="prayer_times_fragment">Prayer Times Fragment</string>
 </resources>
 
