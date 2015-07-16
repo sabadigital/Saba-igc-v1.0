@@ -12,6 +12,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.saba.igc.org.R;
+import com.saba.igc.org.activities.MainActivity1;
 import com.saba.igc.org.adapters.ProgramsArrayAdapter;
 import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.application.SabaClient;
@@ -60,7 +61,7 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
         //mTvLastRrefreshedValue = (TextView) view.findViewById(R.id.tvLastRrefreshedValue);
         
         if(mPrograms != null && mPrograms.size() == 0) {
-			mPrograms = new ArrayList<SabaProgram>();
+			mPrograms = new ArrayList<>();
 		}
 
 		mAdapter = new ProgramsArrayAdapter(getActivity(), mPrograms);
@@ -83,11 +84,17 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 		mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_red_dark,
 				android.R.color.holo_green_dark,
 				android.R.color.holo_blue_dark);
+
 		mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
 			@Override
 			public void onRefresh() {
 				if (mRefreshInProgress)
 					return;
+
+				SabaApplication.sendAnalyticsEvent(((MainActivity1)getActivity()).getToolbarTitle() + " Fragment",
+						((MainActivity1)getActivity()).getToolbarTitle(),
+						getResources().getString(R.string.refresh_event_action_swiped),
+						getResources().getString(R.string.refresh_event_label));
 
 				//Refreshing data from server
 				populatePrograms();

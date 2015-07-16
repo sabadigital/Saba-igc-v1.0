@@ -58,5 +58,30 @@
     <string name="saba_address_2"><u>San Jose, CA 95134</u></string>
 
     <string name="saba_address_with_phone"><![CDATA[4415 Fortran Ct. San Jose, CA 95134. <br />(408-946-5700)]]></string>
+
+    <!--Analytics-->
+    <!--Event Categories-->
+    <string name="event_category_prayer_times">Prayer Times</string>
+    <string name="event_category_weekly_schedule">Weekly Schedule</string>
+    <string name="event_category_announcements">Announcements</string>
+    <string name="event_category_contact_directions">Contact and Directions</string>
+
+    <!--Event Labels-->
+    <string name="refresh_event_label">Refresh</string>
+    <string name="geocoder_event_label">Failed to get the city name</string>
+    <string name="directions_to_saba_info_window">Directions to SABA - Launched Google Maps.</string>
+
+    <!--Event Actions-->
+    <string name="geocoder_event_action_error">Geocoder Error</string>
+    <string name="refresh_event_action_swiped">Swiped</string>
+    <string name="refresh_event_action_clicked">Clicked</string>
+    <string name="clicked">Clicked</string>
+
+    <!--Following are View/Screen constants-->
+    <string name="contact_directions_fragment">Contact and Directions Fragment</string>
+    <string name="weekly_schedule_fragment">Weekly Schedule Fragment</string>
+    <string name="announcements_fragment">Announcements Fragment</string>
+    <string name="daily_program_details_fragment">Daily Program Details Fragment</string>
+    <string name="prayer_times_fragment">Prayer Times Fragment</string>
 </resources>
 

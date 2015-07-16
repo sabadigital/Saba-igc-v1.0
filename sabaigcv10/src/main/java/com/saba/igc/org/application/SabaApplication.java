@@ -2,17 +2,25 @@ package com.saba.igc.org.application;
 
 import android.app.Application;
 import android.content.Context;
+import android.util.Log;
 
 import com.activeandroid.ActiveAndroid;
 import com.activeandroid.Configuration;
+import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.saba.igc.org.extras.SimpleLocation;
+import com.saba.igc.org.listeners.SabaServerResponseListener;
 import com.saba.igc.org.models.DailyProgram;
 import com.saba.igc.org.models.PrayerTimes;
-import com.saba.igc.org.models.SabaDatabaseHelper;
 import com.saba.igc.org.models.SabaProgram;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * @author Syed Aftab Naqvi
@@ -22,7 +30,39 @@ import com.saba.igc.org.models.SabaProgram;
 public class SabaApplication extends Application {
 	private static Context mContext;
 	private static SimpleLocation mLocation;
-	
+	private String TAG = SabaApplication.class.toString();
+
+	/**
+	 * The Analytics singleton. The field is set in onCreate method override when the application
+	 * class is initially created.
+	 */
+	private static GoogleAnalytics mAnalytics;
+
+	/**
+	 * The default app tracker. The field is from onCreate callback when the application is
+	 * initially created.
+	 */
+	private static Tracker mTracker;
+
+	/**
+	 * Access to the global Analytics singleton. If this method returns null you forgot to either
+	 * set android:name="&lt;this.class.name&gt;" attribute on your application element in
+	 * AndroidManifest.xml or you are not setting this.analytics field in onCreate method override.
+	 */
+	public static GoogleAnalytics analytics() {
+		return mAnalytics;
+	}
+
+	/**
+	 * The default app tracker. If this method returns null you forgot to either set
+	 * android:name="&lt;this.class.name&gt;" attribute on your application element in
+	 * AndroidManifest.xml or you are not setting this.tracker field in onCreate method override.
+	 */
+	public static Tracker tracker() {
+		return mTracker;
+	}
+
+
 //
 //	public enum AppStartType {
 //	    FIRST_TIME, 
@@ -78,9 +118,9 @@ public class SabaApplication extends Application {
 		SabaApplication.mContext = this;
 
 	    Configuration.Builder config1 = new Configuration.Builder(this);
-	    config1.addModelClasses(PrayerTimes.class);
-	    config1.addModelClasses(SabaProgram.class);
-	    config1.addModelClasses(DailyProgram.class);
+	    config1.addModelClasses(PrayerTimes.class, SabaProgram.class, DailyProgram.class);
+//	    config1.addModelClasses(SabaProgram.class);
+//	    config1.addModelClasses(DailyProgram.class);
 
 	    ActiveAndroid.initialize(config1.create());
 	    
@@ -92,11 +132,35 @@ public class SabaApplication extends Application {
 		.defaultDisplayImageOptions(defaultOptions)
 		.build();
 		ImageLoader.getInstance().init(config);
-		
-		//mLocation = new SimpleLocation(mContext, true, true, 60000);
-		//mLocation.beginUpdates();
-		
+
+		getSabaClient().getHijriDate("hijriDate", new SabaServerResponseListener() {
+			@Override
+			public void processJsonObject(String programName, JSONObject response) {
+				if(response == null){
+					Log.d(TAG, "json object is null for :" + programName);
+					return;
+				}
+
+				if(programName.compareToIgnoreCase("hijriDate") == 0){
+					try{
+						String hijriDate = response.getString("hijridate");
+						if(hijriDate != null){
+							Log.d(TAG, "HijriDate: " + hijriDate);
+							getSabaClient().saveHijriDate(hijriDate);
+						}
+					} catch (JSONException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+
+			@Override
+			public void processJsonObject(String programName, JSONArray response) {
+
+			}
+		});
 		//createDB();
+		initializeGoogleAnalytics();
 	}
 
 	@Override
@@ -106,14 +170,51 @@ public class SabaApplication extends Application {
     }
 	
 	public static SabaClient getSabaClient() {
-		return (SabaClient) SabaClient.getInstance(SabaApplication.mContext);
+		return SabaClient.getInstance(SabaApplication.mContext);
 	}
 	
-	public static SimpleLocation getLocation(){
-		return mLocation;
+//	public static SimpleLocation getLocation(){
+//		return mLocation;
+//	}
+//	private static void createDB(){
+//		SabaDatabaseHelper sdh = new SabaDatabaseHelper(SabaApplication.mContext);
+//		sdh.createDatabase();
+//	}
+
+	private void initializeGoogleAnalytics(){
+		mAnalytics = GoogleAnalytics.getInstance(this);
+		mAnalytics.setLocalDispatchPeriod(120);
+
+		//https://www.google.com/analytics/web/
+		mTracker = mAnalytics.newTracker("UA-65121409-6");
+
+		// Provide unhandled exceptions reports. Do that first after creating the tracker
+		//mTracker.enableExceptionReporting(true);
+
+		// Enable Remarketing, Demographics & Interests reports
+		// https://developers.google.com/analytics/devguides/collection/android/display-features
+		//mTracker.enableAdvertisingIdCollection(true);
+
+//		// Enable automatic activity tracking for your app
+//		mTracker.enableAutoActivityTracking(true);
+
+//		mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(1, null).build());
 	}
-	private static void createDB(){
-		SabaDatabaseHelper sdh = new SabaDatabaseHelper(SabaApplication.mContext);
-		sdh.createDatabase();
+
+	// this function sends tracking events for Analytics.
+	public static void sendAnalyticsEvent(String screenName, String eventCategory, String eventAction, String eventLabel){
+		mTracker.setScreenName(screenName);
+		mTracker.send(new HitBuilders.EventBuilder()
+				.setCategory(eventCategory)
+				.setAction(eventAction)
+				.setLabel(eventLabel)
+				.build());
+	}
+
+	public static void sendAnalyticsScreenName(String screenName){
+		// Set screen name.
+		mTracker.setScreenName(screenName);
+		// Send a screen view.
+		mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 	}
 }

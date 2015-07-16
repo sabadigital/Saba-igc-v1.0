@@ -106,7 +106,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		// setting WeeklyPrograms displayed on startup. If we want to display something else on startup, change here.
 		Fragment fragment = null;
 		try {
-			fragment = (Fragment) WeeklyProgramsFragment.class.newInstance();
+			fragment = WeeklyProgramsFragment.class.newInstance();
 			mTvToolbarTitle.setText("Weekly Schedule");
 			mCurrentFragment = fragment;
 		} catch (Exception e) {
@@ -115,10 +115,21 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		// Insert the fragment by replacing any existing fragment
 		FragmentManager fragmentManager = getSupportFragmentManager();
-		fragmentManager.beginTransaction().replace(id.flContent, fragment, "Weekly Programs").commit();
+		fragmentManager.beginTransaction().replace(id.flContent, fragment).commit();
 
 		//mDrawer.openDrawer(mNavigationView);
 		mDrawer.closeDrawers();
+
+		// Send screen name.
+		SabaApplication.sendAnalyticsScreenName("Main Activity");
+
+		// Send an Event.
+		SabaApplication.sendAnalyticsEvent("Main Activity",
+									"Main Activity",
+									"App Launched",
+									"Cold Start");
+
+		SabaApplication.sendAnalyticsScreenName(getResources().getString(R.string.weekly_schedule_fragment));
 	}
 
 	private ActionBarDrawerToggle setupDrawerToggle() {
@@ -136,11 +147,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		if (mDrawerToggle.onOptionsItemSelected(item)) {
-			return true;
-		}
-
-		return super.onOptionsItemSelected(item);
+		return mDrawerToggle.onOptionsItemSelected(item)|| super.onOptionsItemSelected(item);
 	}
 
 	@Override
@@ -177,9 +184,9 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		// Create a new fragment and specify the planet to show based on
 		// position
 		Fragment fragment = null;
-		String title = "";
+		String title;
 		Class fragmentClass;
-		int resId = 0;
+		int resId;
 		switch(menuItem.getItemId()) {
 			case id.nav_weekly_schedule_fragment:
 				fragmentClass = WeeklyProgramsFragment.class;
@@ -240,7 +247,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		if(fragment.isAdded()){
 			ft.show(fragment);
 		} else {
-			ft.add(id.flContent, fragment, title);
+			ft.add(id.flContent, fragment);
 		}
 		ft.commit();
 
@@ -249,6 +256,9 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 		menuItem.setChecked(true);
 		setTitle(menuItem.getTitle());
 		mDrawer.closeDrawers();
+
+		// Send screen name. Common for all fragments.
+		SabaApplication.sendAnalyticsScreenName(title + " Fragment");
 	}
 
 	private void setDates(){
@@ -294,6 +304,10 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	@Override
 	public void processJsonObject(String programName, JSONArray response) {
 
+	}
+
+	public String getToolbarTitle(){
+		return mTvToolbarTitle.getText().toString();
 	}
 }
 

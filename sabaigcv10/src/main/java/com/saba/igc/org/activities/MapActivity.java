@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
@@ -18,6 +19,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.CustomInfoWindowAdapter;
+import com.saba.igc.org.application.SabaApplication;
 
 public class MapActivity extends AppCompatActivity implements OnInfoWindowClickListener{
     private static final LatLng SABA_LOCATION = new LatLng(37.421177, -121.958697);
@@ -102,5 +104,16 @@ public class MapActivity extends AppCompatActivity implements OnInfoWindowClickL
                 break;
         }
         return true;
+    }
+
+    private void trackAnalytics(String action){
+        // All subsequent hits will be send with screen name = "main screen"
+        SabaApplication.tracker().setScreenName("Prayer Times Screen");
+
+        SabaApplication.tracker().send(new HitBuilders.EventBuilder()
+                .setCategory("Prayer Times")
+                .setAction(action)
+                .setLabel("")
+                .build());
     }
 }

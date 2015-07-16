@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.saba.igc.org.R;
 import com.saba.igc.org.activities.DailyProgramDetailActivity;
+import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.models.DailyProgram;
 import com.saba.igc.org.models.SabaProgram;
 
@@ -21,7 +22,7 @@ import java.util.List;
  * @version 1.0
  */
 public class WeeklyProgramsFragment extends SabaBaseFragment {
-	private final String TAG = "WeeklyProgramsFragment"; 
+	private final String TAG = "Weekly Programs Fragment";
 	private final String PROGRAM_NAME = "Weekly Programs";
 	private List<List<DailyProgram>> mWeeklyPrograms;
 	
@@ -90,6 +91,10 @@ public class WeeklyProgramsFragment extends SabaBaseFragment {
 				if(mRefreshInProgress)
 					return true;
 
+				SabaApplication.sendAnalyticsEvent(getResources().getString(R.string.weekly_schedule_fragment),
+										getResources().getString(R.string.event_category_weekly_schedule),
+										getResources().getString(R.string.refresh_event_action_clicked),
+										getResources().getString(R.string.refresh_event_label));
 
 				populatePrograms();
 				return true;

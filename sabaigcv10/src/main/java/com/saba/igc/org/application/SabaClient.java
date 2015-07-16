@@ -28,37 +28,30 @@ public class SabaClient {
 	private static Map<String, SabaServerResponseListener> mMap;
 	private static SabaClient sabaClient;
 	private static Context mContext;
-	private static final String SABA_BASE_URL = "http://www.saba-igc.org/mobileapp/datafeedproxy.php?sheetName=weekly&sheetId=";
-	private static String PRAY_TIME_INFO_URL = "http://praytime.info/getprayertimes.php?lat=34.024899&lon=-117.89730099999997&gmt=-480&m=11&d=31&y=2014&school=0";
-	private static String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=";
-	private static String HIJRI_DATE_URL = "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php";
 
+	private static final String SABA_BASE_URL = "http://www.saba-igc.org/mobileapp/datafeedproxy.php?sheetName=weekly&sheetId=";
 	private static final int TIME_OUT = 30000;
 
 	/**
-	 * @param context
-	 * @return
+	 * @param context Application Context
+	 * @return SabaClient
 	 */
 	public synchronized static SabaClient getInstance(Context context) {
 	   if(sabaClient == null) {
 		   mContext = context;
 		   sabaClient = new SabaClient();
-		   mMap = new HashMap<String, SabaServerResponseListener>();
+		   mMap = new HashMap<>();
 	   }
 
 	   return sabaClient;
 	}
 
 	public boolean isInProgress(){
-		return mMap.size()==0?false:true;
+		return mMap.size()!=0;
 	}
 
 	public void removeTarget(String program, SabaServerResponseListener target){
-//		Log.d("SabaClient", "********** - going to find a " + program);
-//		for(String str : mMap.keySet())
-//			Log.d("SabaClient", "********** - Map key: " + str);
 		if(mMap.containsKey(program)){
-//			Log.d("SabaClient", "********** - fond a request and going to remove...");
 			mMap.remove(program);
 		}
 	}
@@ -166,20 +159,14 @@ public class SabaClient {
 		});
 	}
 
-	public void getCachedPrograms(String string, SabaServerResponseListener target) {
-
-		//mTarget = target;
-		//new ReadFromDatabase().execute(string);
-	}
-
 	public void getHijriDate(String hijriDate, SabaServerResponseListener target) {
-
-		//7mTarget = target;
-		sendRequest(hijriDate, HIJRI_DATE_URL, target);
+		//String HIJRI_DATE_URL = "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php";
+		sendRequest(hijriDate, "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php", target);
 	}
 
 	public void getPrayTimes(String timeZoneOffsetInMinutes, double latitude, double longitude, SabaServerResponseListener target) {
-		StringBuilder sb = new StringBuilder(PRAY_TIME_INFO_BASE_URL);
+		//String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=";
+		StringBuilder sb = new StringBuilder("http://praytime.info/getprayertimes.php?school=0&gmt=");
 
 		sb.append(timeZoneOffsetInMinutes); // appending timeZoneOffsetInMinutes.
 
@@ -207,7 +194,7 @@ public class SabaClient {
 				.getDefaultSharedPreferences(mContext);
 		Editor editor = sharedPreferences.edit();
 		editor.putString(key, value);
-		editor.commit();
+		editor.apply();
 	}
 
 	private String getSavedPreferences(String key) {
@@ -220,7 +207,7 @@ public class SabaClient {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		Calendar calendar = Calendar.getInstance();
 		String englishDate = dateFormat.format(calendar.getTime());
-		if( (englishDate != null) && englishDate.compareTo(getEnglishDate())==0){
+		if( englishDate.compareTo(getEnglishDate())==0){
 			return getSavedPreferences("hijriDate");
 		}
 

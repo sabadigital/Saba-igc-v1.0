@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.saba.igc.org.R;
+import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.models.SabaProgram;
 
 /**
@@ -19,7 +20,7 @@ import com.saba.igc.org.models.SabaProgram;
  */
 public class UpcomingProgramsFragment extends SabaBaseFragment {
 	private final String PROGRAM_NAME = "Announcements";
-	private final String TAG = "UpcomingProgramsFragment";
+	private final String TAG = "Upcoming Programs Fragment";
 	public UpcomingProgramsFragment(){
 	}
 
@@ -77,12 +78,19 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 				if(mRefreshInProgress)
 					return true;
 
+				SabaApplication.sendAnalyticsEvent(mProgramName + " Fragment",
+						getResources().getString(R.string.event_category_announcements),
+						getResources().getString(R.string.refresh_event_action_clicked),
+						getResources().getString(R.string.refresh_event_label));
+
 				populatePrograms();
 				return true;
 		}
 
 		return super.onOptionsItemSelected(item);
 	}
+
+
 }
 
 

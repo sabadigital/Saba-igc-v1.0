@@ -133,6 +133,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			public void onRefresh() {
 				if (mPrayerTimesFromWebInProgress)
 					return;
+				SabaApplication.sendAnalyticsEvent(getResources().getString(R.string.prayer_times_fragment),
+						getResources().getString(R.string.event_category_prayer_times),
+						getResources().getString(R.string.refresh_event_action_swiped),
+						getResources().getString(R.string.refresh_event_label));
 
 				//Refreshing data from server
 				refreshUI();
@@ -289,6 +293,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				if (mSwipeRefreshLayout.isRefreshing()) {
 					mSwipeRefreshLayout.setRefreshing(false);
 				}
+				SabaApplication.sendAnalyticsEvent(getResources().getString(R.string.prayer_times_fragment),
+						getResources().getString(R.string.event_category_prayer_times),
+						getResources().getString(R.string.geocoder_event_action_error),
+						getResources().getString(R.string.geocoder_event_label));
+
 				showAlert();
 				return;
 			}
@@ -408,6 +417,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 			case R.id.refreshFragment:
+				SabaApplication.sendAnalyticsEvent(getResources().getString(R.string.prayer_times_fragment),
+						getResources().getString(R.string.event_category_prayer_times),
+						getResources().getString(R.string.refresh_event_action_clicked),
+						getResources().getString(R.string.refresh_event_label));
 
 				refreshUI();
 				return true;

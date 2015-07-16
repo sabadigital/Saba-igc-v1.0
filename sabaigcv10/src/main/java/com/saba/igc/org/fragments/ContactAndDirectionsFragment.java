@@ -1,6 +1,9 @@
 package com.saba.igc.org.fragments;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -22,6 +25,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.saba.igc.org.R;
 import com.saba.igc.org.adapters.CustomInfoWindowAdapter;
+import com.saba.igc.org.application.SabaApplication;
 
 public class ContactAndDirectionsFragment extends Fragment implements OnInfoWindowClickListener{
     private static final LatLng SABA_LOCATION = new LatLng(37.421177, -121.958697);
@@ -127,7 +131,16 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
         Uri gmmIntentUri = Uri.parse("google.navigation:q=4415 Fortran Ct. San Jose, CA 95134");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
+        try {
+            startActivity(mapIntent);
+        } catch (ActivityNotFoundException e){
+            e.printStackTrace();
+            trackAnalytics(false);
+            showAlert();
+            return;
+        }
+
+        trackAnalytics(true);
     }
 
     @Override
@@ -154,5 +167,31 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
     @Override
     public void onDetach() {
         super.onDetach();
+    }
+
+    protected void trackAnalytics(boolean success){
+        SabaApplication.sendAnalyticsEvent(getResources().getString(R.string.contact_directions_fragment),
+                getResources().getString(R.string.event_category_contact_directions),
+                getResources().getString(R.string.clicked),
+                (success == true) ? getResources().getString(R.string.directions_to_saba_info_window)
+                        : "Directions to SABA - Failed to launch Google Maps");
+
+    }
+
+    public void showAlert(){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+
+        // Setting Dialog Title
+        alertDialog.setTitle("Google Maps not found on the device to show directions to SABA.");
+
+        // on pressing OK button
+        alertDialog.setNegativeButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        // Showing Alert Message
+        alertDialog.show();
     }
 }
