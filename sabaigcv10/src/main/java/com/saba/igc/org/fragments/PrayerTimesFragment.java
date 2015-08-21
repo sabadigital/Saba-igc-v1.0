@@ -313,15 +313,6 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
     }
 
 	public void processCurrentLocation(){
-//		LocationAvailability la = LocationServices.FusedLocationApi.getLocationAvailability(mGoogleApiClient);
-//		if (la != null && la.isLocationAvailable()) {
-//			Log.d(TAG, "**** Location Available ****");
-//		}
-		// Gets the best and most recent location currently available,
-		// which may be null in rare cases when a location is not available.
-		//mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
-		//		mGoogleApiClient);
-
 		if (mLastLocation == null) {
 			showSettingsAlert();
 			if (mSwipeRefreshLayout.isRefreshing()) {

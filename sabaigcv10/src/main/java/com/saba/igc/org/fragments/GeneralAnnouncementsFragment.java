@@ -37,7 +37,6 @@ public class GeneralAnnouncementsFragment extends SabaBaseFragment {
 	
 	@Override
 	protected void populatePrograms() {
-		//mProgramsProgressBar.setVisibility(View.VISIBLE);
 		mAdapter.clear();
 		mSabaClient.getGeneralAnnouncements(this);
 	}

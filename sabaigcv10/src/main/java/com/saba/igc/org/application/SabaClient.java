@@ -98,41 +98,7 @@ public class SabaClient {
 					target.processJsonObject(programName, errorResponse);
 					removeTarget(programName, listener);
 				}
-
-				//target.processJsonObject(programName, errorResponse);
 			}
-
-//			@Override
-//			public void onFailure(int statusCode, Header[] headers,
-//					String responseString, Throwable throwable) {
-//				// TODO Auto-generated method stub
-//				super.onFailure(statusCode, headers, responseString, throwable);
-//			}
-//
-//			@Override
-//			public void onFailure(int statusCode, Header[] headers,
-//					Throwable throwable, JSONArray errorResponse) {
-//				// TODO Auto-generated method stub
-//				
-//				
-//				int i = 0;
-//				i++;
-//				super.onFailure(statusCode, headers, throwable, errorResponse);
-//			}
-
-//			@Override
-//			public void onSuccess(int statusCode, Header[] headers,
-//					String responseString) {
-//				// TODO Auto-generated method stub
-//				super.onSuccess(statusCode, headers, responseString);
-//			}
-//
-//			@Override
-//			protected Object parseResponse(byte[] responseBody)
-//					throws JSONException {
-//				// TODO Auto-generated method stub
-//				return super.parseResponse(responseBody);
-//			}
 
 			@Override
 			public void onSuccess(int statusCode, Header[] headers,

@@ -119,12 +119,8 @@ public class SabaApplication extends Application {
 
 	    Configuration.Builder config1 = new Configuration.Builder(this);
 	    config1.addModelClasses(PrayerTimes.class, SabaProgram.class, DailyProgram.class);
-//	    config1.addModelClasses(SabaProgram.class);
-//	    config1.addModelClasses(DailyProgram.class);
-
 	    ActiveAndroid.initialize(config1.create());
-	    
-	    
+
 		// Create global configuration and initialize ImageLoader with this configuration
 		DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder().
 				cacheInMemory().cacheOnDisc().build();
@@ -159,7 +155,6 @@ public class SabaApplication extends Application {
 
 			}
 		});
-		//createDB();
 		initializeGoogleAnalytics();
 	}
 
@@ -172,14 +167,6 @@ public class SabaApplication extends Application {
 	public static SabaClient getSabaClient() {
 		return SabaClient.getInstance(SabaApplication.mContext);
 	}
-	
-//	public static SimpleLocation getLocation(){
-//		return mLocation;
-//	}
-//	private static void createDB(){
-//		SabaDatabaseHelper sdh = new SabaDatabaseHelper(SabaApplication.mContext);
-//		sdh.createDatabase();
-//	}
 
 	private void initializeGoogleAnalytics(){
 		mAnalytics = GoogleAnalytics.getInstance(this);
@@ -187,18 +174,6 @@ public class SabaApplication extends Application {
 
 		//https://www.google.com/analytics/web/
 		mTracker = mAnalytics.newTracker("UA-65121409-6");
-
-		// Provide unhandled exceptions reports. Do that first after creating the tracker
-		//mTracker.enableExceptionReporting(true);
-
-		// Enable Remarketing, Demographics & Interests reports
-		// https://developers.google.com/analytics/devguides/collection/android/display-features
-		//mTracker.enableAdvertisingIdCollection(true);
-
-//		// Enable automatic activity tracking for your app
-//		mTracker.enableAutoActivityTracking(true);
-
-//		mTracker.send(new HitBuilders.ScreenViewBuilder().setCustomDimension(1, null).build());
 	}
 
 	// this function sends tracking events for Analytics.

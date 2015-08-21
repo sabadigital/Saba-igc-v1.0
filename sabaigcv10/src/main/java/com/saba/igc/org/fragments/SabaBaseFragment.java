@@ -189,18 +189,15 @@ public abstract class SabaBaseFragment extends Fragment implements SabaServerRes
 	protected void setProgramName(String program){
 		mProgramName = program;
 	}
-	
 	protected String getProgramName(){
 		return mProgramName;
 	}
-	
 	protected abstract void populatePrograms();
 	protected abstract void processOnItemClick(int position);
 
 	@Override
 	public void onPause(){
 		super.onPause();
-		//Log.d(TAG, "onPause ********** " + mProgramName);
 
 		if(mSwipeRefreshLayout.isRefreshing())
 			mSwipeRefreshLayout.setRefreshing(false);

@@ -21,6 +21,7 @@ import com.saba.igc.org.models.SabaProgram;
 public class UpcomingProgramsFragment extends SabaBaseFragment {
 	private final String PROGRAM_NAME = "Announcements";
 	private final String TAG = "Upcoming Programs Fragment";
+
 	public UpcomingProgramsFragment(){
 	}
 
@@ -68,7 +69,6 @@ public class UpcomingProgramsFragment extends SabaBaseFragment {
 
 	// read about this exception....
 //	java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
-
 
 
 	@Override
