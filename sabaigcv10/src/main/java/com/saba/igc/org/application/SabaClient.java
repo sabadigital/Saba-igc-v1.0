@@ -25,25 +25,32 @@ import java.util.Map;
  * @version 1.0
  */
 public class SabaClient {
+	private static volatile SabaClient 	mSabaClient;
+	private static Context 				mContext;
 	private static Map<String, SabaServerResponseListener> mMap;
-	private static SabaClient sabaClient;
-	private static Context mContext;
 
 	private static final String SABA_BASE_URL = "http://www.saba-igc.org/mobileapp/datafeedproxy.php?sheetName=weekly&sheetId=";
 	private static final int TIME_OUT = 30000;
 
+	private SabaClient(){
+
+	}
 	/**
 	 * @param context Application Context
 	 * @return SabaClient
 	 */
-	public synchronized static SabaClient getInstance(Context context) {
-	   if(sabaClient == null) {
-		   mContext = context;
-		   sabaClient = new SabaClient();
-		   mMap = new HashMap<>();
+	public static SabaClient getInstance(Context context) {
+	   if(mSabaClient == null) {
+		   synchronized(SabaClient.class) {
+			   if(mSabaClient == null) {
+				   mSabaClient = new SabaClient();
+				   mSabaClient.mMap = new HashMap<String, SabaServerResponseListener>();
+				   mSabaClient.mContext = context;
+			   }
+		   }
 	   }
 
-	   return sabaClient;
+	   return mSabaClient;
 	}
 
 	public boolean isInProgress(){
@@ -155,6 +162,9 @@ public class SabaClient {
 		sendRequest("Prayer Times", sb.toString(), target);
 	}
 
+
+
+// Need to find a better place for following code.
 	private void savePreferences(String key, String value) {
 		SharedPreferences sharedPreferences = PreferenceManager
 				.getDefaultSharedPreferences(mContext);
