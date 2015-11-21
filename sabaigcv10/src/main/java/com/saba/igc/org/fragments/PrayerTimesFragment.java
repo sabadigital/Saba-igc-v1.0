@@ -1,10 +1,12 @@
 package com.saba.igc.org.fragments;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Geocoder;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -13,6 +15,7 @@ import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -23,6 +26,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.provider.Settings.SettingNotFoundException;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -75,6 +79,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private SwipeRefreshLayout 		mSwipeRefreshLayout	= null;
 	private	boolean					mLocationProcessed = false;
 	private LocationUpdateWaitTimer mLocationUpdateWaitTimer = null;
+	private boolean					mIsLocationInProgress;
+	private boolean					mIsSettingsAlertDisplayed;
+	private boolean					mIsFreshLaunched;
+
 	// ======= Google Play Services..
 	private static final String TAG = MainActivity.class.getSimpleName();
 	private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
@@ -94,10 +102,6 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			// Building the GoogleApi client
 			buildGoogleApiClient();
 			createLocationRequest();
-
-			if (mGoogleApiClient != null) {
-				mGoogleApiClient.connect();
-			}
 		}
 
 		// helps to display menu in fragments.
@@ -112,8 +116,28 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
 		setupUI(view);
 		setDates();
-
+		mIsFreshLaunched = true;
 		return view;
+	}
+
+	public static boolean isLocationEnabled(Context context) {
+		int locationMode = 0;
+		String locationProviders;
+
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+			try {
+				locationMode = Settings.Secure.getInt(context.getContentResolver(), Settings.Secure.LOCATION_MODE);
+
+			} catch (SettingNotFoundException e) {
+				e.printStackTrace();
+			}
+
+			return locationMode != Settings.Secure.LOCATION_MODE_OFF;
+
+		}else{
+			locationProviders = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.LOCATION_PROVIDERS_ALLOWED);
+			return !TextUtils.isEmpty(locationProviders);
+		}
 	}
 
 	private void setupUI(View view) {
@@ -148,6 +172,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			@Override
 			public void run() {
 				mSwipeRefreshLayout.setRefreshing(true);
+				refreshUI();
 			}
 		});
 
@@ -208,20 +233,28 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	}
 
 	private void refreshUI(){
-		mSwipeRefreshLayout.setRefreshing(true);
-		mLastLocation = null;
-		clearUIControls();
-
-		setDates();
-		// Kicking off the process to get the location and then prayer times,
-		// first we will try Database, if city doesn't exits then we will reach out
-		// to web to get the prayer times.
 		if (mGoogleApiClient != null) {
-			if(!mGoogleApiClient.isConnected()) {
-				mGoogleApiClient.connect();
+			if(!isLocationEnabled(getActivity())){
+				showSettingsAlert();
+
 			} else {
-				startLocationUpdates();
-				//processCurrentLocation();
+				//mIsSettingsAlertDisplayed = false;
+				mSwipeRefreshLayout.setRefreshing(true);
+				mLastLocation = null;
+				clearUIControls();
+
+				setDates();
+				// Kicking off the process to get the location and then prayer times,
+				// first we will try Database, if city doesn't exits then we will reach out
+				// to web to get the prayer times.
+				if (mGoogleApiClient != null) {
+					if(!mGoogleApiClient.isConnected()) {
+						mGoogleApiClient.connect();
+					} else {
+						startLocationUpdates();
+						//processCurrentLocation();
+					}
+				}
 			}
 		}
 	}
@@ -325,6 +358,10 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				return;
 			}
 
+			if(mIsLocationInProgress == true)
+				return;
+
+			mIsLocationInProgress = true;
 			// initiate the request to get the city name based of current latitude and longitude.
 			LocationBasedCityName locationBasedCityName = new LocationBasedCityName();
 			locationBasedCityName.getAddressFromLocation(mLastLocation.getLatitude(), mLastLocation.getLongitude(),
@@ -430,9 +467,23 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public void onPause() {
-		// stop location updates (saves battery)
+
 		super.onPause();
+		Log.d("******1111 ", "onPause");
+
 		stopLocationUpdates();
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		Log.d("******1111 ", "onResume");
+		if(mIsFreshLaunched){
+			mIsFreshLaunched = false;
+			return;
+		}
+
+		refreshUI();
 	}
 
 	/**
@@ -522,6 +573,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	 * Stopping location updates
 	 */
 	protected void stopLocationUpdates() {
+		mIsLocationInProgress = false;
 		mLocationProcessed = true;
 		if(mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
 			LocationServices.FusedLocationApi.removeLocationUpdates(
@@ -564,6 +616,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	 * On pressing Settings button will lauch Settings Options
 	 * */
 	public void showSettingsAlert(){
+		mSwipeRefreshLayout.setRefreshing(false);
+		if(mIsSettingsAlertDisplayed)
+			return;
+
+		mIsSettingsAlertDisplayed = true;
 		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
 
 		// Setting Dialog Title
@@ -575,6 +632,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		// On pressing Settings button
 		alertDialog.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog,int which) {
+				mIsSettingsAlertDisplayed = false;
 				Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
 				getActivity().startActivity(intent);
 			}
@@ -584,6 +642,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		alertDialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				dialog.cancel();
+				mIsSettingsAlertDisplayed = false;
+				mSwipeRefreshLayout.setRefreshing(false);
 			}
 		});
 

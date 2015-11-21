@@ -37,6 +37,8 @@ import org.json.JSONObject;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 import static com.saba.igc.org.R.drawable;
 import static com.saba.igc.org.R.id;
@@ -56,6 +58,7 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	private ActionBarDrawerToggle 	mDrawerToggle;
 	private final String TAG = 		"MainActivity1";
 	private Fragment				mCurrentFragment;
+	private Map<Class,Fragment>		mFragmentsMap;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -103,12 +106,15 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		setDates();
 
+		mFragmentsMap = new HashMap<Class, Fragment>();
+
 		// setting WeeklyPrograms displayed on startup. If we want to display something else on startup, change here.
 		Fragment fragment = null;
 		try {
 			fragment = WeeklyProgramsFragment.class.newInstance();
 			mTvToolbarTitle.setText("Weekly Schedule");
 			mCurrentFragment = fragment;
+			mFragmentsMap.put(WeeklyProgramsFragment.class, fragment);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -220,7 +226,14 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		mTvToolbarTitle.setText(title);
 		try {
-			fragment = (Fragment) fragmentClass.newInstance();
+			//fragment = (Fragment) fragmentClass.newInstance();
+
+			fragment = mFragmentsMap.get(fragmentClass);
+			if(fragment == null){
+				fragment = (Fragment) fragmentClass.newInstance();
+				mFragmentsMap.put(fragmentClass, fragment);
+			}
+
 			final DrawerLayout layout = (DrawerLayout)findViewById(id.drawer_layout);
 			// Load image, decode it to Bitmap and return Bitmap to callback
 			ImageSize targetSize = new ImageSize(640, 1136); // result Bitmap will be fit to this size
