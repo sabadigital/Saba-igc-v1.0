@@ -12,6 +12,7 @@ import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.Settings;
+import android.provider.Settings.SettingNotFoundException;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -26,7 +27,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.provider.Settings.SettingNotFoundException;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -433,6 +433,22 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		return PrayerTimes.getTodayPrayerTimes(city, sb.toString());
 	}
 
+	/**
+	 * Wrapper method to get the prayerTimes from PrayerTimes Model.
+	 *
+	 * */
+//	public List<PrayerTimesCache> getCachedPrayerTimesFromDB(String city){
+//		// check database for this city and it it exists then we will get the prayertimes from our database.
+//		// otherwise get the prayertimes from praytime.info.
+//		StringBuilder sb;
+//		sb = new StringBuilder();
+//		sb.append(Calendar.getInstance().get(Calendar.MONTH)); // month is zero based.
+//		sb.append("-");
+//		sb.append(Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
+//
+//		return PrayerTimesCache.getTodayPrayerTimes(city, sb.toString());
+//	}
+
 	//------ refresh menu item.
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
@@ -467,17 +483,13 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public void onPause() {
-
 		super.onPause();
-		Log.d("******1111 ", "onPause");
-
 		stopLocationUpdates();
 	}
 
 	@Override
 	public void onResume() {
 		super.onResume();
-		Log.d("******1111 ", "onResume");
 		if(mIsFreshLaunched){
 			mIsFreshLaunched = false;
 			return;

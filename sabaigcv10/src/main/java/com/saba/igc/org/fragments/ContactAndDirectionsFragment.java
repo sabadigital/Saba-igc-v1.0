@@ -1,15 +1,16 @@
 package com.saba.igc.org.fragments;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.text.Html;
+import android.view.InflateException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +33,7 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
     private final float DEFAULT_ZOOM = 13.0f;
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private SupportMapFragment mMapFragment;
-
+    private View mView;
     public ContactAndDirectionsFragment() {
         // Required empty public constructor
     }
@@ -43,14 +44,25 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
 
         super.onCreateView(inflater, container, savedInstanceState);
         getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_contact_and_directions, container, false);
+        //http://stackoverflow.com/questions/19708541/android-maps-v2-crashes-when-reopened-in-fragment
+        if (mView != null) {
+            ViewGroup parent = (ViewGroup) mView.getParent();
+            if (parent != null) {
+                parent.removeView(mView);
+            }
+        }
+        try {
+            mView = inflater.inflate(R.layout.fragment_contact_and_directions, container, false);
+        } catch (InflateException e) {
+
+        }
 
         //http://stackoverflow.com/questions/25051246/how-to-use-supportmapfragment-inside-a-fragment
         // this post was really helpful to get this working.
@@ -66,7 +78,7 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
         };
         getChildFragmentManager().beginTransaction().add(R.id.map, mMapFragment).commit();
         String address = getResources().getString(R.string.saba_address_with_phone);
-        TextView tvAddress = (TextView) view.findViewById(R.id.addressValue);
+        TextView tvAddress = (TextView) mView.findViewById(R.id.addressValue);
         if(address!=null) {
             tvAddress.setText(Html.fromHtml(address));
         }
@@ -85,7 +97,7 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
 //        };
 //        mySpannable.setSpan(myClickableSpan, 0, mySpannable.length(), Spannable.SPAN_POINT_POINT);
 
-        return view;
+        return mView;
     }
 
     private void setUpMapIfNeeded() {
@@ -147,28 +159,7 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
     }
-
-    @Override
-    public void onPause(){
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    public void onAttach(Activity activity)
-    {
-        super.onAttach(activity);
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-    }
-
+    
     protected void trackAnalytics(boolean success){
         SabaApplication.sendAnalyticsEvent(getResources().getString(R.string.contact_directions_fragment),
                 getResources().getString(R.string.event_category_contact_directions),

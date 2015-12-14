@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/item_color_selector">
+    <!--android:background="@drawable/list_row_background"> -->
+
+    <ImageView
+        android:id="@+id/ivProgram"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <!-- <com.saba.igc.org.extras.EllipsizingTextView
+    android:linksClickable="true"
+    currently, we don't need this class but might need in future.-->
+    <TextView
+        android:id="@+id/tvProgramDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/program_description"
+        android:layout_margin="10dp"
+        android:paddingBottom="5dp"
+        android:ellipsize="end"
+        android:layout_alignRight="@+id/tvProgramTitle"
+        android:maxLines="3"
+        android:textColor="@color/detail_text_color"
+        android:textColorLink="@color/link_color"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvProgramTitle"
+        android:layout_alignLeft="@+id/tvProgramTitle"
+        android:layout_alignStart="@+id/tvProgramTitle" />
+    <!--android:textColor="@drawable/list_selector"-->
+    <TextView
+        android:id="@+id/tvProgramTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/program_title"
+        android:paddingLeft="10dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/ivProgram"
+        android:textColor="@color/heading_text_color"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/ivProgram"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+
+    <!-- <com.saba.igc.org.extras.EllipsizingTextView
+    android:linksClickable="true"
+    currently, we don't need this class but might need in future.
+<TextView
+android:id="@+id/tvProgramDescription"
+android:layout_width="wrap_content"
+android:layout_height="fill_parent"
+android:layout_alignEnd="@+id/tvProgramTitle"
+android:maxLines="3"
+android:text="@string/program_description"
+android:layout_marginEnd="10dp"
+android:layout_marginBottom="10dp"
+android:layout_marginLeft="5dp"
+android:layout_marginTop="5dp"
+android:paddingEnd="0dp"
+android:ellipsize="end"
+android:layout_below="@+id/ivProgram"
+android:layout_alignStart="@+id/ivProgram" />
+    --><!-- From: file:/Users/snaqvi/Github/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/weekly_program_item.xml -->

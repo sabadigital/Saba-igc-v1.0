@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft = "12dp"
+    android:layout_marginBottom = "12dp"
+    android:layout_marginRight = "4dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop = "12dp"
+        android:layout_marginRight = "8dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Support"
+            android:id="@+id/tvGeneralInquiries"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:textColor="@color/detail_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="app@saba-igc.org"
+            android:textColorLink="@color/link_color"
+            android:id="@+id/tvGeneralInquireEmail"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvGeneralInquiries"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imam and Residant Aalim (Dr. Nabi Raza Abidi)"
+            android:id="@+id/tvImamLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvGeneralInquireEmail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:textColor="@color/detail_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aalim@saba-igc.org"
+            android:textColorLink="@color/link_color"
+            android:id="@+id/tvImamValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvImamLabel"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School of Ahlul'Bait - Sunday School"
+            android:id="@+id/tvSabaSchoolLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvImamValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:textColor="@color/detail_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saba-admin@saba-igc.org"
+            android:textColorLink="@color/link_color"
+            android:id="@+id/tvSabaSchoolValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvSabaSchoolLabel"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General Inquiries"
+            android:id="@+id/webSupportLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/tvSabaSchoolValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:textColor="@color/detail_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="saba@saba-igc.org"
+            android:textColorLink="@color/link_color"
+            android:id="@+id/webSupportValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/webSupportLabel"
+            android:layout_alignParentEnd="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="email"
+            android:textIsSelectable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:id="@+id/addressLabel"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/webSupportValue"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop = "15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:textColor="@color/detail_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saba_address_with_phone"
+            android:textColorLink="@color/link_color"
+            android:id="@+id/addressValue"
+            android:layout_alignStart="@+id/tvGeneralInquiries"
+            android:layout_below="@+id/addressLabel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="phone|email|map|web|all"
+            android:textIsSelectable="true"
+            android:clickable="true"
+            android:textColor="@color/detail_text_color" />
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/map"
+            android:layout_marginTop="15dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_below="@+id/addressValue" />
+    </LinearLayout>
+</ScrollView><!-- From: file:/Users/snaqvi/Github/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/fragment_contact_and_directions.xml -->

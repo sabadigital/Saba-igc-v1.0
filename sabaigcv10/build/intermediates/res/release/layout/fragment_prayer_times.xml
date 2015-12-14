@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvPrayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/city_name_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvPrayerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvPrayerName"
+        android:layout_marginTop="5dp"
+        android:text="@string/today_date"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvFajarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvImsaacLabel"
+        android:layout_below="@+id/tvImsaacLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/fajar_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSunriseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvFajarLabel"
+        android:layout_below="@+id/tvFajarLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/sunrise_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvZoharLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSunriseLabel"
+        android:layout_below="@+id/tvSunriseLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/zohar_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvAsrLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSunriseLabel"
+        android:layout_below="@+id/tvZoharLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/asr_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <TextView
+        android:id="@+id/tvSunsetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvAsrLabel"
+        android:layout_below="@+id/tvAsrLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/sunset_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvMaghribLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSunsetLabel"
+        android:layout_below="@+id/tvSunsetLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/maghrib_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvImsaacLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPrayerTime"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/imsaac_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvImsaacValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvImsaacLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:text="@string/imsaac_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvFajarValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvFajarLabel"
+        android:layout_alignBottom="@+id/tvFajarLabel"
+        android:layout_alignLeft="@+id/tvImsaacValue"
+        android:text="@string/fajar_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSunriseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSunriseLabel"
+        android:layout_alignBottom="@+id/tvSunriseLabel"
+        android:layout_alignLeft="@+id/tvFajarValue"
+        android:text="@string/sunrise_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvZoharValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvZoharLabel"
+        android:layout_alignBottom="@+id/tvZoharLabel"
+        android:layout_alignLeft="@+id/tvSunriseValue"
+        android:text="@string/zohar_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvAsrValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvAsrLabel"
+        android:layout_alignBottom="@+id/tvZoharLabel"
+        android:layout_alignLeft="@+id/tvSunriseValue"
+        android:text="@string/asr_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/tvSunsetValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSunsetLabel"
+        android:layout_alignBottom="@+id/tvSunsetLabel"
+        android:layout_alignLeft="@+id/tvAsrValue"
+        android:layout_alignRight="@+id/tvAsrValue"
+        android:text="@string/sunset_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvMaghribValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvMaghribLabel"
+        android:layout_alignBottom="@+id/tvMaghribLabel"
+        android:layout_alignLeft="@+id/tvSunsetValue"
+        android:text="@string/maghrib_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvIshaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMaghribLabel"
+        android:layout_alignRight="@+id/tvZoharLabel"
+        android:layout_below="@+id/tvMaghribLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/isha_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvIshaValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvIshaLabel"
+        android:layout_alignBottom="@+id/tvIshaLabel"
+        android:layout_alignLeft="@+id/tvMaghribValue"
+        android:text="@string/isha_value"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+<!-- From: file:/Users/snaqvi/Github/Saba-igc-v1.0/sabaigcv10/src/main/res/layout/fragment_prayer_times.xml -->

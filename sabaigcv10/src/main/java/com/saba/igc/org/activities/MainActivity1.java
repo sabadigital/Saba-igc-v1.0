@@ -182,11 +182,6 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 	}
 
 	public void selectDrawerItem(MenuItem menuItem) {
-//		if(SabaApplication.getSabaClient().isInProgress() == true){
-//			//Log.d(TAG, "******** going to remove the request from map...");
-//			SabaApplication.getSabaClient().removeTarget(mCurrentFragment.getTag(), (SabaServerResponseListener)mCurrentFragment);
-//		}
-
 		// Create a new fragment and specify the planet to show based on
 		// position
 		Fragment fragment = null;
@@ -226,13 +221,19 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 
 		mTvToolbarTitle.setText(title);
 		try {
-			//fragment = (Fragment) fragmentClass.newInstance();
-
+			FragmentManager fragmentManager = getSupportFragmentManager();
+			FragmentTransaction ft = fragmentManager.beginTransaction();
+			ft.detach(mCurrentFragment);
 			fragment = mFragmentsMap.get(fragmentClass);
 			if(fragment == null){
 				fragment = (Fragment) fragmentClass.newInstance();
 				mFragmentsMap.put(fragmentClass, fragment);
+				ft.add(id.flContent, fragment);
+
+			} else {
+				ft.attach(fragment);
 			}
+			ft.commit();
 
 			final DrawerLayout layout = (DrawerLayout)findViewById(id.drawer_layout);
 			// Load image, decode it to Bitmap and return Bitmap to callback
@@ -245,24 +246,9 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 				}
 			});
 
-//			Bitmap loadedImage = ImageLoader.getInstance().loadImageSync("drawable://" + resId);
-//			Drawable d = new BitmapDrawable(getResources(), loadedImage);
-//			layout.setBackground(d);
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		FragmentManager fragmentManager = getSupportFragmentManager();
-		FragmentTransaction ft = fragmentManager.beginTransaction();
-
-		ft.hide(mCurrentFragment);
-		if(fragment.isAdded()){
-			ft.show(fragment);
-		} else {
-			ft.add(id.flContent, fragment);
-		}
-		ft.commit();
 
 		mCurrentFragment = fragment;
 		// Highlight the selected item, update the title, and close the drawer

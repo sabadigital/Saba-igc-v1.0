@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_weekly_schedule_fragment"
+            android:icon="@drawable/ic_weekly_schedule"
+            android:title="Weekly Schedule"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_upcoming_programs_fragment"
+            android:icon="@drawable/ic_events_announcements"
+            android:title="Announcements" />
+        <!--<item-->
+            <!--android:id="@+id/nav_community_announcements"-->
+            <!--android:icon="@drawable/ic_community"-->
+            <!--android:title="Community Announcements" />-->
+        <item
+            android:id="@+id/nav_prayer_times_fragment"
+            android:icon="@drawable/ic_prayer"
+            android:title="Prayer Times" />
+        <item
+            android:id="@+id/nav_contact_directions_fragment"
+            android:icon="@drawable/ic_contact_directions"
+            android:title="Contact and Directions" />
+    </group>
+
+    <!--<group android:id="@+id/weekly_schedule"-->
+        <!--android:checkableBehavior="single"-->
+        <!--android:color="#FF0000">-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_weekly_schedule_fragment"-->
+            <!--android:icon="@drawable/ic_weekly_schedule"-->
+            <!--android:title="Weekly Schedule"-->
+            <!--android:checked="true"/>-->
+    <!--</group>-->
+    <!--<group android:id="@+id/announcments"-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_upcoming_programs_fragment"-->
+            <!--android:icon="@drawable/ic_events_annucements"-->
+            <!--android:title="Announcements" />-->
+    <!--</group>-->
+    <!--<group android:id="@+id/community"-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_community_announcements"-->
+            <!--android:icon="@drawable/ic_community"-->
+            <!--android:title="Community Announcements" />-->
+    <!--</group>-->
+    <!--<group android:id="@+id/prayer_times"-->
+        <!--android:checkableBehavior="single">-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_prayer_times_fragment"-->
+            <!--android:icon="@drawable/ic_prayer"-->
+            <!--android:title="Prayer Times" />-->
+    <!--</group>-->
+    <!--<group android:id="@+id/contact_and_directions"-->
+        <!--android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_contact_directions_fragment"-->
+            <!--android:icon="@drawable/ic_contact_directions"-->
+            <!--android:title="Contact and Directions" />-->
+    <!--</group>-->
+    <!--<group android:id="@+id/separator"/>-->
+</menu><!-- From: file:/Users/snaqvi/Github/Saba-igc-v1.0/sabaigcv10/src/main/res/menu/drawer_menu.xml -->
