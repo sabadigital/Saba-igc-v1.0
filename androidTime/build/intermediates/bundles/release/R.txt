@@ -1,6 +1,0 @@
-int plurals in_x_days 0x7f020000
-int plurals in_x_hours 0x7f020001
-int plurals in_x_minutes 0x7f020002
-int plurals x_days_ago 0x7f020003
-int plurals x_hours_ago 0x7f020004
-int plurals x_minutes_ago 0x7f020005

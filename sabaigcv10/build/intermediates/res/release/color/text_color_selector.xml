@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true"
-        android:color="#334d00"/> <!-- pressed -->
-    <item android:state_focused="true"
-        android:color="#334d00"/> <!-- focused -->
-    <item android:color="@color/detail_text_color"/> <!-- default -->
-</selector><!-- From: file:/Users/snaqvi/Github/Saba-igc-v1.0/sabaigcv10/src/main/res/color/text_color_selector.xml -->
