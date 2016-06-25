@@ -26,5 +26,8 @@
     <item name="colorPrimaryDark">#00000000</item>
     <!--<item name="colorPrimaryDark1">#334d00</item>-->
     <item name="colorAccent">#FFFFFF</item>
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
 </style>
 </resources>

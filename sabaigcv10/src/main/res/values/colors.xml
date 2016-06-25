@@ -13,6 +13,12 @@
     <color name="program_time_color">#80FFFFFF</color>
     <color name="transparent_color">#00000000</color>
 
+    <!-- Material Design Colors-->
+    <color name="colorPrimary">#1c90ec</color>
+    <color name="colorPrimaryDark">#1570c0</color>
+    <color name="colorAccent">#d71356</color>
+
+    <color name="colorWhite">#ffffff</color>
 </resources>
 
     <!--<color name="divider">#666666</color>-->

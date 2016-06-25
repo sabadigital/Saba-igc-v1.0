@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/events_announcements">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="SABA ISLAMIC CENTER"
+            android:id="@+id/tvSabaIslamicCenterLabel"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="English Date"
+            android:id="@+id/tvEnglishDate"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white_color"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hijri Date"
+            android:id="@+id/tvHijriDate"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="@color/white_color"/>
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="302dp"
+            android:gravity="top"
+
+            android:numColumns="2"
+            android:listSelector="@null"
+            />
+    </LinearLayout>
+</RelativeLayout>
