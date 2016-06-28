@@ -31,8 +31,8 @@ import com.saba.igc.org.application.SabaApplication;
 public class ContactAndDirectionsFragment extends Fragment implements OnInfoWindowClickListener{
     private static final LatLng SABA_LOCATION = new LatLng(37.421177, -121.958697);
     private final float DEFAULT_ZOOM = 13.0f;
-    private GoogleMap mMap; // Might be null if Google Play services APK is not available.
-    private SupportMapFragment mMapFragment;
+    public GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    public SupportMapFragment mMapFragment;
     private View mView;
     public ContactAndDirectionsFragment() {
         // Required empty public constructor
@@ -64,18 +64,9 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
 
         }
 
-        //http://stackoverflow.com/questions/25051246/how-to-use-supportmapfragment-inside-a-fragment
-        // this post was really helpful to get this working.
-        mMapFragment = new SupportMapFragment() {
-            @Override
-            public void onActivityCreated(Bundle savedInstanceState) {
-                super.onActivityCreated(savedInstanceState);
-                mMap = mMapFragment.getMap();
-                if (mMap != null) {
-                    setUpMap();
-                }
-            }
-        };
+        //http://michalu.eu/wordpress/android-mapfragment-nested-in-parent-fragment/
+        mMapFragment = MyMapFragment.newInstance(new LatLng(37.421177, -121.958697), this);
+
         getChildFragmentManager().beginTransaction().add(R.id.map, mMapFragment).commit();
         String address = getResources().getString(R.string.saba_address_with_phone);
         TextView tvAddress = (TextView) mView.findViewById(R.id.addressValue);
@@ -114,7 +105,7 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
         }
     }
 
-    private void setUpMap() {
+    public void setUpMap() {
         // Saba location's lat & long
         mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter(getActivity().getApplicationContext()));
         Marker saba = mMap.addMarker(new MarkerOptions()
@@ -186,3 +177,4 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
         alertDialog.show();
     }
 }
+

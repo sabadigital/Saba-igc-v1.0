@@ -20,6 +20,10 @@
             android:icon="@drawable/ic_prayer"
             android:title="Prayer Times" />
         <item
+            android:id="@+id/nav_live_stream_fragment"
+            android:icon="@drawable/video_camera"
+            android:title="Live Stream" />
+        <item
             android:id="@+id/nav_contact_directions_fragment"
             android:icon="@drawable/ic_contact_directions"
             android:title="Contact and Directions" />

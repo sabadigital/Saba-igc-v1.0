@@ -47,8 +47,8 @@ public class GridViewAdapter extends BaseAdapter {
         if (convertView == null) {
 
             grid = new View(mContext);
-            grid = inflater.inflate(R.layout.item_gridview, null);
-            TextView textView = (TextView) grid.findViewById(R.id.tvTitle);
+            grid = inflater.inflate(R.layout.item_live_stream, null);
+            TextView textView = (TextView) grid.findViewById(R.id.tvHallName);
             //ImageView imageView = (ImageView)grid.findViewById(R.id.gridview_image);
             textView.setText(string[p]);
             //imageView.setImageResource(Imageid[p]);

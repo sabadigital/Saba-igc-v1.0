@@ -25,6 +25,7 @@ import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListene
 import com.saba.igc.org.R;
 import com.saba.igc.org.application.SabaApplication;
 import com.saba.igc.org.fragments.ContactAndDirectionsFragment;
+import com.saba.igc.org.fragments.LiveStreamFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
 import com.saba.igc.org.fragments.UpcomingProgramsFragment;
 import com.saba.igc.org.fragments.WeeklyProgramsFragment;
@@ -207,12 +208,20 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 				fragmentClass = ContactAndDirectionsFragment.class;
 				title = "Contact and Directions";
 				resId = R.drawable.weekly_programs;
-				break;
+                break;
+
 			case id.nav_prayer_times_fragment:
 				fragmentClass = PrayerTimesFragment.class;
 				title = "Prayer Times";
 				resId = R.drawable.prayers1;
 				break;
+
+            case id.nav_live_stream_fragment:
+                fragmentClass = LiveStreamFragment.class;
+                title = "Live Stream";
+                resId = drawable.events_announcements;
+                break;
+
 			default:
 				fragmentClass = WeeklyProgramsFragment.class;
 				resId = R.drawable.weekly_programs;

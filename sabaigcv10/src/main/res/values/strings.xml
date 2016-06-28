@@ -83,5 +83,8 @@
     <string name="announcements_fragment">Announcements Fragment</string>
     <string name="daily_program_details_activity">Daily Program Details Activity</string>
     <string name="prayer_times_fragment">Prayer Times Fragment</string>
+
+    <!-- Youtube related-->
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
 </resources>
 

@@ -94,6 +94,26 @@ public class SabaClient {
 
 		// trigger the network request
 		client.get(url, new JsonHttpResponseHandler() {
+//			@Override
+//			public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+//				super.onFailure(statusCode, headers, throwable, errorResponse);
+//			}
+//
+//			@Override
+//			public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+//				super.onFailure(statusCode, headers, responseString, throwable);
+//			}
+//
+//			@Override
+//			public void onSuccess(int statusCode, Header[] headers, String responseString) {
+//				super.onSuccess(statusCode, headers, responseString);
+//			}
+//
+//			@Override
+//			protected Object parseResponse(byte[] responseBody) throws JSONException {
+//				return super.parseResponse(responseBody);
+//			}
+
 			@Override
 			public void onFailure(int statusCode, Header[] headers,
 								  Throwable throwable, JSONObject errorResponse) {
@@ -161,8 +181,13 @@ public class SabaClient {
 
 		sendRequest("Prayer Times", sb.toString(), target);
 	}
+	public void getSabaYoutubeChannelVideos(SabaServerResponseListener target){
+		sendRequest("SabaChannels", "https://www.googleapis.com/youtube/v3/search?part=snippet&q=wheelockcollege&type=sabavideos&key=AIzaSyCqg8SNUDh8GwRqBwdGMj_5aVBTjeaTmZw", target);
+	}
 
-
+	public void getLiveStreamFeeds(SabaServerResponseListener target){
+		sendRequest("Live Stream Feeds", "http://www.saba-igc.org/liveStream/liveStreamLinkApp.php", target);
+	}
 
 // Need to find a better place for following code.
 	private void savePreferences(String key, String value) {
