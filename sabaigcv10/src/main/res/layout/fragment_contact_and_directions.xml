@@ -147,17 +147,10 @@
             android:layout_alignStart="@+id/tvGeneralInquiries"
             android:layout_below="@+id/addressLabel"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:autoLink="phone|email|map|web|all"
+            android:autoLink="phone|email|web|all"
             android:textIsSelectable="true"
             android:clickable="true"
             android:textColor="@color/detail_text_color" />
 
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:id="@+id/map"
-            android:layout_marginTop="15dp"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_below="@+id/addressValue" />
     </LinearLayout>
 </ScrollView>

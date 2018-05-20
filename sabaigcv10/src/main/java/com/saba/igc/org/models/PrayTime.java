@@ -92,6 +92,63 @@ public class PrayTime {
 		return prayTimes;
 	}
 
+	public static List<PrayTime> fromSabaPraytimesJSON(JSONObject response) {
+		if(response == null)
+			return null;
+
+		//{"Fajr":"05:59","Isha":"18:18","Asr":"14:43","Dhuhr":"12:11","Sunset":"17:01","Sunrise":"07:21","Maghrib":"17:19","Imsaak":"05:48"}
+		List<PrayTime> prayTimes = new ArrayList<PrayTime>();
+
+		try {
+			if(response.getString("imsak") != null){
+				PrayTime time = new PrayTime("Imsaak", response.getString("imsak"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+
+			if(response.getString("fajar") != null){
+				PrayTime time = new PrayTime("Fajr", response.getString("fajar"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+
+			if(response.getString("sunrise") != null){
+				PrayTime time = new PrayTime("Sunrise", response.getString("sunrise"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+
+			if(response.getString("zuhur") != null){
+				PrayTime time = new PrayTime("Zuhr", response.getString("zuhur"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+
+			if(response.getString("sunset") != null){
+				PrayTime time = new PrayTime("Sunset", response.getString("sunset"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+
+			if(response.getString("maghrib") != null){
+				PrayTime time = new PrayTime("Maghrib", response.getString("maghrib"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+
+			if(response.getString("isha") != null){
+				PrayTime time = new PrayTime("Isha", response.getString("isha"));
+				time.mTime = time.mTime;
+				prayTimes.add(time);
+			}
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return prayTimes;
+	}
+
 	public static String get12HrFormatTime(String time){
 		if("-----".equals(time)== true)
 			return time;

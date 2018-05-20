@@ -49,16 +49,16 @@ public class MapActivity extends AppCompatActivity implements OnInfoWindowClickL
     }
 
     private void setUpMapIfNeeded() {
-        // Do a null check to confirm that we have not already instantiated the map.
-        if (mMap == null) {
-            // Try to obtain the map from the SupportMapFragment.
-            mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map))
-                    .getMap();
-            // Check if we were successful in obtaining the map.
-            if (mMap != null) {
-                setUpMap();
-            }
-        }
+//        // Do a null check to confirm that we have not already instantiated the map.
+//        if (mMap == null) {
+//            // Try to obtain the map from the SupportMapFragment.
+//            mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map))
+//                    .getMapAsync(new OnMapReadyCallBack(){});
+//            // Check if we were successful in obtaining the map.
+//            if (mMap != null) {
+//                setUpMap();
+//            }
+//        }
     }
 
     private void setUpMap() {

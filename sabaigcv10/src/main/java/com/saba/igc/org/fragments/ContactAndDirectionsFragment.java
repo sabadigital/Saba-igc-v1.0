@@ -1,14 +1,10 @@
 package com.saba.igc.org.fragments;
 
 import android.app.AlertDialog;
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.text.Html;
 import android.view.InflateException;
 import android.view.LayoutInflater;
@@ -16,23 +12,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMap.OnInfoWindowClickListener;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.Marker;
-import com.google.android.gms.maps.model.MarkerOptions;
 import com.saba.igc.org.R;
-import com.saba.igc.org.adapters.CustomInfoWindowAdapter;
 import com.saba.igc.org.application.SabaApplication;
 
-public class ContactAndDirectionsFragment extends Fragment implements OnInfoWindowClickListener{
+public class ContactAndDirectionsFragment extends Fragment {
     private static final LatLng SABA_LOCATION = new LatLng(37.421177, -121.958697);
     private final float DEFAULT_ZOOM = 13.0f;
-    public GoogleMap mMap; // Might be null if Google Play services APK is not available.
-    public SupportMapFragment mMapFragment;
+    //public GoogleMap mMap; // Might be null if Google Play services APK is not available.
+    //public SupportMapFragment mMapFragment;
     private View mView;
     public ContactAndDirectionsFragment() {
         // Required empty public constructor
@@ -65,9 +53,9 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
         }
 
         //http://michalu.eu/wordpress/android-mapfragment-nested-in-parent-fragment/
-        mMapFragment = MyMapFragment.newInstance(new LatLng(37.421177, -121.958697), this);
+        //mMapFragment = MyMapFragment.newInstance(new LatLng(37.421177, -121.958697), this);
 
-        getChildFragmentManager().beginTransaction().add(R.id.map, mMapFragment).commit();
+        //getChildFragmentManager().beginTransaction().add(R.id.map, mMapFragment).commit();
         String address = getResources().getString(R.string.saba_address_with_phone);
         TextView tvAddress = (TextView) mView.findViewById(R.id.addressValue);
         if(address!=null) {
@@ -93,58 +81,58 @@ public class ContactAndDirectionsFragment extends Fragment implements OnInfoWind
 
     private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
-        if (mMap == null) {
-            // Try to obtain the map from the SupportMapFragment.
-             FragmentManager m = getActivity().getSupportFragmentManager();
-            mMap = ((SupportMapFragment)m.findFragmentById(R.id.map))
-                    .getMap();
-            // Check if we were successful in obtaining the map.
-            if (mMap != null) {
-                setUpMap();
-            }
-        }
+//        if (mMap == null) {
+//            // Try to obtain the map from the SupportMapFragment.
+//             FragmentManager m = getActivity().getSupportFragmentManager();
+//            mMap = ((SupportMapFragment)m.findFragmentById(R.id.map))
+//                    .getMap();
+//            // Check if we were successful in obtaining the map.
+//            if (mMap != null) {
+//                setUpMap();
+//            }
+//        }
     }
 
     public void setUpMap() {
         // Saba location's lat & long
-        mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter(getActivity().getApplicationContext()));
-        Marker saba = mMap.addMarker(new MarkerOptions()
-                .position(SABA_LOCATION)
-                .title("Saba Islamic Center")
-                .snippet("4415 Fortran Ct. San Jose, CA 95134")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
-        saba.showInfoWindow();
-
-
-        // mMap.setMyLocationEnabled(true); enables the GPS, which will consume more battery. not worth it.
-        mMap.getUiSettings().setZoomControlsEnabled(true);
-        mMap.getUiSettings().setCompassEnabled(true);
-        mMap.getUiSettings().setMyLocationButtonEnabled(true);
-        mMap.getUiSettings().setAllGesturesEnabled(true);
-        mMap.setTrafficEnabled(true);
-
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SABA_LOCATION, DEFAULT_ZOOM));
-        mMap.setOnInfoWindowClickListener(this);
+//        mMap.setInfoWindowAdapter(new CustomInfoWindowAdapter(getActivity().getApplicationContext()));
+//        Marker saba = mMap.addMarker(new MarkerOptions()
+//                .position(SABA_LOCATION)
+//                .title("Saba Islamic Center")
+//                .snippet("4415 Fortran Ct. San Jose, CA 95134")
+//                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+//        saba.showInfoWindow();
+//
+//
+//        // mMap.setMyLocationEnabled(true); enables the GPS, which will consume more battery. not worth it.
+//        mMap.getUiSettings().setZoomControlsEnabled(true);
+//        mMap.getUiSettings().setCompassEnabled(true);
+//        mMap.getUiSettings().setMyLocationButtonEnabled(true);
+//        mMap.getUiSettings().setAllGesturesEnabled(true);
+//        mMap.setTrafficEnabled(true);
+//
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SABA_LOCATION, DEFAULT_ZOOM));
+//        //mMap.setOnInfoWindowClickListener(this);
     }
 
-    @Override
-    public void onInfoWindowClick(Marker marker) {
-        //google.navigation:q=latitude,longitude
-        //https://developers.google.com/maps/documentation/android/intents
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=4415 Fortran Ct. San Jose, CA 95134");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        try {
-            startActivity(mapIntent);
-        } catch (ActivityNotFoundException e){
-            e.printStackTrace();
-            trackAnalytics(false);
-            showAlert();
-            return;
-        }
-
-        trackAnalytics(true);
-    }
+//    @Override
+//    public void onInfoWindowClick(Marker marker) {
+//        //google.navigation:q=latitude,longitude
+//        //https://developers.google.com/maps/documentation/android/intents
+//        Uri gmmIntentUri = Uri.parse("google.navigation:q=4415 Fortran Ct. San Jose, CA 95134");
+//        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//        mapIntent.setPackage("com.google.android.apps.maps");
+//        try {
+//            startActivity(mapIntent);
+//        } catch (ActivityNotFoundException e){
+//            e.printStackTrace();
+//            trackAnalytics(false);
+//            showAlert();
+//            return;
+//        }
+//
+//        trackAnalytics(true);
+//    }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {

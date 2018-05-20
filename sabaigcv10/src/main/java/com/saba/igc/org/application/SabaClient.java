@@ -157,6 +157,10 @@ public class SabaClient {
 		sendRequest(hijriDate, "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php", target);
 	}
 
+	public void getPrayerTimeFromSaba(String prayTimesFromSaba, SabaServerResponseListener target){
+		sendRequest(prayTimesFromSaba, "http://www.saba-igc.org/prayerTimes/salatDataService/salatDataService.php", target);
+	}
+
 	public void getPrayTimes(String timeZoneOffsetInMinutes, double latitude, double longitude, SabaServerResponseListener target) {
 		//String PRAY_TIME_INFO_BASE_URL = "http://praytime.info/getprayertimes.php?school=0&gmt=";
 		StringBuilder sb = new StringBuilder("http://praytime.info/getprayertimes.php?school=0&gmt=");

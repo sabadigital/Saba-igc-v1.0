@@ -1,9 +1,11 @@
 package com.saba.igc.org.fragments;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Build;
@@ -13,8 +15,10 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.TextUtils;
 import android.util.Log;
@@ -110,7 +114,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	@Override
 	public View onCreateView(LayoutInflater inflater,
-			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+							 @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		super.onCreateView(inflater, container, savedInstanceState);
 		getActivity().setTitle("");// Need this to make it little compatible with API 16. might work for API 14 as well.
 		View view = inflater.inflate(R.layout.fragment_pray_times, container, false);
@@ -178,7 +182,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 	}
 
-    @Override
+	@Override
 	public void processJsonObject(String programName, JSONObject response) {
 		if (mSwipeRefreshLayout.isRefreshing()) {
 			mSwipeRefreshLayout.setRefreshing(false);
@@ -189,7 +193,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			return;
 		}
 
-		if(programName.compareToIgnoreCase("hijriDate") == 0){
+		if(programName.compareToIgnoreCase("prayerTimesFromSaba") == 0){
 			try{
 				String hijriDate = response.getString("hijridate");
 				if(hijriDate != null){
@@ -199,14 +203,23 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 					}
 					mSabaClient.saveHijriDate(hijriDate);
 				}
+
+				mPrayTimes = PrayTime.fromSabaPraytimesJSON(response);
+				if(getActivity() != null) {
+					mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes);
+					mLvPrayTimes.setAdapter(mAdapter);
+				}
+
 			} catch (JSONException e) {
 				e.printStackTrace();
 			}
+
 			if(mPrayerTimesFromWebInProgress)
 				mSwipeRefreshLayout.setRefreshing(true);
 
-			return; // we should return from here. Processing of hijriDate is done here.
+			return; // we should return from here. Processing of hijriDate and pray times from Saba is done here.
 		}
+
 		mPrayerTimesFromWebInProgress = false;
 
 		// Handling data returned from http://praytime.info
@@ -251,7 +264,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 					if(!mGoogleApiClient.isConnected()) {
 						mGoogleApiClient.connect();
 					} else {
-						startLocationUpdates();
+						if(this.checkAndRequestPermissions()){
+							startLocationUpdates();
+						}
 						//processCurrentLocation();
 					}
 				}
@@ -281,9 +296,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		}
 
 		// try sending a network call to get the hijridate from SABA server.
-		if(hijriDate==null || hijriDate.isEmpty()){
-			mSabaClient.getHijriDate("hijriDate", this);
-		}
+		//if(hijriDate==null || hijriDate.isEmpty()){
+		//	mSabaClient.getHijriDate("hijriDate", this);
+		//}
 	}
 
 	public void showAlert(){
@@ -307,20 +322,20 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	}
 
 	private class GeocoderHandler extends Handler {
-        @Override
-        public void handleMessage(Message message) {
-            String cityName;
-            switch (message.what) {
-                case 1:
-                    Bundle bundle = message.getData();
-                    cityName = bundle.getString("cityname");
-                    break;
-                default:
-                	Log.d(TAG, "Geocoder was not able to return city_name.");
-                	cityName = null;
-            }
+		@Override
+		public void handleMessage(Message message) {
+			String cityName;
+			switch (message.what) {
+				case 1:
+					Bundle bundle = message.getData();
+					cityName = bundle.getString("cityname");
+					break;
+				default:
+					Log.d(TAG, "Geocoder was not able to return city_name.");
+					cityName = null;
+			}
 			Log.d(TAG, "Prayer City Name: " + cityName);
-            mTvCityName.setText(cityName);
+			mTvCityName.setText(cityName);
 
 			if(cityName == null || cityName.isEmpty()) {
 				if (mSwipeRefreshLayout.isRefreshing()) {
@@ -342,8 +357,8 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				if(!city.isEmpty())
 					getPrayerTimes(city);
 			}
-        }
-    }
+		}
+	}
 
 	public void processCurrentLocation(){
 		if (mLastLocation == null) {
@@ -371,6 +386,20 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			stopLocationUpdates();
 		}
 	}
+/*
+	-(void) getPrayerTimesWithPlacemark:(CLPlacemark*)placemark
+	withLatitude:(double)latitude
+	withLongitude:(double)longitude{
+
+    [self setCityNameWithPlacemark:placemark];
+		if(){
+			// call Salat Service on Saba Service
+        [self getPrayerTimeFromSaba];
+		} else {
+			// Getting prayerTimes from Web.
+        [self getPrayerTimeFromWebWithLatitude:latitude withLongitude:longitude];
+		}
+*/
 
 	/**
 	 * getPrayerTimes(city) - checks the database if prayerTimes exists for given city.
@@ -378,11 +407,11 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	 *  sorry about it...
 	 * **/
 	public void getPrayerTimes(String city){
-		List<PrayerTimes> prayerTimes = getTodayPrayerTimesFromDB(city);
+		//List<PrayerTimes> prayerTimes = getTodayPrayerTimesFromDB(city);
 
 		// following block of code converts "PrayerTimes"(read from database) to
 		// "PrayTime"(adapter uses this array).
-		if(prayerTimes!=null && prayerTimes.size()>0){
+		/*if(prayerTimes!=null && prayerTimes.size()>0){
 			if (mSwipeRefreshLayout.isRefreshing()) {
 				mSwipeRefreshLayout.setRefreshing(false);
 			}
@@ -407,6 +436,18 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 				mAdapter = new PrayTimeAdapter(getActivity(), mPrayTimes);
 				mLvPrayTimes.setAdapter(mAdapter);
 			}
+		} else*/
+
+		if(city.equals("San Jose") || city.equals("Milpitas") ||
+			city.equals("Sunnyvale") || city.equals("Gilroy") ||
+			city.equals("Morgan Hill") || city.equals("Mountain View") ||
+			city.equals("Fremont") || city.equals("Santa Clara") ||
+			city.equals("Campbell") || city.equals("Los Gatos") ||
+			city.equals("Cupertino") || city.equals("Saratoga") ||
+			city.equals("Alum Rock") || city.equals("Evergreen") ||
+			city.equals("Newark") ){
+
+			mSabaClient.getPrayerTimeFromSaba("prayerTimesFromSaba", this);
 		} else {
 			// Now, its time to get the prayer times from web.
 			// Once, we will get the date, pasrse it and display on UI.
@@ -558,7 +599,9 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	@Override
 	public void onConnected(Bundle arg0) {
 		mSwipeRefreshLayout.setRefreshing(true);
-		startLocationUpdates();
+		if(this.checkAndRequestPermissions()){
+			startLocationUpdates();
+		}
 	}
 
 	@Override
@@ -633,7 +676,14 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 			return;
 
 		mIsSettingsAlertDisplayed = true;
-		AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+		AlertDialog.Builder alertDialog;
+
+		AlertDialog.Builder builder;
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+			alertDialog = new AlertDialog.Builder(getActivity(), android.R.style.Theme_Material_Light_Dialog_Alert);
+		} else {
+			alertDialog = new AlertDialog.Builder(getActivity());
+		}
 
 		// Setting Dialog Title
 		alertDialog.setTitle("Location Settings");
@@ -663,6 +713,53 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 		alertDialog.show();
 	}
 
+	public static final int REQUEST_ID_MULTIPLE_PERMISSIONS = 10;
+
+	private boolean checkAndRequestPermissions() {
+		if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+			int coarsePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION);
+			//int locationPermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION);
+
+			List<String> listPermissionsNeeded = new ArrayList<>();
+//			if (locationPermission != PackageManager.PERMISSION_GRANTED) {
+//				listPermissionsNeeded.add(Manifest.permission.ACCESS_FINE_LOCATION);
+//			}
+			if (coarsePermission != PackageManager.PERMISSION_GRANTED) {
+				listPermissionsNeeded.add(Manifest.permission.ACCESS_COARSE_LOCATION);
+			}
+
+			if (!listPermissionsNeeded.isEmpty()) {
+				requestPermissions(listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), REQUEST_ID_MULTIPLE_PERMISSIONS);
+				return false;
+			}
+		}
+		return true;
+	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+		if (requestCode == REQUEST_ID_MULTIPLE_PERMISSIONS) {
+			if (grantResults.length > 0) {
+				for (int i = 0; i < permissions.length; i++) {
+					if (permissions[i].equals(Manifest.permission.ACCESS_COARSE_LOCATION)) {
+						if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
+							refreshUI();
+							Log.e("msg", "location granted - ACCESS_COARSE_LOCATION");
+						}
+					}
+//					else if (permissions[i].equals(Manifest.permission.ACCESS_FINE_LOCATION)) {
+//						if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
+//							refreshUI();
+//							Log.e("msg", "location granted - ACCESS_FINE_LOCATION");
+//						}
+//					}
+				}
+			}
+		}
+	}
+
 	// CountDownTimer class
 	class LocationUpdateWaitTimer extends CountDownTimer{
 		public LocationUpdateWaitTimer(long startTime, long interval) {
@@ -671,6 +768,7 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 
 		@Override
 		public void onFinish() {
+			mLocationUpdateWaitTimer.cancel();
 			mLocationUpdateWaitTimer = null;
 		}
 
