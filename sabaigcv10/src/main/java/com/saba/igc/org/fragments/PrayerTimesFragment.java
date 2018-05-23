@@ -615,12 +615,17 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	 * */
 	protected void startLocationUpdates() {
 		if(mLocationUpdateWaitTimer == null && mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
-			LocationServices.FusedLocationApi.requestLocationUpdates(
-					mGoogleApiClient, mLocationRequest, this);
+			try{
 
-			mLocationProcessed = false;
-			mLocationUpdateWaitTimer = new LocationUpdateWaitTimer(5500, 5500);
-			mLocationUpdateWaitTimer.start();
+				LocationServices.FusedLocationApi.requestLocationUpdates(
+						mGoogleApiClient, mLocationRequest, this);
+
+				mLocationProcessed = false;
+				mLocationUpdateWaitTimer = new LocationUpdateWaitTimer(5500, 5500);
+				mLocationUpdateWaitTimer.start();
+			} catch(SecurityException e){
+			    Log.d("PrayerTimes: Exception.", e.getMessage());
+            }
 		}
 	}
 
@@ -718,12 +723,12 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 	private boolean checkAndRequestPermissions() {
 		if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 			int coarsePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION);
-			//int locationPermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION);
+			int locationPermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION);
 
 			List<String> listPermissionsNeeded = new ArrayList<>();
-//			if (locationPermission != PackageManager.PERMISSION_GRANTED) {
-//				listPermissionsNeeded.add(Manifest.permission.ACCESS_FINE_LOCATION);
-//			}
+			if (locationPermission != PackageManager.PERMISSION_GRANTED) {
+				listPermissionsNeeded.add(Manifest.permission.ACCESS_FINE_LOCATION);
+			}
 			if (coarsePermission != PackageManager.PERMISSION_GRANTED) {
 				listPermissionsNeeded.add(Manifest.permission.ACCESS_COARSE_LOCATION);
 			}
@@ -749,12 +754,12 @@ public class PrayerTimesFragment extends Fragment implements SabaServerResponseL
 							Log.e("msg", "location granted - ACCESS_COARSE_LOCATION");
 						}
 					}
-//					else if (permissions[i].equals(Manifest.permission.ACCESS_FINE_LOCATION)) {
-//						if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
-//							refreshUI();
-//							Log.e("msg", "location granted - ACCESS_FINE_LOCATION");
-//						}
-//					}
+					else if (permissions[i].equals(Manifest.permission.ACCESS_FINE_LOCATION)) {
+						if (grantResults[i] == PackageManager.PERMISSION_GRANTED) {
+							refreshUI();
+							Log.e("msg", "location granted - ACCESS_FINE_LOCATION");
+						}
+					}
 				}
 			}
 		}

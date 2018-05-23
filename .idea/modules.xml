@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Saba-igc-v1.0.iml" filepath="$PROJECT_DIR$/Saba-igc-v1.0.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androidTime/androidTime.iml" filepath="$PROJECT_DIR$/androidTime/androidTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Syed-Android.iml" filepath="$PROJECT_DIR$/Syed-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/googleplayservices_lib/googleplayservices_lib.iml" filepath="$PROJECT_DIR$/googleplayservices_lib/googleplayservices_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/sabaigcv10/sabaigcv10.iml" filepath="$PROJECT_DIR$/sabaigcv10/sabaigcv10.iml" />
     </modules>

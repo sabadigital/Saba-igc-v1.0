@@ -8,6 +8,7 @@ import com.activeandroid.ActiveAndroid;
 import com.activeandroid.Configuration;
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.analytics.Tracker;
+import com.google.android.gms.analytics.HitBuilders;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -168,27 +169,27 @@ public class SabaApplication extends Application {
 	}
 
 	private void initializeGoogleAnalytics(){
-		//mAnalytics = GoogleAnalytics.getInstance(this);
-		//mAnalytics.setLocalDispatchPeriod(120);
+		mAnalytics = GoogleAnalytics.getInstance(this);
+		mAnalytics.setLocalDispatchPeriod(120);
 
 		//https://www.google.com/analytics/web/
-		//mTracker = mAnalytics.newTracker("UA-65121409-6");
+		mTracker = mAnalytics.newTracker("UA-65121409-6");
 	}
 
 	// this function sends tracking events for Analytics.
 	public static void sendAnalyticsEvent(String screenName, String eventCategory, String eventAction, String eventLabel){
-		//mTracker.setScreenName(screenName);
-		//mTracker.send(new HitBuilders.EventBuilder()
-		//		.setCategory(eventCategory)
-		//		.setAction(eventAction)
-		//		.setLabel(eventLabel)
-		//		.build());
+		mTracker.setScreenName(screenName);
+		mTracker.send(new HitBuilders.EventBuilder()
+				.setCategory(eventCategory)
+				.setAction(eventAction)
+				.setLabel(eventLabel)
+				.build());
 	}
 
 	public static void sendAnalyticsScreenName(String screenName){
 		// Set screen name.
-		//mTracker.setScreenName(screenName);
-		// Send a screen view.
-		//mTracker.send(new HitBuilders.ScreenViewBuilder().build());
+		mTracker.setScreenName(screenName);
+		//Send a screen view.
+		mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 	}
 }

@@ -55,7 +55,7 @@ public class PrayTime {
 			}
 			
 			if(response.getString("Dhuhr") != null){
-				PrayTime time = new PrayTime("Dhuhr", response.getString("Dhuhr"));
+				PrayTime time = new PrayTime("Zuhr", response.getString("Dhuhr"));
 				time.mTime = get12HrFormatTime(time.mTime);
 				prayTimes.add(time);
 			}
