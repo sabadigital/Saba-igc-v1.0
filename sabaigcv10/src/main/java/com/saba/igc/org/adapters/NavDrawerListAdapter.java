@@ -71,34 +71,8 @@ public class NavDrawerListAdapter extends BaseAdapter{
 			updateViewHolder(viewHolder, (NavDrawerItem)item);
 			// Set the section details.
 		}
-//		else if (item instanceof Person) {
-//			if (convertView == null) {
-//				convertView = getInflater().inflate(R.layout.person, null);
-//			}
-//			// Set the person details.
-//		}
+
 		return convertView;
-
-
-
-
-//		NavDrawerItem navItem = mNavDrawerItems.get(position);
-//		ViewHolder viewHolder = null;
-//		if(convertView == null){
-//			viewHolder = new ViewHolder();
-//			LayoutInflater inflater = LayoutInflater.from(mContext);
-//			convertView = inflater.inflate(R.layout.drawer_nav_item, parent, false);
-//
-//			viewHolder.ivIcon = (ImageView) convertView.findViewById(R.id.ivIcon);
-//			viewHolder.tvTitle = (TextView) convertView.findViewById(R.id.tvTitle);
-//
-//			convertView.setTag(viewHolder);
-//		} else {
-//			viewHolder = (ViewHolder)convertView.getTag();
-//		}
-//
-//		updateViewHolder(viewHolder, navItem);
-//		return convertView;
 	}
 
 	private void updateViewHolder(ViewHolder viewHolder, NavDrawerItem navItem){

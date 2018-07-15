@@ -24,6 +24,10 @@
             android:icon="@drawable/video_camera"
             android:title="Live Stream" />
         <item
+            android:id="@+id/nav_saba_web_site"
+            android:icon="@drawable/ic_saba_website"
+            android:title="Saba Website" />
+        <item
             android:id="@+id/nav_contact_directions_fragment"
             android:icon="@drawable/ic_contact_directions"
             android:title="Contact and Directions" />

@@ -29,6 +29,7 @@ import com.saba.igc.org.fragments.LiveStreamFragment;
 import com.saba.igc.org.fragments.PrayerTimesFragment;
 import com.saba.igc.org.fragments.UpcomingProgramsFragment;
 import com.saba.igc.org.fragments.WeeklyProgramsFragment;
+import com.saba.igc.org.fragments.WebviewFragment;
 import com.saba.igc.org.listeners.SabaServerResponseListener;
 
 import org.json.JSONArray;
@@ -200,10 +201,12 @@ public class MainActivity1 extends AppCompatActivity implements SabaServerRespon
 				title = "Announcements";
 				resId = R.drawable.events_announcements;
 				break;
-//			case id.nav_community_announcements:
-//				fragmentClass = CommunityAnnouncementsFragment.class;
-//				mTvToolbarTitle.setText("Community");
-//				break;
+			case id.nav_saba_web_site:
+				fragmentClass = WebviewFragment.class;
+				title = "Saba Website";
+				resId = R.drawable.events_announcements;
+				mTvToolbarTitle.setText("Saba Website");
+				break;
 			case id.nav_contact_directions_fragment:
 				fragmentClass = ContactAndDirectionsFragment.class;
 				title = "Contact and Directions";
